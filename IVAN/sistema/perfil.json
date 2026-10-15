@@ -1,0 +1,264 @@
+{
+  "cliente": "Presentador de ejemplo / Ascendia",
+  "manual": "PROMPT_MAESTRO.md",
+  "drive_entrega": "CONFIGURE_RECURSO_0521",
+  "drive_crudos": "CONFIGURE_RECURSO_1469",
+  "exportacion": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "crf": 18
+  },
+  "tipografia": {
+    "principal": "Sequel Sans Bold Disp",
+    "secundaria": "Scholar Italic"
+  },
+  "archivos_tipografia": {
+    "principal": "recursos/Sequel_Sans_Bold_Disp.ttf",
+    "secundaria": "recursos/Scholar_Italic.ttf"
+  },
+  "subtitulos": {
+    "hook_segundos": 5,
+    "hook_palabras_por_bloque": null,
+    "desarrollo_palabras_por_bloque": [
+      2,
+      3
+    ],
+    "centrado_horizontal": true,
+    "posicion_presentador": "debajo_barbilla_detectada_suavizada",
+    "excepcion_editorial": "Movimiento tipográfico intencional documentado",
+    "hook_modo": "editorial_sin_transcripcion_automatica",
+    "continuidad_broll": true
+  },
+  "zoom_talking_head": [
+    1.06,
+    1.12
+  ],
+  "riser_impacto_segundos": [
+    2,
+    6
+  ],
+  "transiciones_burn": {
+    "mezcla": "screen",
+    "duracion_segundos": [
+      0.3,
+      1.0
+    ]
+  },
+  "workflow": [
+    "manual_completo",
+    "skills_locales_leidas_aplicadas",
+    "preflight_siete_herramientas_tella_excluido",
+    "referencias",
+    "inventario_crudos",
+    "analisis",
+    "transcripcion_alineada",
+    "storyboard",
+    "recursos_semanticos",
+    "catalogo_y_motion_graphics",
+    "check_keyframes_y_preview",
+    "mezcla_render",
+    "auditoria_tecnica_visual_sonora_temporal",
+    "entrega_verificada",
+    "limpieza_derivados"
+  ],
+  "auditoria_obligatoria": [
+    "sincronizacion",
+    "ortografia",
+    "legibilidad",
+    "superposiciones",
+    "tipografia",
+    "motion_graphics",
+    "autenticidad_interfaces",
+    "audio",
+    "ritmo",
+    "claridad_graficos",
+    "herramientas",
+    "zonas_seguras",
+    "calidad_tecnica",
+    "continuidad_temporal",
+    "centrado_subtitulos",
+    "distancia_barbilla",
+    "sombra_referencia",
+    "rojo_semantico",
+    "broll_autentico",
+    "transformaciones_conectadas",
+    "comparacion_referencias"
+  ],
+  "referencias": [
+    {
+      "key": "A1_INTERNACIONAL",
+      "id": "CONFIGURE_RECURSO_0355",
+      "tipo": "identidad",
+      "archivo": "recursos/A1_INTERNACIONAL.mp4"
+    },
+    {
+      "key": "A2_CLASE",
+      "id": "CONFIGURE_RECURSO_1593",
+      "tipo": "identidad",
+      "archivo": "recursos/A2_CLASE.mp4"
+    },
+    {
+      "key": "A3_YO",
+      "id": "CONFIGURE_RECURSO_0493",
+      "tipo": "identidad",
+      "archivo": "recursos/A3_YO.mp4"
+    },
+    {
+      "key": "B1_EDIT",
+      "id": "CONFIGURE_RECURSO_1613",
+      "tipo": "historica_motion_no_vigente",
+      "archivo": "recursos/B1_EDIT.mp4"
+    },
+    {
+      "key": "B2_CLONE",
+      "id": "CONFIGURE_RECURSO_1679",
+      "tipo": "motion_exclusiva",
+      "archivo": "recursos/B2_CLONE.mp4"
+    },
+    {
+      "key": "B3_AGENT",
+      "id": "CONFIGURE_RECURSO_1671",
+      "tipo": "historica_motion_no_vigente",
+      "archivo": "recursos/B3_AGENT.mp4"
+    }
+  ],
+  "sonidos": [
+    {
+      "key": "RISER",
+      "id": "CONFIGURE_RECURSO_0595",
+      "archivo": "recursos/Riser_1.wav"
+    },
+    {
+      "key": "SONIDO_UTIL",
+      "id": "CONFIGURE_RECURSO_1590",
+      "archivo": "recursos/SONIDO_UTIL.mp3"
+    },
+    {
+      "key": "WOOSH",
+      "id": "CONFIGURE_RECURSO_0547",
+      "archivo": "recursos/Woosh_Effect_1.wav"
+    }
+  ],
+  "bibliotecas": [
+    {
+      "key": "musica",
+      "id": "CONFIGURE_RECURSO_1536"
+    },
+    {
+      "key": "burn",
+      "id": "CONFIGURE_RECURSO_1305"
+    },
+    {
+      "key": "broll_dinamico",
+      "id": "CONFIGURE_RECURSO_1792"
+    },
+    {
+      "key": "broll_herramientas",
+      "id": "CONFIGURE_RECURSO_1351"
+    }
+  ],
+  "directiva_estructural": {
+    "presentador_maximo_continuo_s": 3,
+    "presentador_objetivo_proporcion": 0.2,
+    "incluye_split_y_transiciones": true,
+    "subtitulos": "barbilla_detectada_suavizada",
+    "sombra_css": "2px 4px 5px rgba(0,0,0,0.85)",
+    "rojo": "riesgo_error_costo_negacion_contraste",
+    "zoom_s": [
+      0.15,
+      0.35
+    ],
+    "muestra_obligatoria_s": [
+      8,
+      12
+    ],
+    "motor_preferente": "HyperFrames",
+    "split_presentador_proporcion": [
+      0.45,
+      0.45
+    ],
+    "zoom_impacto_s": [
+      0.15,
+      0.25
+    ],
+    "zoom_enfasis_s": [
+      0.2,
+      0.35
+    ],
+    "entradas_elementos_s": [
+      0.12,
+      0.3
+    ],
+    "tarjetas_s": [
+      0.2,
+      0.4
+    ],
+    "transicion_principal_s": [
+      0.2,
+      0.6
+    ],
+    "auditoria_todos_los_frames": true,
+    "broll_real_prioritario": true,
+    "acciones_conectadas_obligatorias": true,
+    "entorno_completo_antes_edicion": true,
+    "relleno_borroso_permitido": false,
+    "prueba_v4_s": 10,
+    "aprobacion_prueba_requerida": true,
+    "prueba_nombre": "ascendia_test_v5_10s.mp4"
+  },
+  "directiva_vigente": "ASCENDIA V5",
+  "herramientas_excluidas": [
+    "Tella MCP"
+  ],
+  "decision_tella": "Excluido por instrucción explícita del usuario el 12 de octubre de 2026",
+  "entrada_crudos": {
+    "nombre_verificado": "Crudos",
+    "verificado_en": "2026-10-12T13:57:30Z",
+    "seleccion": "videos_directos",
+    "deduplicacion": "ID y tamaño/MD5",
+    "comando": "python3 -B sistema/workflow.py crudos --ingestar"
+  },
+  "drive_raiz": "CONFIGURE_RECURSO_1066",
+  "instrucciones_operativas": "INSTRUCCIONES.md",
+  "bibliotecas_inventario": "recursos/inventario_drive.json",
+  "seleccion_brolls": {
+    "obligatoria_antes_render": true,
+    "ambas_bibliotecas": true,
+    "descarga": "solo_preseleccion_contextual",
+    "revision_visual_obligatoria": true,
+    "decisiones": "por_bloque_semantico",
+    "max_candidatos_por_pasada": 12,
+    "archivo_proyecto": "seleccion_recursos.json",
+    "deduplicacion": "ID o MD5/tamaño"
+  },
+  "equilibrio_v4": {
+    "presentador": [
+      0.15,
+      0.2
+    ],
+    "broll_real": [
+      0.35,
+      0.45
+    ],
+    "motion": [
+      0.35,
+      0.45
+    ],
+    "regla": "Documentar dominancia y solapamientos; no fabricar suma de porcentajes"
+  },
+  "broll_destino": "assets/broll",
+  "referencia_identidad_principal": "A3_YO",
+  "style_observado": "STYLE_YO.md",
+  "montaje_nuevo_por_crudo": true,
+  "skills_obligatorias": true,
+  "skills_registro_por_proyecto": "skills_aplicadas.json",
+  "skills_directorio_canonico": ".agents/skills",
+  "referencia_motion_exclusiva": "B2_CLONE",
+  "alcance_actual": "fase_1_segunda_pasada_estatica_CLONE_3_100",
+  "aprobacion_diseno_antes_animar": true,
+  "prueba_tecnica_gsap_ya_comprobada": true,
+  "ritmo_trabajo": "normal"
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "purpose": "Adaptación opt-in de instancias nuevas; los módulos y defaults de reconstrucción permanecen intactos. No cambia la acción ni inventa funciones.",
+  "families": {
+    "radial_research": {
+      "labels": {"target_label": {"original": "THE APP YOU CLONED", "max_chars": 24, "width": 294, "size": 18}},
+      "omit": {"metric": {"groups": ["counter-group"], "hidden_params": ["count", "metric"]}},
+      "legibility": "Etiquetas de fuentes hasta28px y métrica hasta30px, con ajuste por ancho y peso real. No son titulares.",
+      "conceptual_note": "Las fuentes pueden ser herramientas descritas en el guion; una cantidad cuenta entradas, nunca calidad inferida."
+    },
+    "feedback_bars": {
+      "labels": {"panel_title": {"original": "WHAT USERS WANT FIXED", "max_chars": 28, "width": 505, "size": 18}},
+      "omit": {},
+      "legibility": "Observaciones cortas hasta30px, categorías hasta28px y contadores36px. Tags solo secundarios. Cada valor exige evidencia del guion.",
+      "conceptual_note": "Admite resultados suministrados organizados por criterio; no inventa reseñas, porcentajes ni ganador. No comparar magnitudes con unidades distintas como benchmark."
+    },
+    "phone_recon": {
+      "labels": {"role_label": {"original": "/ replica-recon", "max_chars": 22, "width": 248, "size": 22}},
+      "omit": {"analysis_counts": {"groups": ["result0", "result1"], "hidden_params": ["screens", "flows"]}},
+      "legibility": "Resultados y títulos son focos; detalles de calendario son secundarios.",
+      "conceptual_note": "Interfaz de reservas conceptual; no utilizar para chats u otras funciones."
+    },
+    "phone_rebuild": {
+      "labels": {"role_label": {"original": "/ replica-build", "max_chars": 22, "width": 208, "size": 22}, "booking_button": {"original": "Confirm booking", "max_chars": 20, "width": 210, "size": 18}, "blueprint_header": {"original": "HEADER · SCREEN 1/18", "max_chars": 25, "width": 250, "size": 9}, "blueprint_flow": {"original": "SLOT PICKER · FLOW 2/7", "max_chars": 25, "width": 250, "size": 9}},
+      "omit": {},
+      "conceptual_note": "Blueprint→app de reservas; selección y botón son representación gráfica, no demostración de un software ejecutado."
+    },
+    "phone_qa": {
+      "labels": {"role_label": {"original": "/ replica-test", "max_chars": 22, "width": 211, "size": 22}, "booking_button": {"original": "Confirm booking", "max_chars": 20, "width": 210, "size": 18}},
+      "omit": {},
+      "conceptual_note": "Solo si el guion describe pruebas de reservas. No inventar errores ni resultados."
+    },
+    "phone_compare": {
+      "labels": {},
+      "omit": {"metric": {"groups": ["metric"], "hidden_params": ["score", "metricLabel"]}},
+      "conceptual_note": "Siempre contrasta una app y su réplica, no dos herramientas arbitrarias. Ocultar score no cambia esta semántica."
+    },
+    "problem_resolution": {
+      "labels": {"features_title": {"original": "WHAT’S NEW", "max_chars": 22, "width": 233, "size": 16}},
+      "omit": {},
+      "conceptual_note": "Necesidad→función aportada mediante lista genérica de funciones y switches en teléfono; el builder no contiene calendario ni reservas. Interfaz conceptual, no captura real: no atribuir capacidades nuevas a marcas."
+    },
+    "product_card": {
+      "labels": {},
+      "omit": {"rating": {"groups": ["rating"], "texts": ["RATING"], "hidden_params": ["rating"]}, "price": {"groups": ["price"], "texts": ["PRICE"], "hidden_params": ["price"]}, "publication": {"groups": ["live"], "hidden_params": ["domain"]}},
+      "conceptual_note": "Ficha de aplicación; omitir datos no aportados. LIVE requiere publicación descrita, status requiere estado suministrado."
+    }
+  }
+}

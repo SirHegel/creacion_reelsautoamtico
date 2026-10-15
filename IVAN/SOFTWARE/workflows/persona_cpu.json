@@ -1,0 +1,11 @@
+{
+  "start": 0,
+  "duration": 5,
+  "fps": 15,
+  "max_width": 540,
+  "max_height": 960,
+  "threshold": 0.5,
+  "softness": 0.1,
+  "feather": 2,
+  "temporal_smoothing": 0
+}

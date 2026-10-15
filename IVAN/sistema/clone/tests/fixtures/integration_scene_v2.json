@@ -1,0 +1,992 @@
+{
+  "schema_version": 1,
+  "id": "semantic_5dd3592f014c",
+  "semantic_analysis": {
+    "summary": "El guion atribuye enfado a Google porque Claude dispone de una skill de scraping; enumera LinkedIn, YouTube e Instagram como fuentes y afirma que no requiere pagar ninguna API.",
+    "entities": [
+      {
+        "id": "google",
+        "name": "Google",
+        "kind": "brand",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "kind": "brand",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "skill",
+        "name": "Skill de scraping",
+        "kind": "capability",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "internet",
+        "name": "Internet",
+        "kind": "information_source",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn",
+        "kind": "brand",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "youtube",
+        "name": "YouTube",
+        "kind": "brand",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "kind": "brand",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "api",
+        "name": "API",
+        "kind": "service_interface",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "facts": [
+      {
+        "id": "f1",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f2",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f3",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f4",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f5",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "relationships": [
+      {
+        "from": "claude",
+        "to": "skill",
+        "action": "dispone de",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "internet",
+        "action": "resume",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "internet",
+        "to": "linkedin",
+        "action": "incluye como ejemplo narrado",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "internet",
+        "to": "youtube",
+        "action": "incluye como ejemplo narrado",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "internet",
+        "to": "instagram",
+        "action": "incluye como ejemplo narrado",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "api",
+        "action": "no requiere pago según el guion",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "google",
+        "action": "motiva el enfado atribuido",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "unsupported_claims": [
+      "El enfado de Google, el alcance «todo internet» y la ausencia de pago de API son afirmaciones del guion, sin corroboración externa aportada.",
+      "Las transferencias y el sprite recon representan relaciones conceptuales; no demuestran scraping ejecutado ni añaden un agente real a los hechos.",
+      "El plan solicita que la transformación del nodo Claude ocurra después de completar su transferencia entrante; su ejecución necesita verificación del runtime.",
+      "El overlay oficial de identidad del hook corresponde al director YO separado y no está ejecutado ni incluido como slot nativo en este plan.",
+      "Contexto private_review: publication_authorized:false. Los permisos y revisiones de publicación de las marcas permanecen pendientes conforme al registro suministrado.",
+      "Lectura móvil, encuadre, restricciones de tratamiento de los logos, permanencias y continuidad requieren revisión del render; este plan no aprueba estética.",
+      "La caption de la segunda escena resume la condición final desde el inicio del bloque. El catálogo no publica una fase independiente para introducirla exactamente en su mención."
+    ],
+    "timing_mode": "anchored_to_supplied_narration",
+    "conceptual": true,
+    "narrative_structure": "Hook de reacción atribuida a Google; explicación causal mediante Claude y su skill; desarrollo del alcance de scraping; enumeración acumulativa de fuentes; condición final sobre pago de API.",
+    "visual_strategy": "Dos bloques contiguos: un grafo causal breve presenta la reacción y la skill, recibe información de Internet antes de transformar el estado de Claude; después, radial_research concreta las fuentes con logos auténticos de 72px y Claude como identidad objetivo de 76px. El hook puede recibir identidad oficial de Google mediante la dirección YO posterior, pendiente de selección y render. Se conservan voz, cortes y duración original de 7,9s."
+  },
+  "scenes": [
+    {
+      "id": "hook_skill",
+      "start": 0,
+      "duration": 3.6,
+      "content": "Texto sintético de ejemplo.",
+      "objective": "Presentar la reacción atribuida y explicar la relación entre Claude, su skill y la entrada de información.",
+      "semantic_reason": "Representa f1–f3 y las anclas 0–11. La emoción es un estado editorial, la posesión de la skill se escribe en Claude y el scraping se representa como información que llega desde Internet. La transformación de Claude comienza después de terminar la transferencia entrante, corrigiendo el defecto causal sin inventar resultados.",
+      "family": "composition_graph",
+      "fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "actions": [
+        {
+          "at": 0.0,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "google"
+        },
+        {
+          "at": 0.7,
+          "duration": 0.2,
+          "op": "camera",
+          "target": "google",
+          "scale": 1.05
+        },
+        {
+          "at": 1.2,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "claude"
+        },
+        {
+          "at": 1.4333333333333333,
+          "duration": 0.6,
+          "op": "type",
+          "target": "claude",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 2.3333333333333335,
+          "duration": 0.26666666666666666,
+          "op": "enter",
+          "target": "internet"
+        },
+        {
+          "at": 2.6,
+          "duration": 0.2,
+          "op": "type",
+          "target": "internet",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 2.8333333333333335,
+          "duration": 0.3,
+          "op": "transfer",
+          "target": "claude",
+          "from": "internet",
+          "to": "claude"
+        },
+        {
+          "at": 3.1666666666666665,
+          "duration": 0.2,
+          "op": "type",
+          "target": "claude",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 3.3666666666666667,
+          "duration": 0.23333333333333334,
+          "op": "transform",
+          "target": "claude"
+        }
+      ],
+      "narration_anchors": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "composition": "full_motion",
+      "transition_in": {
+        "kind": "cut",
+        "duration": 0.0
+      },
+      "transition_out": {
+        "kind": "cut",
+        "duration": 0.0
+      },
+      "visual_reason": "Pipeline nativo de tres nodos, sin un hub que exija añadir un actor. Google entra primero como estado editorial; Claude aparece en su mención y los cuerpos escritos comienzan vacíos. Internet entra después, recibe texto y transfiere información a Claude antes de cualquier transformación. La cámara breve enfatiza el hook sin fingir un cambio de estado. No se introducen logos de 21px como identidades protagonistas; Google puede identificarse con el overlay oficial separado, todavía pendiente. El corte lleva la idea genérica de Internet a fuentes reconocibles en la escena siguiente.",
+      "alternatives": [
+        {
+          "family": "spotlight_agent",
+          "reason": "Puede presentar una función con rapidez, pero este bloque necesita una reacción atribuida a Google y una relación causal con Claude. Un sprite no acredita ninguna de esas identidades y su foco no expresa por sí solo la entrada de información."
+        },
+        {
+          "family": "terminal_install",
+          "reason": "Admite una instrucción natural y flujo hacia un resultado, pero el bloque describe posesión de una skill y reacción causal, sin instrucción pronunciada ni instalación. Sus checks y activación introducirían énfasis ajeno."
+        },
+        {
+          "family": "product_card",
+          "reason": "Su slot de 154px permitiría identificar Claude, pero la transformación de disponibilidad a apertura y los agentes de despliegue no corresponden a la reacción ni a la posesión de una skill narradas."
+        }
+      ],
+      "choreography": {
+        "mode": "custom_steps",
+        "execution": "params.steps",
+        "phase_ids": []
+      },
+      "illustrative_fields": [],
+      "data_bindings": [],
+      "handoff": {
+        "incoming_scene": null,
+        "shared_entity_ids": [],
+        "shared_assets": [],
+        "narrative_link": "Introduce la causa del hook y el alcance genérico de la skill.",
+        "visual_strategy": "La identidad oficial de Google puede acompañar el hook mediante el director YO separado; no se cuenta como presente en esta composición.",
+        "execution": "metadata_only",
+        "execution_verified": false
+      },
+      "continuity": null,
+      "layout": null,
+      "closing": null,
+      "asset_bindings": [],
+      "rhythm": null,
+      "asset_identity_receipt": [],
+      "native_brand_sizing_receipt": [],
+      "params": {
+        "title": "",
+        "caption": "Google anuncia riesgo",
+        "conceptual": true,
+        "layout": "pipeline",
+        "nodes": [
+          {
+            "id": "google",
+            "kind": "editorial",
+            "label": "Google",
+            "body": "Furioso"
+          },
+          {
+            "id": "claude",
+            "kind": "terminal",
+            "label": "Claude",
+            "body": ""
+          },
+          {
+            "id": "internet",
+            "kind": "message",
+            "label": "Internet",
+            "body": ""
+          }
+        ],
+        "edges": [
+          {
+            "from": "internet",
+            "to": "claude",
+            "label": "scraping"
+          },
+          {
+            "from": "claude",
+            "to": "google",
+            "label": "porque tiene una skill"
+          }
+        ],
+        "steps": [
+          {
+            "at": 0.0,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "google"
+          },
+          {
+            "at": 0.7,
+            "duration": 0.2,
+            "op": "camera",
+            "target": "google",
+            "scale": 1.05
+          },
+          {
+            "at": 1.2,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "claude"
+          },
+          {
+            "at": 1.4333333333333333,
+            "duration": 0.6,
+            "op": "type",
+            "target": "claude",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 2.3333333333333335,
+            "duration": 0.26666666666666666,
+            "op": "enter",
+            "target": "internet"
+          },
+          {
+            "at": 2.6,
+            "duration": 0.2,
+            "op": "type",
+            "target": "internet",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 2.8333333333333335,
+            "duration": 0.3,
+            "op": "transfer",
+            "target": "claude",
+            "from": "internet",
+            "to": "claude"
+          },
+          {
+            "at": 3.1666666666666665,
+            "duration": 0.2,
+            "op": "type",
+            "target": "claude",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 3.3666666666666667,
+            "duration": 0.23333333333333334,
+            "op": "transform",
+            "target": "claude"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources_condition",
+      "start": 3.6,
+      "duration": 4.3,
+      "content": "Texto sintético de ejemplo.",
+      "objective": "Concretar las fuentes mencionadas y conservar la condición final sobre pago de API.",
+      "semantic_reason": "Representa f3–f5 y las anclas 12–23. Las tres plataformas son fuentes que convergen conceptualmente en la skill de Claude. La caption expresa únicamente la condición aportada, sin convertirla en precio, ahorro, licencia o gratuidad general. La timeline nativa muestra rutas y flujo antes de revelar la identidad objetivo.",
+      "family": "radial_research",
+      "fact_ids": [
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "actions": [
+        {
+          "at": 0.0,
+          "duration": 0.3333333333333333,
+          "op": "enter",
+          "target": "agent",
+          "phase_id": "agent",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        },
+        {
+          "at": 0.3333333333333333,
+          "duration": 0.26666666666666666,
+          "op": "enter",
+          "target": "source*",
+          "phase_id": "sources",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        },
+        {
+          "at": 0.6,
+          "duration": 0.2666666666666667,
+          "op": "transfer",
+          "target": "route*",
+          "phase_id": "routes",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        },
+        {
+          "at": 0.8666666666666667,
+          "duration": 0.16666666666666674,
+          "op": "resolve",
+          "target": "counter-group",
+          "phase_id": "counting",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": false,
+          "state_note": "El reloj/fase del builder permanece, pero presentation oculta completamente el grupo."
+        },
+        {
+          "at": 1.0333333333333334,
+          "duration": 1.2333333333333332,
+          "op": "transfer",
+          "target": "data*",
+          "phase_id": "data_flow",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        },
+        {
+          "at": 2.2666666666666666,
+          "duration": 1.4666666666666668,
+          "op": "resolve",
+          "target": "target",
+          "phase_id": "target",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        },
+        {
+          "at": 3.7333333333333334,
+          "duration": 0.5666666666666664,
+          "op": "camera",
+          "target": "world",
+          "phase_id": "exit",
+          "execution": "component_timeline",
+          "timing_kind": "phase_window",
+          "enabled": true,
+          "visible": true
+        }
+      ],
+      "narration_anchors": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "composition": "full_motion",
+      "transition_in": {
+        "kind": "cut",
+        "duration": 0.0
+      },
+      "transition_out": {
+        "kind": "cut",
+        "duration": 0
+      },
+      "visual_reason": "Las fuentes usan slots nativos de 72px y Claude uno de 76px, superiores al mínimo nominal de 64px. Las plataformas entran como grupo ligeramente escalonado y permanecen acumuladas durante su enumeración; no se reemplazan por cada palabra. El sprite recon es una mediación gráfica conceptual, no una identidad oficial de Claude. Se oculta por completo el contador ausente y se adapta el rótulo del objetivo. Los logos conservan arte y proporciones; el catálogo no publica rotación para estos slots, a diferencia de apps_clone_orbit. El corte desde el grafo conserva la idea de la skill, sin solicitar un morph que carece de par publicado. El runtime debe comprobar legibilidad efectiva del logo, espacio libre y ausencia de tratamientos prohibidos.",
+      "alternatives": [
+        {
+          "family": "composition_graph",
+          "reason": "Permitiría programar la recepción de cada fuente, pero sus iconos nativos de 21px no alcanzan el mínimo de 64px para estas marcas protagonistas. Aquí la convergencia especializada ya expresa la relación sin pasos adicionales."
+        },
+        {
+          "family": "apps_clone_orbit",
+          "reason": "Sus satélites de 78px admiten las identidades, pero duplica la aplicación principal sin que el guion describa un clon y aplica rotación incompatible con las restricciones de YouTube."
+        },
+        {
+          "family": "phone_compare",
+          "reason": "Sus logos de 148px tienen tamaño suficiente, pero la relación fija entre app original y réplica no corresponde a fuentes de scraping. Ocultar el score no modifica esa relación."
+        },
+        {
+          "family": "feedback_bars",
+          "reason": "Organiza evidencia por criterios con barras, mientras este bloque enumera fuentes sin valores ni criterios comparativos. Además, sus iconos de 35px no cumplen el mínimo de marca protagonista."
+        }
+      ],
+      "choreography": {
+        "mode": "family_phases",
+        "execution": "component_timeline",
+        "phase_ids": [
+          "agent",
+          "sources",
+          "routes",
+          "counting",
+          "data_flow",
+          "target",
+          "exit"
+        ],
+        "requested_phase_ids": [
+          "agent",
+          "sources",
+          "routes",
+          "data_flow",
+          "target",
+          "exit"
+        ],
+        "hidden_phase_ids": [
+          "counting"
+        ],
+        "disabled_phase_ids": [],
+        "compositor_enhancements": "Fuera de las fases nativas: solo adaptaciones autorizadas ejecutadas por engine/presentation, con recibo browser posterior.",
+        "actions_execute": false,
+        "timing_kind": "phase_window",
+        "source_file": "sistema/clone/components/research.js",
+        "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+        "note": "actions describe ventanas del componente; no son órdenes nuevas de movimiento."
+      },
+      "illustrative_fields": [],
+      "data_bindings": [],
+      "handoff": {
+        "incoming_scene": "hook_skill",
+        "shared_entity_ids": [
+          "claude",
+          "skill",
+          "internet"
+        ],
+        "shared_assets": [],
+        "narrative_link": "El alcance genérico de Internet se concreta en las tres plataformas y desemboca en la condición de no pagar API.",
+        "visual_strategy": "Corte deliberado entre causalidad textual y convergencia de fuentes; Claude permanece como referencia semántica, ahora con su identidad oficial en un slot nativo pertinente.",
+        "execution": "metadata_only",
+        "execution_verified": false
+      },
+      "presentation": {
+        "labels": {
+          "target_label": "Claude · skill"
+        },
+        "omit": [
+          "metric"
+        ]
+      },
+      "continuity": null,
+      "layout": null,
+      "closing": null,
+      "asset_bindings": [
+        {
+          "path": "sources.0.asset",
+          "asset": "brand_linkedin_icon",
+          "entity_id": "linkedin",
+          "reason": "Identidad auténtica de LinkedIn, fuente explícitamente mencionada; slot nativo de 72px disponible para private_review."
+        },
+        {
+          "path": "sources.1.asset",
+          "asset": "brand_youtube_icon",
+          "entity_id": "youtube",
+          "reason": "Identidad auténtica de YouTube, fuente explícitamente mencionada; slot nativo de 72px sin rotación publicada. Verificar que el render no añada sombra, contorno ni distorsión al icono."
+        },
+        {
+          "path": "sources.2.asset",
+          "asset": "brand_instagram_glyph",
+          "entity_id": "instagram",
+          "reason": "Identidad auténtica de Instagram, fuente explícitamente mencionada; slot nativo de 72px disponible para la revisión privada."
+        },
+        {
+          "path": "target",
+          "asset": "brand_claude_mark",
+          "entity_id": "claude",
+          "reason": "Identifica Claude como titular de la skill narrada mediante el slot objetivo de 76px, sin atribuir al logo evidencia de ejecución."
+        }
+      ],
+      "rhythm": null,
+      "asset_identity_receipt": [
+        {
+          "path": "sources.0.asset",
+          "asset": "brand_linkedin_icon",
+          "entity_id": "linkedin",
+          "reason": "Identidad auténtica de LinkedIn, fuente explícitamente mencionada; slot nativo de 72px disponible para private_review.",
+          "brand": "linkedin",
+          "sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600",
+          "source_url": "https://brand.linkedin.com/downloads",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "sources.1.asset",
+          "asset": "brand_youtube_icon",
+          "entity_id": "youtube",
+          "reason": "Identidad auténtica de YouTube, fuente explícitamente mencionada; slot nativo de 72px sin rotación publicada. Verificar que el render no añada sombra, contorno ni distorsión al icono.",
+          "brand": "youtube",
+          "sha256": "1027b1b0517727adb9697155a270744381c3ce9b047b1c8bd8a9389dc7d07a83",
+          "source_url": "https://brand.youtube/youtube-icon/",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "sources.2.asset",
+          "asset": "brand_instagram_glyph",
+          "entity_id": "instagram",
+          "reason": "Identidad auténtica de Instagram, fuente explícitamente mencionada; slot nativo de 72px disponible para la revisión privada.",
+          "brand": "instagram",
+          "sha256": "21f86b55f986848665ce54ab354ff6b43b7705e6c421d90c04369882b5956766",
+          "source_url": "https://www.meta.com/brand/resources/instagram/instagram-brand/",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "target",
+          "asset": "brand_claude_mark",
+          "entity_id": "claude",
+          "reason": "Identifica Claude como titular de la skill narrada mediante el slot objetivo de 76px, sin atribuir al logo evidencia de ejecución.",
+          "brand": "claude",
+          "sha256": "6d53db4be375e899c937c26cf16684a80d6e869b1928d72b37748bef2560e219",
+          "source_url": "https://www.anthropic.com/news",
+          "use": "identity_only; not proof of software execution"
+        }
+      ],
+      "native_brand_sizing_receipt": [
+        {
+          "path": "sources.0.asset",
+          "asset": "brand_linkedin_icon",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "sources.1.asset",
+          "asset": "brand_youtube_icon",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "sources.2.asset",
+          "asset": "brand_instagram_glyph",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "target",
+          "asset": "brand_claude_mark",
+          "native_slot_size": 76,
+          "minimum_requested": 64,
+          "basis": "research.js target C.image(p.target,...,76)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        }
+      ],
+      "params": {
+        "sources": [
+          {
+            "asset": "brand_linkedin_icon",
+            "label": "LinkedIn"
+          },
+          {
+            "asset": "brand_youtube_icon",
+            "label": "YouTube"
+          },
+          {
+            "asset": "brand_instagram_glyph",
+            "label": "Instagram"
+          }
+        ],
+        "count": 0,
+        "metric": "",
+        "target": "brand_claude_mark",
+        "agent": "agent_recon",
+        "caption": "Sin pagar ninguna API"
+      }
+    }
+  ],
+  "duration": 7.9,
+  "timing": {
+    "mode": "anchored_to_supplied_narration",
+    "voice_provided": true,
+    "fps": 30,
+    "anchors": [
+      {
+        "index": 0,
+        "start": 0.0,
+        "end": 0.32,
+        "text": "Google"
+      },
+      {
+        "index": 1,
+        "start": 0.4,
+        "end": 0.56,
+        "text": "anuncia"
+      },
+      {
+        "index": 2,
+        "start": 0.56,
+        "end": 0.88,
+        "text": "riesgo"
+      },
+      {
+        "index": 3,
+        "start": 0.96,
+        "end": 1.2,
+        "text": "mientras"
+      },
+      {
+        "index": 4,
+        "start": 1.2,
+        "end": 1.68,
+        "text": "Claude"
+      },
+      {
+        "index": 5,
+        "start": 1.68,
+        "end": 1.84,
+        "text": "procesa"
+      },
+      {
+        "index": 6,
+        "start": 1.84,
+        "end": 1.92,
+        "text": "varios"
+      },
+      {
+        "index": 7,
+        "start": 1.92,
+        "end": 2.24,
+        "text": "datos"
+      },
+      {
+        "index": 8,
+        "start": 2.32,
+        "end": 2.4,
+        "text": "para"
+      },
+      {
+        "index": 9,
+        "start": 2.4,
+        "end": 3.04,
+        "text": "resumir"
+      },
+      {
+        "index": 10,
+        "start": 3.04,
+        "end": 3.28,
+        "text": "información"
+      },
+      {
+        "index": 11,
+        "start": 3.28,
+        "end": 3.44,
+        "text": "web"
+      },
+      {
+        "index": 12,
+        "start": 3.68,
+        "end": 3.92,
+        "text": "usando"
+      },
+      {
+        "index": 13,
+        "start": 4.0,
+        "end": 4.24,
+        "text": "fuentes"
+      },
+      {
+        "index": 14,
+        "start": 4.24,
+        "end": 4.8,
+        "text": "LinkedIn"
+      },
+      {
+        "index": 15,
+        "start": 4.96,
+        "end": 5.2,
+        "text": "YouTube"
+      },
+      {
+        "index": 16,
+        "start": 5.36,
+        "end": 5.76,
+        "text": "Instagram"
+      },
+      {
+        "index": 17,
+        "start": 5.84,
+        "end": 6.08,
+        "text": "además"
+      },
+      {
+        "index": 18,
+        "start": 6.08,
+        "end": 6.24,
+        "text": "sin"
+      },
+      {
+        "index": 19,
+        "start": 6.24,
+        "end": 6.56,
+        "text": "pagar"
+      },
+      {
+        "index": 20,
+        "start": 6.56,
+        "end": 6.72,
+        "text": "ninguna"
+      },
+      {
+        "index": 21,
+        "start": 6.72,
+        "end": 7.04,
+        "text": "API"
+      },
+      {
+        "index": 22,
+        "start": 7.04,
+        "end": 7.44,
+        "text": "de"
+      },
+      {
+        "index": 23,
+        "start": 7.44,
+        "end": 7.76,
+        "text": "prueba"
+      }
+    ],
+    "note": "Anclas reales aportadas; límites visuales cuantizados a30FPS."
+  },
+  "planner": {
+    "provider": "codex",
+    "semantic_inference": true,
+    "keyword_fallback": false,
+    "ready_for_compile": true,
+    "pending_families": [],
+    "conceptual": true,
+    "manual_editorial_review": "pending",
+    "manual_sha256": {
+      "AGENTS.md": "d59bbfbb2c4cd0d3e6a6d59df794e4dc188668582930328fffc15fcc78cf01e1",
+      "PROMPT_MAESTRO.md": "cee4937fa23ba1e3a9f1ea5e85ba02df36fde25b4f7017bc8c72572b9edcb6a3",
+      "INSTRUCCIONES.md": "755716bbe5161fc750259fc40625bbdf031ff0a27d4c76b947cdbef5489cf1cf"
+    },
+    "continuity_execution": {
+      "handoff": "metadata_only",
+      "requested_operations": 0,
+      "capability_validated": false,
+      "execution_verified": false,
+      "verification": "Recibo del compositor, seeks y revisión visual con SHA vigente."
+    },
+    "transition_owner": "incoming_boundary; transition_out derived",
+    "family_actions": "ventanas derivadas, no nuevos comandos de animación",
+    "brand_asset_snapshot_sha256": "47c3b00f320f768a8f2f56c8e212157d95851cc89329d10b851176ced5a782db",
+    "asset_resolution": {
+      "context": "private_review",
+      "publication_authorized": false,
+      "snapshot_sha256": "47c3b00f320f768a8f2f56c8e212157d95851cc89329d10b851176ced5a782db",
+      "proofs": [
+        {
+          "path": "sources.0.asset",
+          "asset": "brand_linkedin_icon",
+          "entity_id": "linkedin",
+          "reason": "Identidad auténtica de LinkedIn, fuente explícitamente mencionada; slot nativo de 72px disponible para private_review.",
+          "brand": "linkedin",
+          "sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600",
+          "source_url": "https://brand.linkedin.com/downloads",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "sources.1.asset",
+          "asset": "brand_youtube_icon",
+          "entity_id": "youtube",
+          "reason": "Identidad auténtica de YouTube, fuente explícitamente mencionada; slot nativo de 72px sin rotación publicada. Verificar que el render no añada sombra, contorno ni distorsión al icono.",
+          "brand": "youtube",
+          "sha256": "1027b1b0517727adb9697155a270744381c3ce9b047b1c8bd8a9389dc7d07a83",
+          "source_url": "https://brand.youtube/youtube-icon/",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "sources.2.asset",
+          "asset": "brand_instagram_glyph",
+          "entity_id": "instagram",
+          "reason": "Identidad auténtica de Instagram, fuente explícitamente mencionada; slot nativo de 72px disponible para la revisión privada.",
+          "brand": "instagram",
+          "sha256": "21f86b55f986848665ce54ab354ff6b43b7705e6c421d90c04369882b5956766",
+          "source_url": "https://www.meta.com/brand/resources/instagram/instagram-brand/",
+          "use": "identity_only; not proof of software execution"
+        },
+        {
+          "path": "target",
+          "asset": "brand_claude_mark",
+          "entity_id": "claude",
+          "reason": "Identifica Claude como titular de la skill narrada mediante el slot objetivo de 76px, sin atribuir al logo evidencia de ejecución.",
+          "brand": "claude",
+          "sha256": "6d53db4be375e899c937c26cf16684a80d6e869b1928d72b37748bef2560e219",
+          "source_url": "https://www.anthropic.com/news",
+          "use": "identity_only; not proof of software execution"
+        }
+      ],
+      "policy": "Private review never grants social-publication rights; registry context and usage conditions remain authoritative."
+    },
+    "brand_assets_used": [
+      "brand_claude_mark",
+      "brand_instagram_glyph",
+      "brand_linkedin_icon",
+      "brand_youtube_icon"
+    ],
+    "visual_requirements": {
+      "brand_logo_min_native_size": 64
+    },
+    "native_brand_sizing": {
+      "receipts": [
+        {
+          "path": "sources.0.asset",
+          "asset": "brand_linkedin_icon",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "sources.1.asset",
+          "asset": "brand_youtube_icon",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "sources.2.asset",
+          "asset": "brand_instagram_glyph",
+          "native_slot_size": 72,
+          "minimum_requested": 64,
+          "basis": "research.js source C.image(source.asset,...,72)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        },
+        {
+          "path": "target",
+          "asset": "brand_claude_mark",
+          "native_slot_size": 76,
+          "minimum_requested": 64,
+          "basis": "research.js target C.image(p.target,...,76)",
+          "source_sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+          "nominal_slot_not_ink_size": true,
+          "render_visibility_and_readability": "pending"
+        }
+      ],
+      "basis": "Published nominal C.image slots, not rendered ink size, guaranteed visibility or mobile approval.",
+      "integration_hook_identity": "Available only in the separate YO director; unrequested/unrendered overlays are not counted as visible logos."
+    },
+    "proof": ".estado/clone/planner/9b8cad74b1930e47/attempt_2/provider_proof.json",
+    "prompt_version": "3.5.2_block_capabilities_native_brand_size",
+    "catalog_sha256": "31d82bc98196512757cd8231d81f93c9e31a4490b14decf5a333de4ef1d91fb2",
+    "prompt_sha256": "1eeadfae49fb6ec36d8488c654e7be5826aef21caf207c84bcae60837ac78025",
+    "response_sha256": "6fabeabb29eeab4d7e06d16ccde3c40cf49951b9b5b730601c3bbfcf9fb33fab",
+    "script_sha256": "5dd3592f014c75066d296e1c5ceb098f1c7ecb71087a0400e585020f07d3c9ca",
+    "attempts": 2
+  }
+}

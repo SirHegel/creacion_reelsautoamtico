@@ -1,0 +1,471 @@
+{
+  "schema_version": 2,
+  "source_v1_sha256": "a189f21cdd242cef63896b5b9f3b55799d8aa92270da0c9ee4dd1820dd6e1064",
+  "mp4_v1_sha256": "f7ba77c346bb7b8845ee50823ef7acff704a3d7892b6d666854f9e8f610d83bb",
+  "snapshot": ".estado/tmp/v2/v1_frozen",
+  "original_to_snapshot": {
+    "ejemplos/demo_integracion/integracion/INFORME_INTEGRACION.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/INFORME_INTEGRACION.json",
+      "sha256": "0728d50a058176ae81e23199fdf8f2e0586504b7b31c68ff4b2884b6542f9e99"
+    },
+    "ejemplos/demo_integracion/integracion/integration_compile.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/integration_compile.json",
+      "sha256": "43d68feb40ce88684141efdd9f10c1c1e966a3e7c0b23cf1957661f03df8d2bb"
+    },
+    "ejemplos/demo_integracion/integracion/proyecto.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/proyecto.json",
+      "sha256": "36b75e07d95e9879f8df06c233277a467b43d4cbc0cd9c06dec8b117b25f5fc1"
+    },
+    "ejemplos/demo_integracion/integracion/VISUAL_QA.md": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/VISUAL_QA.md",
+      "sha256": "a8084656bef0e8e278c0e8933c7f986a9bb96ff670c9a33adc758e9ee680908f"
+    },
+    "ejemplos/demo_integracion/integracion/drive_original.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/drive_original.json",
+      "sha256": "e187017dc13ab9d2adcbfe5791c0a09d9efb5c7cfce97fcbad9ad216340afd8b"
+    },
+    "ejemplos/demo_integracion/integracion/mounts.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/mounts.json",
+      "sha256": "2da7efc87a54e17e4b8e8a376949fee5cfb576f578be79ac973a18935d76b411"
+    },
+    "ejemplos/demo_integracion/integracion/integration_browser_qc.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/integration_browser_qc.json",
+      "sha256": "1fdc03504735e614d36c13640d80a7d7aa0ee052fad5c9577c447007475e93ed"
+    },
+    "ejemplos/demo_integracion/integracion/paquete_manifest.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/paquete_manifest.json",
+      "sha256": "a4d6d9674833846d3842108581393b27de75bdb5d6f41443a4cb67b450a264d3"
+    },
+    "ejemplos/demo_integracion/integracion/keyframes.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/keyframes.json",
+      "sha256": "ee490eb23fc0daac759fcd266367fc321bd97112d7f8edaab4c1ae5116ee9843"
+    },
+    "ejemplos/demo_integracion/integracion/VISUAL_QA.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/VISUAL_QA.json",
+      "sha256": "659c11bac6de0cb4376b0cb62d46198257236313e0274b4b4f97b99896c6d9b3"
+    },
+    "ejemplos/demo_integracion/integracion/planner_evidencias.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/planner_evidencias.json",
+      "sha256": "088161d432fe04c7613541884e81bf5cecbd2d9fbd300f9e53ad7f7a8107f445"
+    },
+    "ejemplos/demo_integracion/integracion/integration-config.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/integration-config.json",
+      "sha256": "892edbd8ec33bd45485b61bbaca80a774c41f3d91ab462b1772e6fbc9f8f71f2"
+    },
+    "ejemplos/demo_integracion/integracion/auto_storyboard.md": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/auto_storyboard.md",
+      "sha256": "b9dca0aa5e7d4b158a0040d42be83417481c4ca09aae10ae991ff31d4bd7ec5b"
+    },
+    "ejemplos/demo_integracion/integracion/asr_parakeet.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/asr_parakeet.json",
+      "sha256": "62c3540bfcce67b3cab64281ba2c50335e8484d4efc9c295bfa396163f4b8c07"
+    },
+    "ejemplos/demo_integracion/integracion/narration.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/narration.json",
+      "sha256": "9af3bcf90823e5048107d2b0352b0e572e5990748267bfadfe06ed66294a1f3b"
+    },
+    "ejemplos/demo_integracion/integracion/skills_lectura.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/skills_lectura.json",
+      "sha256": "a04a27f7e60ebe8289bb829e16f273c72a1b174d3c13ae6fc63f37159a7928fa"
+    },
+    "ejemplos/demo_integracion/integracion/render.log": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/render.log",
+      "sha256": "84e6e5f21fdedeeb10887766936c55d6e2b50c78e667067ed437a8e580624d72"
+    },
+    "ejemplos/demo_integracion/integracion/catalogo_skills.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/catalogo_skills.json",
+      "sha256": "5edc7476a58970d5ba27e94c6833464af07cd1f3c14b4e4fa30466854ec23814"
+    },
+    "ejemplos/demo_integracion/integracion/INFORME_INTEGRACION.md": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/INFORME_INTEGRACION.md",
+      "sha256": "51abc26894726e3958573427cb3b6624072889fb9dda8a9a2da8c41426e82c70"
+    },
+    "ejemplos/demo_integracion/integracion/componentes_utilizados.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/componentes_utilizados.json",
+      "sha256": "e98c088269797e98f0351429e5714c33e81a95eb97b8fa54944ba6b269942d34"
+    },
+    "ejemplos/demo_integracion/integracion/index.html": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/index.html",
+      "sha256": "30f49e0a97c6180604325c961ba8a955c8e337fdce9e47eec84e0ae7e018c200"
+    },
+    "ejemplos/demo_integracion/integracion/diagnostico_crudo.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/diagnostico_crudo.json",
+      "sha256": "32a17d8e35d22b611395f69c92cebe2449c261ec7ccc7af99f0ff033df342deb"
+    },
+    "ejemplos/demo_integracion/integracion/qc.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/qc.json",
+      "sha256": "c55202d818e6238394c39bec20163099278da3007e290b92f125c63ffdb317ac"
+    },
+    "ejemplos/demo_integracion/integracion/poster.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/poster.png",
+      "sha256": "a36e4b4f7b54c88d82b600f9814b2697ac7c36adf60f64ce5d20be59a619b5a5"
+    },
+    "ejemplos/demo_integracion/integracion/scene.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/scene.json",
+      "sha256": "0de33c2f7ee1eb34df5a85593b2dd284423c314e043cdf93a91581f526c10d8c"
+    },
+    "ejemplos/demo_integracion/integracion/check.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/check.json",
+      "sha256": "3ca6a797d66abb7a33266588a2bf362862c817b380a1b8001b9b56882529d14d"
+    },
+    "ejemplos/demo_integracion/integracion/skills_aplicadas.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/skills_aplicadas.json",
+      "sha256": "167e17a50e7a9f4f79da93c63a5b1e1bfc9b4000267311227d19d02fd4125607"
+    },
+    "ejemplos/demo_integracion/integracion/source_manifest.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/source_manifest.json",
+      "sha256": "7d395bd3d3ed409119100ed87a712729bba2cef4cfaa2e3264285a454026fc17"
+    },
+    "ejemplos/demo_integracion/integracion/check_gate.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/check_gate.json",
+      "sha256": "ed5fba9f6a6ca7dc59d857cddb716485143e8effe34a319fbe3c98ca4552f76b"
+    },
+    "ejemplos/demo_integracion/integracion/integration_plan.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/integration_plan.json",
+      "sha256": "52a74e91764e65fa8612388b69baf60911fc0b8e250f04b1df99773a01c939b0"
+    },
+    "ejemplos/demo_integracion/integracion/check.log": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/check.log",
+      "sha256": "b209f6ed1464d0b189241263c7d40b13e36d78ec4e4274c3733220a41563561a"
+    },
+    "ejemplos/demo_integracion/integracion/keyframes.log": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/keyframes.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ejemplos/demo_integracion/integracion/planner_receipt.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/planner_receipt.json",
+      "sha256": "4ede2f3bcc229b53ea611e9cf8c19a90ca54aa4902527d5e7339dfd563e89cfe"
+    },
+    "ejemplos/demo_integracion/integracion/integration_qc.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/integration_qc.json",
+      "sha256": "52e9db1a9357f2e94dbd6f4e186b756820976548b81d19dff615b0d46abf55d5"
+    },
+    "ejemplos/demo_integracion/integracion/instance_layout_qc.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/instance_layout_qc.json",
+      "sha256": "891002ad292ceb022a8b4c1e0a9036b223c9fb234092112d216c48a3ce4a0f0a"
+    },
+    "ejemplos/demo_integracion/integracion/entrega_integracion.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/entrega_integracion.json",
+      "sha256": "42ea37db11a9838ce3beeca419d865b2def6b580e42f1267c5d23719149dbde0"
+    },
+    "ejemplos/demo_integracion/integracion/diagnostico_yo/diagnostico_yo.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/diagnostico_yo/diagnostico_yo.json",
+      "sha256": "97b8491fbe0b08b3a8ce83357f0bf04857e9700376397ecc45f2071d2c9988ae"
+    },
+    "ejemplos/demo_integracion/integracion/diagnostico_yo/anclas_55_45.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/diagnostico_yo/anclas_55_45.json",
+      "sha256": "c68fe5f70d4f693599bb13961d83a599ba724993f5351007faa47359988068f9"
+    },
+    "ejemplos/demo_integracion/integracion/diagnostico_yo/crop_55_45.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/diagnostico_yo/crop_55_45.jpg",
+      "sha256": "c7c3d4e3bb3442aad18b8169d88697509db1864e8b5d46fdcf473ed4caa9c186"
+    },
+    "ejemplos/demo_integracion/integracion/diagnostico_yo/DIAGNOSTICO_YO.md": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/diagnostico_yo/DIAGNOSTICO_YO.md",
+      "sha256": "5bf0a7ee6499ab36cac775741e1e4584559cb6a349dbff911b87b2564753273f"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/nativo_f197.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/nativo_f197.jpg",
+      "sha256": "1395b5918bbb5c253eb87d05333910b3849f1027d06e937e6dd9141f012a4a61"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/comparacion_yo.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/comparacion_yo.jpg",
+      "sha256": "a7439f83b102629dc6689f16a7dcc635a60ab5121871284d02894d4bbe9272df"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_06.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_06.jpg",
+      "sha256": "26efec6ea1387dbb0446674c1c8bf582c907ee3f22e6dc4467b7a00290d072bf"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f236.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f236.jpg",
+      "sha256": "4502076191d6583825f2182ef15887f06e5da95edfab98377b4a5696718c403f"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f187.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f187.jpg",
+      "sha256": "df3f1879161a021ca5fb774e75cb3d9d1eabe30efccf5e0edd311aaa4a9178a6"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f115.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f115.jpg",
+      "sha256": "8690de17724ee828107cfc18bfac8d9b3c1cdf046ce64e8ad589ff66716b56f9"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_04.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_04.jpg",
+      "sha256": "1d964cd32fde6bb6d6d5a1dd78d78111bc4c2053b9d4534d78a9e726dc5cf576"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_03.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_03.jpg",
+      "sha256": "45831297ff764a63036057f18d20de948d6675b07330cf0027f77989485ad2b0"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/nativo_f203.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/nativo_f203.jpg",
+      "sha256": "7c60562fa8fab65b553c32255c0d00b0c60bbac12a9a310d2902ce9a3b62757f"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f144.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f144.jpg",
+      "sha256": "04971a350ee4cca4e326227f208568ea5007fc5bdf20884864bd6893519992b9"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_01.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_01.jpg",
+      "sha256": "06e62d4a1a2d194dae2ff86acffe92433d4260694b7d64c42a2a00b8b353a7c9"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/micro_fuente_medicion.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/micro_fuente_medicion.jpg",
+      "sha256": "ec7c96b2d38f74b8c5c625d8ba301c50431f87f703eb6d9abe1996138ab073ad"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/nativo_f187.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/nativo_f187.jpg",
+      "sha256": "e3425c7144a13ab36b3f9bedf2006d4ef11123ef7cb539f3c65222d38c20493c"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f197.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f197.jpg",
+      "sha256": "10d3bf88b230211e7e19d9466779b5f90de65cb7c42759a99120f0844d7fae19"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_02.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_02.jpg",
+      "sha256": "e902398a5db84d45f1b2cfbead729a922b7a2544983819f52615616b91a3d1f3"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f016.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f016.jpg",
+      "sha256": "bde8daa8226ec3b8cc1227a9cd5bca523c1a1d7b6aa71460ee3a367274d1b8aa"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f088.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f088.jpg",
+      "sha256": "76467ea809dbc48a1d6ae270e5d643bec5ccc5210245a9a73cc6d061c7c89797"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f201.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f201.jpg",
+      "sha256": "597c203feb6de8f128b5e43457ec550e5effcc008f1eee4cf158a85c16432dfd"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_00.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_00.jpg",
+      "sha256": "394b97020abd02d34b79330516215e4e0e0d09ce07cb1b18ef36ff1c99c891b0"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f203.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f203.jpg",
+      "sha256": "c9a1ede7ff5bc48aaeee8cae3838d4f5ecfdd69b651f183aac50ddf8c97d102f"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_05.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_05.jpg",
+      "sha256": "56a296f1541c7928fa4568fc8a87dd6aace76ba275e1bf9594d831bd1775b9b6"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/nativo_f004.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/nativo_f004.jpg",
+      "sha256": "6ed4c16530753b5386a4b7f1ef4e664fa95d415b6719cfedd604b0ccbf4465dc"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/comparacion_clone_mecanismos.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/comparacion_clone_mecanismos.jpg",
+      "sha256": "f72a2563fd713afb66278f2ba8b6cfbbdc6de822d1c4311115b1f0d368d98aef"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f018.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f018.jpg",
+      "sha256": "e0d6d7288102453e931603e9ac672a847d4f9b7e2e2985aed7e8a0b1f369315a"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/237_frames_07.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/237_frames_07.jpg",
+      "sha256": "b648bac1f69d97d41a3215ffd5aaf98890320e50988590aa946866702751f69a"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/movil_f004.jpg": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/movil_f004.jpg",
+      "sha256": "7111ccf7db1f0ebd7a63a802b523dcd62eaba46c6ed8295ac0ec08cd82186b7f"
+    },
+    "ejemplos/demo_integracion/integracion/media/voice_original.m4a": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/media/voice_original.m4a",
+      "sha256": "849cd4656ccfacb292ba82606966de10aa6b3146e1a44a194fa1ab4dfc6e2d72"
+    },
+    "ejemplos/demo_integracion/integracion/media/provenance.json": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/media/provenance.json",
+      "sha256": "990600de460307b6540b29bb2cdef64c3801ad51ca8d95a0b3325f966fc2a6b9"
+    },
+    "ejemplos/demo_integracion/integracion/shared/gsap.min.js": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/shared/gsap.min.js",
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    "ejemplos/demo_integracion/integracion/shared/clone-bundle.js": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/shared/clone-bundle.js",
+      "sha256": "ce8602884faa3c5eceb74abe406ec09828d2b9df4d196f5f1f4175576edd0ef0"
+    },
+    "ejemplos/demo_integracion/integracion/shared/fonts.css": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/shared/fonts.css",
+      "sha256": "968e71fc47ce202a0470dbe09728110e2b3f6c6aa00aeeeafffa41975930f398"
+    },
+    "ejemplos/demo_integracion/integracion/compositions/s_scraping.html": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/compositions/s_scraping.html",
+      "sha256": "53ffa77df01c94bfa33d3dde9aa65ebd649ae1fa8b31f5a6467bbdb43e63ed02"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_7_55.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_7_55.png",
+      "sha256": "d9c8b6a41794e3cc2687870f79d84da976afa4b5ba7f2f24d4490c2a38bf52e6"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_0_55.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_0_55.png",
+      "sha256": "4e76c87c58a626a317196234cc2121f5cde97cabf2d7b0ed49d91b24cc624861"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_1_40.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_1_40.png",
+      "sha256": "137de8acb4de9180d90cfe7d7e55738d53b55c0b445f947385a92f3616d7a9a7"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_6_40.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_6_40.png",
+      "sha256": "aae4951404405493b9ce5207970bce82e61e21fe83e43e2d122a236a74f53c7a"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_2_60.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_2_60.png",
+      "sha256": "43a112a6acacbf1ac200a4987bdab6619b3e1ab6d0054137ee6c304b436e8974"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_1_00.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_1_00.png",
+      "sha256": "070540118ad2d2f8ea6783faa21b2c775d4cc03e2bdde7ef3e0c59fc1b5cb4b8"
+    },
+    "ejemplos/demo_integracion/integracion/evidencia_qa/browser/t_4_50.png": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/evidencia_qa/browser/t_4_50.png",
+      "sha256": "1e567054e24bb990aa6d3787eacd5e7053aae5e16a8db344010abc2f671de4eb"
+    },
+    "ejemplos/demo_integracion/integracion/media/camera.mp4": {
+      "snapshot": ".estado/tmp/v2/v1_frozen/media/camera.mp4",
+      "sha256": "9a6706e442e04a9ad12614463af674eac64f4cea36f30738c7d9b524b5540616",
+      "immutable_media_link": true
+    }
+  },
+  "preservation_files": {
+    "sistema/clone/components/agents.js": "d493d78f17cdee989e731ae243a6edbcb4b8c6420bcc4dea8e56fa3d9e117cf4",
+    "sistema/clone/components/devices.js": "423f8586ff7b05ee3acc4a51e2eefa237826ef39a79da54b0e9bfaccb76cbb97",
+    "sistema/clone/components/graph.js": "7f99cf95a6521260a95986a243c32a568d66c2e4c8c119b87e208befd1e42557",
+    "sistema/clone/components/proof_cards.js": "26e73e22992e0b53a16daa5296fec9cf16c3a4f0e013439791b890cb28c2a206",
+    "sistema/clone/components/research.js": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5",
+    "sistema/clone/components/terminal.js": "d0203dab289142d621e58fe80355f504eef5de66f82d214c05502280d2fa6bdb",
+    "sistema/clone/runtime.js": "dab28a0359377ac13b23cb67078e4be944467323b08dac0e6024487afbbdcf3f",
+    "sistema/clone/design-system.json": "93aa992409f68bcdf5bd3e89170a9e17fab30d4eb4c38224f6afdf752898eb6b",
+    "sistema/clone/assets.json": "bc43e57d58fd83ba5d1b0dd0d35bede4ce5aba8c3d1524d8b4eabe97f99889d2",
+    "sistema/clone/inventario_escenas.json": "164190ee6a48c63e4d8d6d164e537816fe173817ecfb07e0766e449909c7dc97",
+    "proyectos/clone_motor/previews/agent_marquee/index.html": "316c9fce6466f4ca10df4fa83955e1fb9562d973915737b90f42a794782e9206",
+    "proyectos/clone_motor/previews/agent_marquee/scene.json": "3d94923b16c76f11da2a71979c9ba8a0ebb0c1c1a93c9ce8b13dfa54846ae919",
+    "proyectos/clone_motor/previews/agent_marquee/preview.mp4": "ae552db886395665ec5e7190c2fbb9ae4baf31b34823946734edfa06743fbc36",
+    "proyectos/clone_motor/previews/agent_marquee/poster.png": "639882c08f48b1dfb930ad24192592bd25b8fb820b4014f720085fa326c449e6",
+    "proyectos/clone_motor/previews/agent_marquee/comparison.png": "961cfd31cd9b802c26a250e7541e36b02090f2ee32d0b27f4c3d2618a8c1cb92",
+    "proyectos/clone_motor/previews/apps_clone_orbit/index.html": "e0f91a7cf86c98fc35e4faf8607bf17f69cdf33ddd1df96ce94f0ca0d744aeb3",
+    "proyectos/clone_motor/previews/apps_clone_orbit/scene.json": "3dd466447cf0783d1fbe2dc5a298764775eca4d7d27a85560535faade23d4230",
+    "proyectos/clone_motor/previews/apps_clone_orbit/preview.mp4": "9ba5120db988a79dd32453bdf8bfd996c350e1bce9bf10f322af945c6c600732",
+    "proyectos/clone_motor/previews/apps_clone_orbit/poster.png": "e619641f66339b4a61c5ac9d241264b12839f10c771102692da633805b3a4476",
+    "proyectos/clone_motor/previews/apps_clone_orbit/comparison.png": "7eef3e939a5e80288fe6d37e5b803a2722e7ab35a7b62d976400c561e912d444",
+    "proyectos/clone_motor/previews/cancelled/index.html": "d442b50f9022ceddf00e6d70a5de9f67eedceeb647d73c0f02aef62dffc515e5",
+    "proyectos/clone_motor/previews/cancelled/scene.json": "89377ac864e09e1f95c895a54aa364b5432d34ff7b01c7a95aa39f007c9c6147",
+    "proyectos/clone_motor/previews/cancelled/preview.mp4": "aa0734802836bb6a429d2ab0ac6fad254c9cdb11652ed75de56e11a193ed25bd",
+    "proyectos/clone_motor/previews/cancelled/poster.png": "325a31cc4de77261fcdf82b13b307d4922cdefcbfbaf46ccae652d981bb8f31e",
+    "proyectos/clone_motor/previews/cancelled/comparison.png": "93afd793a95a7d5bc4929708f8dd8ecf881543c172a1153f0c5ef202647e5527",
+    "proyectos/clone_motor/previews/feedback_bars/index.html": "98a897b83002d338cb0cc1cdefc3e46ab0448410804cbef595b6f8d2b5758cf8",
+    "proyectos/clone_motor/previews/feedback_bars/scene.json": "a610e0f894b0dd800502a3e8fe945bfccb4113b76cf6dfb1fb0cac37549a4467",
+    "proyectos/clone_motor/previews/feedback_bars/preview.mp4": "9404d25ecd64b8f3d47a954b6085ec33cddb71afc26242a027a581f06666bad3",
+    "proyectos/clone_motor/previews/feedback_bars/poster.png": "3e0fef3080e243f37bb35fde42526d1173daafd2389d656199699322a06d2ba7",
+    "proyectos/clone_motor/previews/feedback_bars/comparison.png": "777f2cd05311cf72409eb1f5e6586b024a282d01cda16dcc10c2f001569c1628",
+    "proyectos/clone_motor/previews/github_cards/index.html": "8a1041563551a4c08bbb563eb499d3f39440b62fa728d97014d774225e02e17e",
+    "proyectos/clone_motor/previews/github_cards/scene.json": "7f98e924df65df1c8673974b897571fa9a8ed2ec32babaa3c17267a54054447d",
+    "proyectos/clone_motor/previews/github_cards/preview.mp4": "16dff425fa9c0eeed93623c48f500fa694e647b70b9523d5fd4385a39c90ccd3",
+    "proyectos/clone_motor/previews/github_cards/poster.png": "ccb1a318c86845e9cbfc7898ef1278c06ad91df7eb4dc0c87581b5b4698cdcb0",
+    "proyectos/clone_motor/previews/github_cards/comparison.png": "5f144aaaa0346e0a291a38923f6a82b1754bea14953d5c758a5f148a9de562cb",
+    "proyectos/clone_motor/previews/phone_compare/index.html": "7c428a68499bd5dc4fe6bbb43e27f2de2afe5933d057652927cd422401de1646",
+    "proyectos/clone_motor/previews/phone_compare/scene.json": "1bd77ab86ea449cb9790d17a5b12fccd780c298ccc6e632e83e1e49332009900",
+    "proyectos/clone_motor/previews/phone_compare/preview.mp4": "f8272e91af3daf4e5850c865ed8af888522714ca3a25016dfb895df9e6a638d6",
+    "proyectos/clone_motor/previews/phone_compare/poster.png": "60f0334c1e7a08f7fe03c84855ae8ea5483f31c5ed7164b8aa335c8ac34832f4",
+    "proyectos/clone_motor/previews/phone_compare/comparison.png": "4179b16a41c48cfdbaaac02d20ce9c38cf23beb8c5a3e5e65f4a256e02554d70",
+    "proyectos/clone_motor/previews/phone_qa/index.html": "cd28dbee6db987652b1c2e508ba18a6d2f185a817db20d4b6ae548382f631214",
+    "proyectos/clone_motor/previews/phone_qa/scene.json": "619e9added9ad0044c98f106a85cca20822883b66c46ce2b8f67a539e25161cc",
+    "proyectos/clone_motor/previews/phone_qa/preview.mp4": "5a4cd6ead46bddb9c4c7eb1514cd2e7d6f8d53f383f9709ef0880ebf722dfd28",
+    "proyectos/clone_motor/previews/phone_qa/poster.png": "12ab6ffd671917b5c46eee7c09edfaf6ebfb06f1601324209cac47707e3747b1",
+    "proyectos/clone_motor/previews/phone_qa/comparison.png": "e113c9ffcca6c14b6840398c2484f4ec77a7cdd83bd64c90ddc1c329ecb921fd",
+    "proyectos/clone_motor/previews/phone_rebuild/index.html": "4156cfa9e6efc4a68daa8271ce6b5a7651f7e6792a95329e1948785983e272bc",
+    "proyectos/clone_motor/previews/phone_rebuild/scene.json": "4a0135984a279c7dae81935c2597c05a42906b8cd7f753ed315cd3f08bd597c8",
+    "proyectos/clone_motor/previews/phone_rebuild/preview.mp4": "6951c420747f81a08da665e938eb5af9d20209da7c575c6c5a66168b51b455a4",
+    "proyectos/clone_motor/previews/phone_rebuild/poster.png": "42824f439b890029c96927ef874732d8f95371f3daffc43ce92ee12e5894f2ae",
+    "proyectos/clone_motor/previews/phone_rebuild/comparison.png": "7ff302f5b4f2004025b9f49cadbd6414261bc64d07aee60897d71081e46e1b63",
+    "proyectos/clone_motor/previews/phone_recon/index.html": "672b7ab98f00f68d6b4d2883df22d573de18f5b70a3bfe0429e4b772ed900fb1",
+    "proyectos/clone_motor/previews/phone_recon/scene.json": "69048efef79627c880246b4f977ca8a371143a52bfab7c15038f44972196b9db",
+    "proyectos/clone_motor/previews/phone_recon/preview.mp4": "98efac91cb9f206d36d388dd45966b594960bb246cb3c727d7f825ee78af9819",
+    "proyectos/clone_motor/previews/phone_recon/poster.png": "39b69fc88855718635074ccbd42f413daa36b7677fceb526f7ae8ae1ebee931d",
+    "proyectos/clone_motor/previews/phone_recon/comparison.png": "1982e2cd0039792c55748eb3d27d71a9f136dc13e6a1bda14a803ed0c0e80489",
+    "proyectos/clone_motor/previews/pixel_agents/index.html": "9455462370664c8f1daf0f1d277ecc0e2cc6e6fd7f774f6ed3da225349440430",
+    "proyectos/clone_motor/previews/pixel_agents/scene.json": "e383ebb29797fc0e1a583bab4c2a52549b7d33a1b9e86cc0d255800427ce2d7a",
+    "proyectos/clone_motor/previews/pixel_agents/preview.mp4": "12ec3164da73ce2c8ba1fd0ab475180ab3cdf864680d2d9e37f691cc2cdcb42a",
+    "proyectos/clone_motor/previews/pixel_agents/poster.png": "c91bdeac2830e9fb85a86d6d368ca33c5318db9be0295989cc20c1b61ef0faa6",
+    "proyectos/clone_motor/previews/pixel_agents/comparison.png": "01f8489bf898b92fa8845f2ea3df4599f03ebafc78f87c3d3fea509eea7bb938",
+    "proyectos/clone_motor/previews/problem_resolution/index.html": "d3ea6e6dc8a9113900137779d1af823b72922361af43feb6319553dc93459bb2",
+    "proyectos/clone_motor/previews/problem_resolution/scene.json": "79334ecbdb6b0924a077f5091da922f95beb8899f93cd7be3bdd6b31c913b9be",
+    "proyectos/clone_motor/previews/problem_resolution/preview.mp4": "3330e7adcaf0ded97ddeebb504019a52b94c48b4823cadfda9ce37f8eecded24",
+    "proyectos/clone_motor/previews/problem_resolution/poster.png": "85934282d91c1ee4b9c6e1945203ce97e28696f022b54ddeea8fee985de3c022",
+    "proyectos/clone_motor/previews/problem_resolution/comparison.png": "5b8856ae7678e768975b8062a9530243bc67867e817872df3451bd8438380549",
+    "proyectos/clone_motor/previews/product_card/index.html": "bb022a4f06aa8736ebd83902df28beacc0f9f680921c4fc0806a6a96b3aa1803",
+    "proyectos/clone_motor/previews/product_card/scene.json": "b18ea8afa9c6474854a77eeb530b8ed672635d4f98c47a45d5854e97c4c1f6dd",
+    "proyectos/clone_motor/previews/product_card/preview.mp4": "1b8aa8e526a8d77a08bbd13d9e52229d9fbca03e1c1fc82a37b19edd8cc8d7b3",
+    "proyectos/clone_motor/previews/product_card/poster.png": "f4c1ae9a3b1c96267ca82613d31a690886dfc329a5ddd879cc48bbe87870298a",
+    "proyectos/clone_motor/previews/product_card/comparison.png": "8f0ceb2de0e427dcbd6e5f954cced12540eb8cf4f1071da985ef2dbf77c75404",
+    "proyectos/clone_motor/previews/radial_research/index.html": "e5efae9e4cf17404a5d9f521ed69ce2722d990dd80f9fd582adcc8d0199bdbf6",
+    "proyectos/clone_motor/previews/radial_research/scene.json": "7b70d2c4c5e190578b80b35f597fce3bbb3c844a17e47a0849fa8c07c4eb8d14",
+    "proyectos/clone_motor/previews/radial_research/preview.mp4": "36c6fe6c89524a9512902baf12399401c14c80833ba39c593b2ba1f6d72ce135",
+    "proyectos/clone_motor/previews/radial_research/poster.png": "cc7f451d91e1394894bf8e637e78b85e9bf6eb7d23ad4dee8f28a0f0ff4e2b58",
+    "proyectos/clone_motor/previews/radial_research/comparison.png": "db2a5a31e98cd37a9a92aa9f3d9316ad74a55b9a37073765b89aa3e6baa02126",
+    "proyectos/clone_motor/previews/spotlight_agent/index.html": "3d3ec474dde5eac90745241365a40f28f6e2fe439c8705df20bea498a5b824c7",
+    "proyectos/clone_motor/previews/spotlight_agent/scene.json": "edc8b85e19e92c8e824f205875a5d313bce7c7576ff0914e02d41f01c7d451f1",
+    "proyectos/clone_motor/previews/spotlight_agent/preview.mp4": "2a26714d89ab22bdc3abf1ee2ad4cb1491674cb22d8a6e6aa492f58829287c61",
+    "proyectos/clone_motor/previews/spotlight_agent/poster.png": "23952a0dd4c79cb68aa3d9fb4157b111fd6b2496a07d213a055b0fe0a74c695a",
+    "proyectos/clone_motor/previews/spotlight_agent/comparison.png": "756bd86fd0335313930a08a954c848448792c4d8d76927f2eb2d2777f38d44e7",
+    "proyectos/clone_motor/previews/terminal_install/index.html": "529c15982890b129f4f4987a852003c0cd4bcfdb7366117a6b4e53bcc176647e",
+    "proyectos/clone_motor/previews/terminal_install/scene.json": "4a1a5ea7b69973855491947bda98302fbb05f75a51392e66bca4dfff44bf06f4",
+    "proyectos/clone_motor/previews/terminal_install/preview.mp4": "cc6a2f7ed64f81263a487e3b9c1f8a70b464cc404931992521942e8fa3d75bb4",
+    "proyectos/clone_motor/previews/terminal_install/poster.png": "63cc0113c8107d001ff43c5c22113e509cabe76840ea06b54ad76c50cebd6153",
+    "proyectos/clone_motor/previews/terminal_install/comparison.png": "4bf88882cc5c25279ac9af2c7371da5151a04cd23a27c2f50f6cb45eb9b82c65",
+    "ejemplos/clone_componente/diseno.svg": "30d849580cb73d00c9ed96df33edf1f0586596231207b8e10b21cde1051ad43b",
+    "ejemplos/clone_componente/clone_diseno_estatico.png": "61031fd548c95a32dd7746d85b14003f44477eab60c74463bc297d93f3c1078d",
+    "ejemplos/clone_componente/clone_segmento_animado.mp4": "0782f9b195965a030c8362ac387a3b0a96da2f16bf21f7ce8665460d85c7e8aa",
+    "ejemplos/clone_componente/timeline.gsap.js": "5de9ce8e5f433c6b60856b52a93905201299a6079cabc4612a3be5a9ba22d6b4",
+    "ejemplos/clone_componente/editable_manifest.json": "08ff120b483101508383be01dc6ba86c0227ba927980d9cd06cd8d0e1e6b65bb",
+    "ejemplos/clone_componente/assets/calendly.png": "8d7c62c3ee40dfd48151211600dee3328506ceb86285b4ccd37d275785c78753",
+    "ejemplos/clone_componente/assets/canva.png": "c157b6fa24a99f374ef8525c5271cc35f39c60699d6d916b42a11f5555711991",
+    "ejemplos/clone_componente/assets/caption-for_referencia.png": "f714d4166899594bf8d8b148c5c65691d990374afcd64814d5f05b2cfaa71efe",
+    "ejemplos/clone_componente/assets/caption-without_referencia.png": "7f784628e970dc947e1eb27afb79b5f490cd72f52071fbf8db318bc5ee203ecf",
+    "ejemplos/clone_componente/assets/duolingo.png": "03b6881e93cbb0af5c458418e72f3f99881755f6ddfb9bc8cf26fe5c4575f789",
+    "ejemplos/clone_componente/assets/gsap.min.js": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+    "ejemplos/clone_componente/assets/headspace.png": "c1e32bbe6a559613e5a26dcf8e4e9293d1ecc8cce4b86ab35daae28c4f77173c",
+    "ejemplos/clone_componente/assets/notion.png": "3f6bd2d2b69c58794062f9e89efef5ab18551afb139024aa50b5458806dad8ea",
+    "ejemplos/clone_componente/assets/referencia_audio.wav": "8ef549f9015f0f280b7defb08328ccee9dddc8224bac9e8ce5431a495346e330",
+    "ejemplos/clone_componente/assets/spotify.png": "92daecb965d3873e0d40aa45f84ff214e68ba8d50f97b3c43073aae7e19bfefc",
+    "recursos/clone/agent_recon.png": "15039429d532a8a622018a1dc9e851e5c374db3ce2d21554fbb5da5b3c0332f9",
+    "recursos/clone/agent_architect.png": "1c24f9028892265a7ee4586be5ef49c76471062dda1c0022646ec48c150d521f",
+    "recursos/clone/agent_design.png": "8340159470fd03a906900420203833b1bb8ae6e6d45a54c40cde8bc9b90a1c8d",
+    "recursos/clone/agent_build.png": "d3c2cb0f2e1d2e0454cffcf4dab417fea08d382b52878ad64dd9d4f0d6fad0d9",
+    "recursos/clone/agent_backend.png": "6e846ce18d6885fe3cac2b53b09ba178dbca9baf73b6c0f239ce30da88dfec01",
+    "recursos/clone/agent_test.png": "c4d2d57d1647b3865d1a469184f4f13c366b434e0646f81a2c9ff620fc7ea5fa",
+    "recursos/clone/agent_diff.png": "71a9fa3c04e4cf561bc529e8d4cdec2f9b7120ae59f0b91504c52772ba561169",
+    "recursos/clone/agent_entrepreneur.png": "babebbfa94eab5a3c2a90ed1f1958ebbde544356a6c3889239105186e273f7b5",
+    "recursos/clone/agent_brand.png": "468d75b6b72e1b191d9a837bee2c3fa099da3ae5f68f2213b5f5fb26462fc649",
+    "recursos/clone/agent_launch.png": "5561d9457057a5eb501a9a3d2500bc8ee1859133dffbd0c1b519e3ef0277388b",
+    "recursos/clone/agent_deploy.png": "d910c5743d384a8c436d93f88315ff59e3d26b5eeb66b4faef50f71f05bbab64",
+    "recursos/clone/agent_base.png": "d6a70961be2eb2518e4c91371ad516343ba73e42aa9643103f2fb33bf5a023de",
+    "recursos/clone/app_airbnb.png": "d247cedd3a064fd8e5f25c7ac534021cf632248225c94ce268536966017d5b5d",
+    "recursos/clone/app_uber.png": "f1b6e9a50e09c4ae6076466920a63c9303b19f43a0df03a84710fdb61de45e2d",
+    "recursos/clone/app_github.png": "77297f8d16e17a98215f05188a7d9b153ecab08853941e52f493a9b08923f3c3",
+    "recursos/clone/repo_avatar.png": "2dab9de0661dba9b175da8ae04403a13868c1788cab5f42df234495010c2f14d",
+    "recursos/clone/app_store.png": "ea79f1933447d1dd77601dc0b43423ef6cca15ac55e28902d894822bbb82fb4e",
+    "recursos/clone/app_g2.png": "78e4bf589001e2bf1a9e89e6fff404eaf27b95442ce7f17b0a2a9cf62acb7371",
+    "recursos/clone/app_reddit.png": "e2204f055f483ff7b2de8e319506dc9927f0259d2626d49d23b9a7e9b0dd0d9d",
+    "recursos/clone/app_trustpilot.png": "2b52c2a01456dff0afb40d7d9dc8e24e94aebca02a3d54e1bfa4b4ad2011d5e0",
+    "recursos/clone/app_slotly.png": "ba9a1813c174a6e60c7e3ded4ce256f791c63ad47a3bb225fca1e8bfab1fcbeb",
+    "recursos/clone/calendar_blue.png": "08bee440fcb9e7a0bca5c35796f4f34ec041333a7a3d85b6987bcc35510b46ea",
+    "recursos/clone/app_notion.png": "337725f6a9937e1daa7d5f46715c4d2ce35f7757356c240a3188adc5e10ab1d4",
+    "recursos/clone/app_spotify.png": "474b857708ef390df7a8f07ecb3aee0ec820c23ced92acde0043e8a1cfbf0961",
+    "recursos/clone/app_duolingo.png": "75ac51de2c5e0eba0f75da35d05ff568639fc234b7286968a54ea1ee02480238",
+    "proyectos/clone_motor/creatividad/comparacion/B_V1.mp4": "918513396c7025c7b9d53eb80da9db9db2baaf442b36f9d60c0ec8d7dd28bcf8",
+    "proyectos/clone_motor/creatividad/comparacion/preview.mp4": "ea70279dbe9defb45964a21c83b4fa1d95bf4a0258df50c169b9d3e7c8e675f0",
+    "ejemplos/demo_integracion/integracion/ascendia_integracion_test_10s.mp4": "f7ba77c346bb7b8845ee50823ef7acff704a3d7892b6d666854f9e8f610d83bb",
+    ".estado/tmp/v2/v1_frozen/skills_aplicadas.json": "167e17a50e7a9f4f79da93c63a5b1e1bfc9b4000267311227d19d02fd4125607",
+    ".estado/tmp/v2/v1_frozen/integration_browser_qc.json": "1fdc03504735e614d36c13640d80a7d7aa0ee052fad5c9577c447007475e93ed",
+    ".estado/tmp/v2/v1_frozen/integration_qc.json": "52e9db1a9357f2e94dbd6f4e186b756820976548b81d19dff615b0d46abf55d5",
+    ".estado/tmp/v2/v1_frozen/compositions/s_scraping.html": "0000000000000000000000000000000000000000000000000000000000000000",
+    ".estado/tmp/v2/v1_frozen/index.html": "30f49e0a97c6180604325c961ba8a955c8e337fdce9e47eec84e0ae7e018c200",
+    "ejemplos/demo_integracion/integracion/media/camera.mp4": "9a6706e442e04a9ad12614463af674eac64f4cea36f30738c7d9b524b5540616",
+    "ejemplos/demo_integracion/integracion/media/voice_original.m4a": "849cd4656ccfacb292ba82606966de10aa6b3146e1a44a194fa1ab4dfc6e2d72",
+    ".estado/tmp/v2/v1_frozen/shared/clone-bundle.js": "ce8602884faa3c5eceb74abe406ec09828d2b9df4d196f5f1f4175576edd0ef0",
+    ".estado/tmp/v2/v1_frozen/shared/fonts.css": "968e71fc47ce202a0470dbe09728110e2b3f6c6aa00aeeeafffa41975930f398",
+    ".estado/tmp/v2/v1_frozen/shared/gsap.min.js": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+    "ejemplos/demo_integracion/original.mp4": "ffe94d66d50ef7cd1e570a30c882a24b4286f7c9309cecc3215d17466614351c"
+  },
+  "scope": "Mutable fuenteV1 preservada privadamente antes del montajeV2; MP4V1/proxy/original/familias/B permanecen canónicos. No promueve auditorías históricas bajo manualV2."
+}

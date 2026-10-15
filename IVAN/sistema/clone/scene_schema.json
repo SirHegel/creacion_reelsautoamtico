@@ -1,0 +1,781 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CLONE semantic planner output — normalized by planner.py",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "semantic_analysis",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "semantic_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "entities",
+        "facts",
+        "relationships",
+        "unsupported_claims",
+        "timing_mode",
+        "conceptual",
+        "narrative_structure",
+        "visual_strategy"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "name",
+              "kind",
+              "evidence"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "claim",
+              "evidence"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "claim": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "to",
+              "action",
+              "evidence"
+            ],
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "unsupported_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "timing_mode": {
+          "type": "string",
+          "enum": [
+            "proposed_without_voice",
+            "anchored_to_supplied_narration"
+          ]
+        },
+        "conceptual": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "narrative_structure": {
+          "type": "string"
+        },
+        "visual_strategy": {
+          "type": "string"
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "start",
+          "duration",
+          "content",
+          "objective",
+          "semantic_reason",
+          "family",
+          "fact_ids",
+          "params_json",
+          "actions",
+          "narration_anchors",
+          "composition",
+          "transition_in",
+          "transition_out",
+          "visual_reason",
+          "alternatives",
+          "choreography",
+          "illustrative_fields",
+          "data_bindings",
+          "handoff",
+          "framing",
+          "presentation",
+          "continuity",
+          "layout",
+          "closing"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "start": {
+            "type": "number"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "content": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "semantic_reason": {
+            "type": "string",
+            "description": "Explain this scene’s narrative block and supplied facts. Compare alternatives against this block, not an artificial requirement that every family explain the whole clip."
+          },
+          "family": {
+            "type": "string"
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "params_json": {
+            "type": "string",
+            "description": "JSON string decoded and validated against the selected family param_schema. Includes every default parameter explicitly. Graph nodes allow ONLY id/kind/label/body/role?/asset?; graph edges require EXACTLY from/to/label, never id; steps allow ONLY at/duration/op/target/from?/to?/text?/scale?. Every editable caption is at most48characters; use a short main editorial idea and keep details in the actual composition."
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "at",
+                "duration",
+                "op",
+                "target",
+                "from",
+                "to",
+                "text",
+                "scale"
+              ],
+              "properties": {
+                "at": {
+                  "type": "number"
+                },
+                "duration": {
+                  "type": "number"
+                },
+                "op": {
+                  "type": "string",
+                  "enum": [
+                    "enter",
+                    "transfer",
+                    "type",
+                    "collect",
+                    "resolve",
+                    "transform",
+                    "camera"
+                  ]
+                },
+                "target": {
+                  "type": "string"
+                },
+                "from": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "to": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "scale": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "narration_anchors": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "composition": {
+            "type": "string",
+            "enum": [
+              "full_motion"
+            ]
+          },
+          "transition_in": {
+            "$ref": "#/$defs/transition",
+            "description": "Single boundary owner: incoming reveal; first scene cut/0. cut duration0, other kinds positive <=0.6s. match is camera/reveal, not object morph."
+          },
+          "transition_out": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/transition"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Send null. Normalizer derives this from the following transition_in; last scene becomes cut/0. Legacy proposals are not executed independently."
+          },
+          "visual_reason": {
+            "type": "string",
+            "description": "Explain real native geometry, readable scale, meaningful grouped/retained sources and continuity. A hook identity overlay belongs to the separate integration director and must not be claimed already executed."
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "family",
+                "reason"
+              ],
+              "properties": {
+                "family": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Evaluate 1–4 alternatives for the same semantic block. No family diversity quota, no mandatory tween for each rapidly enumerated source name."
+          },
+          "choreography": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mode",
+              "execution",
+              "phase_ids"
+            ],
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "family_phases",
+                  "custom_steps"
+                ]
+              },
+              "execution": {
+                "type": "string",
+                "enum": [
+                  "component_timeline",
+                  "params.steps"
+                ]
+              },
+              "phase_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Unique legitimate native phase IDs, optionally a relevant subset; normalizer derives all native windows and annotates hidden/disabled states. Empty for custom_steps."
+              }
+            }
+          },
+          "illustrative_fields": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "reason"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "data_bindings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "fact_id",
+                "reason"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "fact_id": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "handoff": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "incoming_scene",
+              "shared_entity_ids",
+              "shared_assets",
+              "narrative_link",
+              "visual_strategy",
+              "execution"
+            ],
+            "properties": {
+              "incoming_scene": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "shared_entity_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "shared_assets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Effective assets present in both params, or native:calendar_phone only when both device ports publish that vector identity. A native identity is not a downloaded PNG or a used bitmap asset."
+              },
+              "narrative_link": {
+                "type": "string"
+              },
+              "visual_strategy": {
+                "type": "string"
+              },
+              "execution": {
+                "type": "string",
+                "enum": [
+                  "metadata_only"
+                ]
+              }
+            }
+          },
+          "framing": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "view_box"
+            ],
+            "properties": {
+              "view_box": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            }
+          },
+          "presentation": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "labels_json",
+              "omit"
+            ],
+            "properties": {
+              "omit": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "labels_json": {
+                "type": "string",
+                "description": "JSON object of whitelisted label keys to text; decoded to labels map."
+              }
+            }
+          },
+          "continuity": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "from_scene",
+              "reason",
+              "operations"
+            ],
+            "description": "Requested object continuity, not proof of rendered execution. Null in first scene. Only catalog ports and accepted family pairs.",
+            "properties": {
+              "from_scene": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 20
+              },
+              "operations": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 2,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "source_port",
+                    "target_port",
+                    "asset",
+                    "entity_ids",
+                    "duration"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "actor_pose_match",
+                        "device_pose_match"
+                      ]
+                    },
+                    "source_port": {
+                      "type": "string"
+                    },
+                    "target_port": {
+                      "type": "string"
+                    },
+                    "asset": {
+                      "type": "string"
+                    },
+                    "entity_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "maxItems": 20
+                    },
+                    "duration": {
+                      "type": "number",
+                      "minimum": 0.2,
+                      "maximum": 0.6,
+                      "description": "Finite seconds aligned to30FPS, supported by both scenes and the exact pair capability."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "layout": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "profile",
+              "gap_px",
+              "anchor_x",
+              "anchor_y",
+              "margin_px",
+              "body_px",
+              "secondary_px"
+            ],
+            "description": "Optional composition capability, not a new family. Profile must be published by this family catalog.layout.profiles. Pixel fields use1080x1920; unused fields null.",
+            "properties": {
+              "profile": {
+                "type": "string"
+              },
+              "gap_px": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 36,
+                "maximum": 144
+              },
+              "anchor_x": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0.33,
+                "maximum": 0.67
+              },
+              "anchor_y": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0.33,
+                "maximum": 0.67
+              },
+              "margin_px": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 72,
+                "maximum": 180
+              },
+              "body_px": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 48,
+                "maximum": 60
+              },
+              "secondary_px": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 30,
+                "maximum": 42
+              }
+            }
+          },
+          "closing": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "at",
+              "headline"
+            ],
+            "description": "Only a meaningful response-coverage conclusion for feedback_bars, compact_stack and caption with the no-quality limit. Local at>=duration*.6, <=duration-1.2, aligned to30FPS. Otherwise null.",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "coverage_conclusion"
+                ]
+              },
+              "at": {
+                "type": "number",
+                "minimum": 0
+              },
+              "headline": {
+                "type": "string",
+                "enum": [
+                  "Cobertura de respuestas"
+                ]
+              }
+            }
+          },
+          "asset_bindings": {
+            "type": "array",
+            "maxItems": 36,
+            "description": "Bind every verified brand-logo field to a supplied entity. Native slot size is validated against optional job visual_requirements, independently of authentic bytes; a21px icon cannot be claimed a hero logo.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "asset",
+                "entity_id",
+                "reason"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "asset": {
+                  "type": "string"
+                },
+                "entity_id": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "rhythm": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "mode",
+              "points",
+              "reason"
+            ],
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "phase_clock"
+                ]
+              },
+              "reason": {
+                "type": "string"
+              },
+              "points": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 36,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cue_id",
+                    "at",
+                    "native_progress",
+                    "hold_s",
+                    "reason"
+                  ],
+                  "properties": {
+                    "cue_id": {
+                      "type": "string"
+                    },
+                    "at": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "native_progress": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "hold_s": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "const": 0
+                        },
+                        {
+                          "type": "number",
+                          "minimum": 0.23333333333333334,
+                          "maximum": 1.3
+                        }
+                      ]
+                    },
+                    "reason": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "duration"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "cut",
+            "wipe",
+            "push",
+            "match",
+            "mask"
+          ]
+        },
+        "duration": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

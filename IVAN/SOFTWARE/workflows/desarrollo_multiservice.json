@@ -1,0 +1,244 @@
+{
+  "schema": "ascendia.development-workflow/1",
+  "id": "multiservice_auto_manual_collaboration",
+  "created_at": "2026-10-14T01:26:11.809815+00:00",
+  "objective": "Crudo completo→edición automática o manual con branding/recursos propios; proyectos compartidos por permisos; código y auditorías verificadas.",
+  "constraints": {
+    "writes": "SOFTWARE",
+    "parent": "read_only",
+    "gpu": false,
+    "workers_cpu": 1,
+    "ffmpeg_threads": 2,
+    "no_parent_credentials": true,
+    "no_auto_editorial_approval": true
+  },
+  "tasks": [
+    {
+      "id": "collaboration",
+      "agent": "root",
+      "status": "verified",
+      "owns": [
+        "studio/sharing.py",
+        "studio/gateway.py",
+        "studio/accounts.py",
+        "tests/test_sharing.py",
+        "tests/test_collaboration_gateway.py"
+      ],
+      "depends": [],
+      "outputs": [
+        "project_acl",
+        "shared_editor_context",
+        "revision_conflicts",
+        "revocation_tests"
+      ],
+      "evidence": [
+        ".estado/validacion/sharing_security_audit.json",
+        ".estado/validacion/v06/python_suite.json"
+      ],
+      "latest_pytest": {
+        "passed": 76,
+        "seconds": 22.45
+      }
+    },
+    {
+      "id": "home_modes",
+      "agent": "interfaz_editor",
+      "status": "verified",
+      "owns": [
+        "web",
+        "tests/*multiservice*.mjs"
+      ],
+      "depends": [
+        "collaboration"
+      ],
+      "outputs": [
+        "automatic_manual_home",
+        "own_shared_projects",
+        "sharing_ui",
+        "actual_browser_audit"
+      ],
+      "evidence": [
+        ".estado/validacion/modes_v06/browser.json",
+        ".estado/validacion/collaboration/browser_collaboration.json"
+      ],
+      "scope": "Current real browser8PASS; historical real collaboration17PASS remains a separate checkpoint. No frontend source changes after current browser check."
+    },
+    {
+      "id": "voice_tracks",
+      "agent": "motor_render",
+      "status": "verified",
+      "owns": [
+        "studio/analysis.py",
+        "studio/media_tools.py",
+        "tests/test_voice_tracks.py"
+      ],
+      "depends": [],
+      "outputs": [
+        "global_stream_selector",
+        "aligned_asr_extraction",
+        "real_multitrack_fixture_tests"
+      ],
+      "evidence": [
+        ".estado/validacion/voice_tracks.json"
+      ]
+    },
+    {
+      "id": "brand_registry",
+      "agent": "auditoria_investigacion",
+      "status": "verified",
+      "owns": [
+        "studio/brand_assets.py",
+        "tests/test_brand_assets.py"
+      ],
+      "depends": [],
+      "outputs": [
+        "official_sources_catalog",
+        "private_registry",
+        "verified_fetch",
+        "rights_context_guards"
+      ],
+      "evidence": [
+        ".estado/validacion/brand_assets_real.json",
+        ".estado/validacion/brand_assets_tests.json"
+      ]
+    },
+    {
+      "id": "automation_orchestrator",
+      "agent": "root + motor_render",
+      "status": "verified",
+      "owns": [
+        "studio/automation.py",
+        "studio/pipeline.py",
+        "studio/jobs.py",
+        "studio/server.py",
+        "studio/mcp.py",
+        "studio/core.py",
+        "studio/render.py"
+      ],
+      "depends": [
+        "voice_tracks",
+        "brand_registry"
+      ],
+      "outputs": [
+        "resumable_pipeline",
+        "api_native_agent_stages",
+        "full_raw_technical_render",
+        "branding_resource_context",
+        "automatic_qc_and_repair"
+      ],
+      "evidence": [
+        ".estado/validacion/pipeline_full/mcp_sdk.json",
+        ".estado/validacion/pipeline_full/pipeline_result.json",
+        ".estado/validacion/v06/pipeline_legibility.json"
+      ]
+    },
+    {
+      "id": "cloud_backup",
+      "agent": "root + auditoria_investigacion + cloud_snapshot_review",
+      "status": "verified",
+      "owns": [
+        "studio/cloud_storage.py",
+        "studio/jobs.py",
+        "studio/server.py",
+        "studio/mcp.py",
+        "tests/test_cloud_backup_jobs.py"
+      ],
+      "depends": [
+        "collaboration"
+      ],
+      "outputs": [
+        "complete_project_snapshot",
+        "verified_cas_outbox_runner",
+        "owner_backup_queue",
+        "staged_restore_without_approval"
+      ],
+      "queue_tests": {
+        "passed": 26,
+        "transport": "mock",
+        "remote_calls": 0
+      },
+      "evidence": [
+        ".estado/validacion/v06/python_suite.json",
+        "docs/NUBE.md"
+      ],
+      "cloud_configured": false,
+      "cloud_live_verified": false
+    },
+    {
+      "id": "verification",
+      "agent": "team",
+      "status": "verified",
+      "depends": [
+        "collaboration",
+        "home_modes",
+        "voice_tracks",
+        "brand_registry",
+        "automation_orchestrator"
+      ],
+      "outputs": [
+        "full_tests_current_sources",
+        "real_pipeline_output",
+        "visual_audio_qc",
+        "protected_baseline_hashes"
+      ],
+      "technical_manual_full_test": {
+        "seconds": 12,
+        "pista_seleccionada": 2,
+        "pcm_retraso_preservado": true,
+        "native_cpu": true,
+        "mp4_zip_actuales": true,
+        "editorial_approved": false,
+        "pytest_passed": 10,
+        "pytest_seconds": 13.66
+      },
+      "legacy_regression": {
+        "passed": 231,
+        "seconds": 17.92
+      },
+      "evidence": [
+        ".estado/validacion/v06/final_source_coverage.json",
+        ".estado/validacion/pipeline_full/frame_coverage.json",
+        ".estado/validacion/pipeline_full/audio_clock_final.json",
+        ".estado/validacion/v06/protected_baseline_final.json"
+      ],
+      "final_tests": {
+        "full_suite": 2166,
+        "targeted_after_receipt_fix": 121,
+        "failed": 0,
+        "source_coverage_chain": true
+      },
+      "whole_pipeline": {
+        "generation": 4,
+        "seconds": 12,
+        "synthetic_fixture": true,
+        "sdk_passed": 8,
+        "mcp_tools": 61,
+        "consecutive_frames_reviewed": 144,
+        "same_movie_sha_as_reviewed_generation3": true,
+        "audio_listened": false,
+        "editorial_approved": false
+      }
+    },
+    {
+      "id": "mobile_text_and_exact_split_receipt",
+      "agent": "root + motor_render + interfaz_editor",
+      "status": "verified",
+      "outputs": [
+        "visible_text_size_and_dwell_proxy",
+        "specific_semantic_motion_fixture",
+        "exact_split_pixel_heights"
+      ],
+      "evidence": [
+        ".estado/validacion/v06/pipeline_legibility.json",
+        ".estado/validacion/v06/hyperframes_split_receipt.json",
+        ".estado/validacion/pipeline_full/plans_revised_validation.json",
+        ".estado/validacion/pipeline_full/render_receipt.json"
+      ],
+      "perceptual_approval": false
+    }
+  ],
+  "updated_at": "2026-10-14T05:16:17.640476+00:00",
+  "source_release_startup_check": "Consultar recibo privado v06/release_smoke.json para SHA exacto y ejecución; separado de aprobación editorial, instalador y dependencias externas.",
+  "commercial_ready": false,
+  "editorial_approved": false
+}

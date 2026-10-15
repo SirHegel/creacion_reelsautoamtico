@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151618">
+  <title>Ascendia Studio — Editor de reels</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/api/typography-client.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true"><defs>
+    <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 8h4M3 16h4M17 8h4M17 16h4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5h16v-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M4 5h16M12 5v15M8 20h8M4 5v3M20 5v3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></symbol>
+    <symbol id="i-nodes" viewBox="0 0 24 24"><rect x="3" y="8" width="5" height="8" rx="1"/><rect x="16" y="3" width="5" height="6" rx="1"/><rect x="16" y="15" width="5" height="6" rx="1"/><path d="M8 12h4V6h4m-4 6v6h4"/></symbol>
+    <symbol id="i-audio" viewBox="0 0 24 24"><path d="M5 9v6M9 5v14M13 8v8M17 3v18M21 9v6"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M4 3h13l3 3v15H4ZM8 3v6h8V3M8 21v-8h8v8"/></symbol>
+    <symbol id="i-export" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 4H3v17h17v-7"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="m8 8 12 12M8 16 20 4"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7M14 10v7"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 6 4 11l5 5M4 11h11a5 5 0 0 1 5 5"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m15 6 5 5-5 5M20 11H9a5 5 0 0 0-5 5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 3h9v11H3Z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  </defs></svg>
+
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Ascendia Studio, inicio"><span class="brand-mark">A<span></span></span><span>ASCENDIA <small>STUDIO</small></span></a>
+    <div class="project-head"><select id="project-select" aria-label="Proyecto"><option value="">Seleccionar proyecto</option></select><button id="new-project" class="icon-button" title="Nuevo proyecto" aria-label="Nuevo proyecto"><svg><use href="#i-plus"/></svg></button><span id="save-state" class="save-state">Local · sin proyecto</span></div>
+    <div class="top-actions"><button id="tools-status" class="status-pill"><span class="status-dot"></span><span id="connection-label">Conectando</span></button><button id="save-project" class="button ghost" disabled><svg><use href="#i-save"/></svg>Guardar</button><button id="export-project" class="button ghost" disabled><svg><use href="#i-export"/></svg>Editable</button><button id="render-project" class="button primary" disabled><svg><use href="#i-film"/></svg>Renderizar prueba <span class="keycap">10 s</span></button></div>
+  </header>
+
+  <main class="studio">
+    <nav class="rail" aria-label="Herramientas del editor">
+      <button class="rail-item active" data-tab="library" title="Biblioteca"><svg><use href="#i-folder"/></svg><span>Medios</span></button>
+      <button class="rail-item" data-tab="transcript" title="Transcripción"><svg><use href="#i-text"/></svg><span>Texto</span></button>
+      <button class="rail-item" data-tab="motion" title="Motion graphics"><svg><use href="#i-spark"/></svg><span>Motion</span></button>
+      <button class="rail-item" data-tab="audio" title="Música y efectos"><svg><use href="#i-audio"/></svg><span>Audio</span></button>
+      <button class="rail-item" data-tab="style" title="Identidad y manual"><svg><use href="#i-shield"/></svg><span>Estilo</span></button>
+      <button class="rail-item" data-tab="workflow" title="Flujo de trabajo"><svg><use href="#i-nodes"/></svg><span>Flujo</span></button>
+      <div class="rail-spacer"></div>
+      <button id="open-settings" class="rail-item" title="Ajustes de proyecto"><svg><use href="#i-settings"/></svg><span>Ajustes</span></button>
+    </nav>
+
+    <aside class="library-panel panel">
+      <section id="tab-library" class="tab-view active">
+        <div class="panel-heading"><div><span class="eyebrow">TU ESPACIO DE TRABAJO</span><h1>Biblioteca</h1></div><span id="asset-count" class="count">0</span></div>
+        <button id="import-media" class="button import-button"><svg><use href="#i-upload"/></svg>Importar medios</button>
+        <button id="manage-library-fonts" class="button ghost full font-library-launch"><svg><use href="#i-text"/></svg>Fuentes locales</button>
+        <button id="import-editable" class="button ghost full" style="font-size:10px;margin-top:-8px;margin-bottom:13px"><svg><use href="#i-folder"/></svg>Abrir editable ZIP</button>
+        <input id="file-input" type="file" accept="video/*,audio/*,image/*,.mkv,.mov,.mxf,.webm,.avi,.m4a,.flac,.ogg" multiple hidden>
+        <input id="bundle-input" type="file" accept=".zip,application/zip" hidden>
+        <div class="search-field"><svg><use href="#i-search"/></svg><input id="asset-search" placeholder="Buscar en tu biblioteca" aria-label="Buscar medios"></div>
+        <div class="filter-tabs" role="group" aria-label="Filtrar medios"><button data-filter="all" class="active">Todo</button><button data-filter="video">Video</button><button data-filter="audio">Audio</button><button data-filter="image">Imagen</button><button data-filter="font">Fuentes</button></div>
+        <div id="assets-grid" class="assets-grid"></div>
+        <div id="library-empty" class="library-empty"><svg><use href="#i-film"/></svg><p>Un buen reel empieza<br>con tu material.</p><small>Importa el crudo, demos, música<br>y efectos que quieras usar.</small></div>
+        <div class="library-foot"><span class="status-dot"></span>Biblioteca local</div>
+      </section>
+
+      <section id="tab-transcript" class="tab-view">
+        <div class="panel-heading"><div><span class="eyebrow">VOZ A TEXTO</span><h1>Transcripción</h1></div><svg><use href="#i-text"/></svg></div>
+        <p class="panel-description">Palabras alineadas a la narración original. Selecciona un bloque para ir a ese momento.</p>
+        <div class="form-row"><label for="asr-model">Modelo local</label><select id="asr-model"><option value="tiny">Tiny · más rápido</option><option value="base" selected>Base · equilibrio</option><option value="small">Small · más preciso</option></select></div>
+        <button id="analyze-source" class="button primary full" disabled><svg><use href="#i-audio"/></svg>Analizar voz y video</button>
+        <button id="track-source" class="button ghost full" disabled>Medir rostro y barbilla · CPU</button><button id="view-tracking" class="button ghost full" hidden>Ver medidas faciales</button><p id="tracking-state" class="small-copy">El seguimiento genera muestras y propuestas; no cambia el encuadre ni aprueba el contenido.</p>
+        <div class="panel-subheading"><span>Bloques de narración</span><button id="add-transcript" class="icon-button" title="Añadir bloque de texto" aria-label="Añadir bloque de transcripción"><svg><use href="#i-plus"/></svg></button></div>
+        <div id="transcript-list" class="transcript-list"><p class="muted empty-copy">Importa un crudo para comenzar. No se generan palabras de ejemplo.</p></div>
+        <button id="edit-words" class="button ghost full" disabled>Editar alineación por palabra</button>
+      </section>
+
+      <section id="tab-motion" class="tab-view">
+        <div class="panel-heading"><div><span class="eyebrow">ACCIONES QUE EXPLICAN</span><h1>Motion</h1></div><svg><use href="#i-spark"/></svg></div>
+        <p class="panel-description">CLONE es la referencia exclusiva de motion graphics. Revisa acciones, transformaciones y continuidad en movimiento.</p>
+        <button id="manage-motion-fonts" class="button ghost full font-library-launch"><svg><use href="#i-text"/></svg>Gestionar fuentes</button>
+        <button id="create-free-motion" class="button primary full" disabled><svg><use href="#i-plus"/></svg>Crear composición libre</button>
+        <p class="small-copy">Texto, formas y medios propios. Selecciona, arrastra y ajusta cada elemento en el lienzo, con keyframes y curvas editables.</p>
+        <button id="import-scene-ir" class="button ghost full" disabled><svg><use href="#i-upload"/></svg>Importar SceneIR</button>
+        <input id="scene-ir-input" type="file" accept=".json,application/json" hidden>
+        <button id="scene-ir-schema" class="button ghost full">Ver esquema SceneIR</button>
+        <p class="small-copy">Revisa el documento de escenas y sus datos compilados antes de aplicarlo. Usa gráficos originales declarados o marcas con un registro local observado y vigente.</p>
+        <div id="templates-list" class="templates-list"></div>
+        <div class="note"><svg><use href="#i-shield"/></svg><span>Las composiciones son conceptuales. No representan interfaces ni resultados verificados.</span></div>
+        <div class="note"><svg><use href="#i-spark"/></svg><span id="motion-engine-status">Consultando el estado del motor y del adaptador HyperFrames/GSAP.</span></div>
+      </section>
+
+      <section id="tab-audio" class="tab-view">
+        <div class="panel-heading"><div><span class="eyebrow">DISEÑO SONORO</span><h1>Audio</h1></div><svg><use href="#i-audio"/></svg></div>
+        <p class="panel-description">La voz original guía la mezcla. Añade música o efectos de tu biblioteca.</p>
+        <button id="import-audio" class="button import-button"><svg><use href="#i-upload"/></svg>Importar audio</button>
+        <div id="audio-assets" class="audio-assets"></div>
+        <div class="panel-subheading">Pistas en el proyecto</div>
+        <div id="audio-tracks" class="audio-tracks"></div>
+        <div class="note"><svg><use href="#i-audio"/></svg><span>Riser: culminación entre 2–6 s. Revisa entrada, intención y equilibrio de la voz.</span></div>
+      </section>
+
+      <section id="tab-workflow" class="tab-view">
+        <div class="panel-heading"><div><span class="eyebrow">ASCENDIA V5</span><h1>Producción</h1></div><svg><use href="#i-nodes"/></svg></div>
+        <div class="workflow-intro"><span class="mini-brand">A</span><p>Tu identidad.<br><strong>Un sistema reutilizable.</strong></p></div>
+        <ol id="workflow-steps" class="workflow-steps"></ol>
+        <button id="automate-project" class="button primary full" disabled><svg><use href="#i-spark"/></svg>Analizar + storyboard</button>
+        <button id="plan-project" class="button ghost full" disabled>Crear storyboard desde texto</button>
+        <button id="validate-project" class="button ghost full" disabled><svg><use href="#i-shield"/></svg>Comprobar proyecto</button>
+        <button id="review-project" class="button ghost full" disabled><svg><use href="#i-check"/></svg>Revisar prueba de 10 s</button>
+        <button id="agent-workflow" class="button ghost full" disabled><svg><use href="#i-nodes"/></svg>Preparar tareas de agentes</button>
+        <button id="agent-tasks" class="button ghost full">Ver tareas de agentes</button>
+        <button id="cloud-backup" class="button ghost full" hidden disabled>Respaldo del proyecto en nube</button>
+        <div id="validation-results" class="validation-results"></div>
+        <div class="note"><svg><use href="#i-shield"/></svg><span id="workflow-scope-note">Un exportado técnico verifica el editor y no aprueba fidelidad a CLONE/YO. La prueba narrativa V5 requiere controles vigentes y revisión explícita. El completo permanece bloqueado.</span></div>
+      </section>
+      <section id="tab-style" class="tab-view">
+        <div class="panel-heading"><div><span class="eyebrow">YO · CÁMARA / CLONE · MOTION</span><h1>Estilo V5</h1></div><svg><use href="#i-shield"/></svg></div>
+        <p class="panel-description">YO define cámara, subtítulos y split. CLONE define exclusivamente motion graphics. Lee el manual completo y compara ambas referencias en secuencia.</p>
+        <button id="read-manual" class="button primary full">Abrir manual completo</button>
+        <p id="manual-state" class="small-copy">Lectura del proyecto pendiente.</p>
+        <label class="field">Observaciones reales de YO<textarea id="identity-observations" rows="5" placeholder="Cámara, encuadre, subtítulos, split, sombra y tiempos que comprobaste"></textarea></label>
+        <label class="field">Evidencia de la referencia<textarea id="identity-evidence" rows="3" placeholder="Rutas de capturas dentro de SOFTWARE, una por línea"></textarea></label>
+        <button id="choose-identity-evidence" class="button ghost full">Elegir evidencia de la biblioteca</button>
+        <button id="save-identity" class="button ghost full" disabled>Guardar observaciones</button>
+        <div class="note"><svg><use href="#i-shield"/></svg><span>YO: split 55/45, rostro máximo 3 s y subtítulos. CLONE: acciones y transformaciones de motion. Sequel y Scholar auténticas, rojo semántico y revisión de la secuencia.</span></div>
+      </section>
+    </aside>
+
+    <section class="viewer-panel">
+      <div class="viewer-toolbar"><div class="viewer-mode" role="group" aria-label="Modo de previsualización"><button id="preview-timeline" class="active" title="Vista interactiva aproximada. Revisa la salida final en Render.">Montaje</button><button id="preview-source">Original</button><button id="preview-render" disabled>Render</button></div><div class="viewer-tools"><span id="resolution-label">1080 × 1920</span><button id="safe-zones" class="icon-button active" title="Mostrar zonas seguras" aria-label="Alternar zonas seguras"><svg><use href="#i-shield"/></svg></button></div></div>
+      <div id="preview-stage" class="preview-stage">
+        <div class="stage-glow"></div>
+        <div id="preview-frame" class="preview-frame"><canvas id="preview-canvas" width="540" height="960" tabindex="0" aria-label="Previsualización vertical del montaje" aria-describedby="canvas-edit-help"></canvas><video id="render-video" playsinline controls hidden></video><div id="safe-overlay" class="safe-overlay"><span>ZONA SEGURA</span></div><div id="preview-empty" class="preview-empty"><div class="empty-reel"><div></div><svg><use href="#i-film"/></svg><div></div></div><span class="eyebrow">DE CRUDO A HISTORIA</span><h2>Tu próximo reel<br>empieza aquí.</h2><p>Carga tu grabación y construye<br>cada escena con intención.</p><button id="start-import" class="button primary"><svg><use href="#i-upload"/></svg>Importar un crudo</button></div></div>
+        <p id="canvas-edit-help" class="canvas-edit-help" hidden>Arrastra para mover · tirador: tamaño desde el centro · puntos de ruta arrastrables · flechas para ajustar · Mayús: 10 px · Esc: deseleccionar</p><span id="canvas-edit-status" class="sr-only" aria-live="polite"></span>
+        <div class="stage-caption"><span id="scene-indicator">SIN MATERIAL</span><span>9:16</span></div>
+      </div>
+      <div class="playback-controls"><div class="playback-left"><button id="jump-start" class="icon-button" title="Ir al inicio" aria-label="Ir al inicio">|◁</button><button id="play-button" class="play-button" aria-label="Reproducir"><svg><use href="#i-play"/></svg></button><span id="timecode">00:00.000 <span>/ 00:00.000</span></span></div><div class="playback-right"><select id="playback-speed" aria-label="Velocidad de reproducción"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="1.5">1,5×</option><option value="2">2×</option></select><button id="mute-button" class="icon-button" title="Silenciar voz" aria-label="Silenciar voz"><svg><use href="#i-audio"/></svg></button><button id="fullscreen-preview" class="icon-button" title="Pantalla completa" aria-label="Pantalla completa"><svg><use href="#i-export"/></svg></button></div></div>
+      <div id="jobs-strip" class="jobs-strip"><span class="status-dot"></span><span id="job-message">Motor local listo para trabajar</span><button id="open-jobs">Ver tareas <svg><use href="#i-chevron"/></svg></button><div id="job-progress" class="job-progress"></div></div>
+    </section>
+
+    <aside class="inspector-panel panel">
+      <div class="panel-heading"><div><span class="eyebrow">AJUSTA CADA DETALLE</span><h1>Inspector</h1></div><svg><use href="#i-settings"/></svg></div>
+      <div id="inspector-empty" class="inspector-empty"><div class="selection-shape"><i></i><i></i><i></i><i></i></div><p>Selecciona una escena<br>en la línea de tiempo.</p><small>Sus capas, texto y movimiento<br>aparecerán aquí.</small></div>
+      <form id="scene-form" hidden>
+        <div class="inspector-scene"><span id="inspector-scene-name">Escena 01</span><span id="inspector-scene-duration" class="count">0 s</span></div>
+        <label class="field">Composición<select id="scene-type"><option value="presenter">Presentador · original</option><option value="split">Split · proporción del proyecto</option><option value="broll">B-roll · pantalla completa</option><option value="motion">Motion · escena conceptual</option></select></label>
+        <div class="field-pair"><label class="field">Entrada (s)<input id="scene-start" type="number" step="0.01" min="0"></label><label class="field">Salida (s)<input id="scene-end" type="number" step="0.01" min="0.01"></label></div>
+        <label class="field">Recurso visual<select id="scene-asset"><option value="">Sin recurso</option></select></label>
+        <label class="field">Entrada del recurso (s)<input id="scene-source-in" type="number" step="0.01" min="0"></label>
+        <label id="presenter-in-field" class="field" hidden>Entrada del crudo inferior (s)<input id="scene-presenter-in" type="number" step="0.01" min="0"></label>
+        <div class="field-pair"><label class="range-field">Foco horizontal <output id="focus-x-output">50 %</output><input id="scene-focus-x" type="range" min="0" max="1" step="0.01" value="0.5"></label><label class="range-field">Foco vertical <output id="focus-y-output">50 %</output><input id="scene-focus-y" type="range" min="0" max="1" step="0.01" value="0.5"></label></div>
+        <label class="field">Plantilla de motion<select id="scene-template"><option value="custom">Composición libre · elementos editables</option><option value="workflow">Proceso conectado</option><option value="compare">Comparación</option><option value="kinetic">Tipografía cinética</option><option value="counter">Dato narrado</option></select></label>
+        <details id="free-motion-section" open hidden><summary>Diseño libre del lienzo</summary><p class="small-copy">Caja y posiciones normalizadas. Tamaño de fuente y radio a 1080 px. Las guías de selección solo aparecen en el editor.</p><label class="field">Fondo del lienzo<input id="motion-background" type="color" value="#101318"></label><div class="motion-add-actions"><button id="motion-add-text" class="button compact ghost" type="button">+ Texto</button><button id="motion-add-shape" class="button compact ghost" type="button">+ Forma</button><button id="motion-add-media" class="button compact ghost" type="button">+ Medio</button></div><div class="motion-proof-actions"><button id="snapshot-design" type="button" class="button ghost full" disabled>Generar PNG del diseño estático</button><button id="review-design" type="button" class="button ghost full" hidden>Ver PNG y registrar revisión</button><p id="design-snapshot-state" class="small-copy">La captura real y su aprobación explícita se comprueban antes de la animación narrativa.</p></div><div id="motion-elements-list" class="motion-elements-list" aria-label="Elementos del lienzo"></div><div id="motion-element-inspector"></div></details>
+        <details open><summary>Texto y composición</summary><label class="field">Titular integrado<textarea id="scene-title" rows="2" placeholder="Una idea fiel a la narración"></textarea></label><label class="field">Palabra de énfasis · Scholar<input id="scene-accent-text" placeholder="Contraste editorial selectivo"></label><label class="field">Subtítulo breve<textarea id="scene-subtitle" rows="2" placeholder="Después del hook · 2–3 palabras"></textarea></label><div class="field-pair"><label class="field">Color del texto<input id="scene-color" type="color" value="#ffffff"></label><label class="field">Énfasis<select id="scene-emphasis"><option value="primary">Sequel Sans</option><option value="accent">Scholar Italic</option></select></label></div><label class="range-field">Altura bajo barbilla <output id="chin-output">65 %</output><input id="scene-chin" type="range" min="0.1" max="0.92" step="0.01" value="0.65"></label><label class="field">Intención editorial del color<input id="scene-color-reason" placeholder="Justifica el rojo si lo usas"></label><label class="field">Pausa textual justificada<input id="scene-text-pause" placeholder="Solo si la composición exige una pausa"></label></details>
+        <details id="motion-data-section"><summary>Datos de la animación</summary><div id="workflow-data"><label class="field">Nodos del proceso (exactamente 3)<textarea id="scene-nodes" rows="3" placeholder="Entrada\nAcción real\nResultado narrado"></textarea></label></div><div id="compare-data"><label class="field">Estados de comparación (2 líneas)<textarea id="scene-labels" rows="2" placeholder="Antes\nDespués"></textarea></label></div><div id="counter-data"><div class="field-pair"><label class="field">Valor del guion<input id="scene-value" type="number" step="0.01" placeholder="Dato real"></label><label class="field">Valor inicial<input id="scene-value-from" type="number" step="0.01" value="0"></label></div><div class="field-pair"><label class="field">Decimales<input id="scene-decimals" type="number" min="0" max="4" value="0"></label><label class="field">Sufijo<input id="scene-suffix" placeholder="%, h, €…"></label></div></div><p class="small-copy">Usa solo acciones y datos presentes en la narración. Estas composiciones son conceptuales.</p></details>
+        <details><summary>Transición luminosa</summary><label class="field">Burn auténtico · mezcla Screen<select id="scene-transition"><option value="">Corte limpio</option></select></label><div class="field-pair"><label class="field">Duración (s)<input id="scene-transition-duration" type="number" min="0.3" max="1" step="0.01" value="0.5"></label><label class="field">Desde archivo (s)<input id="scene-transition-source" type="number" min="0" step="0.01" value="0"></label></div></details>
+        <details><summary>Color del recurso</summary><label class="range-field">Brillo <output id="brightness-output">100 %</output><input id="scene-brightness" type="range" min="0.3" max="1.8" step="0.01" value="1"></label><label class="range-field">Contraste <output id="contrast-output">100 %</output><input id="scene-contrast" type="range" min="0.3" max="2" step="0.01" value="1"></label><label class="range-field">Saturación <output id="saturation-output">100 %</output><input id="scene-saturation" type="range" min="0" max="2" step="0.01" value="1"></label></details>
+        <details><summary>Movimiento y keyframes</summary><p class="small-copy">Posición normalizada. Tiempo relativo a la escena. Interpolación suave entre estados.</p><div id="keyframes-list"></div><button id="add-keyframe" type="button" class="button ghost full"><svg><use href="#i-plus"/></svg>Keyframe en el cursor</button></details>
+        <details id="overlay-section"><summary>Capas visuales independientes</summary><p class="small-copy">Imagen o video real con transparencia. Hasta 8 capas, con posición y movimiento propios. La última capa queda arriba.</p><div id="overlay-list"></div><button id="add-overlay" type="button" class="button ghost full"><svg><use href="#i-plus"/></svg>Añadir capa visual</button></details>
+        <details><summary>Decisión de recursos</summary><label class="field">Búsqueda realizada<textarea id="scene-search" rows="2" placeholder="Bibliotecas, candidatos y contenido observado"></textarea></label><label class="field">Motivo de la selección<textarea id="scene-reason" rows="2" placeholder="Relación precisa con la frase"></textarea></label><label class="field">Evidencias (una por línea)<textarea id="scene-evidence" rows="2" placeholder="Ruta de captura o referencia"></textarea></label><button id="choose-scene-evidence" type="button" class="button ghost full">Elegir captura real</button><label class="review-check"><input id="scene-chin-reviewed" type="checkbox"><span>Comprobé el rostro completo y el texto bajo barbilla en esta composición.</span></label></details>
+        <div id="scene-warnings" class="scene-warnings"></div><button id="delete-scene" type="button" class="button danger full"><svg><use href="#i-trash"/></svg>Eliminar escena</button>
+      </form>
+    </aside>
+
+    <section class="timeline-panel" aria-label="Línea de tiempo">
+      <div class="timeline-toolbar"><div class="timeline-title"><svg><use href="#i-film"/></svg><span>Línea de tiempo</span><span id="scene-count" class="count">0 escenas</span></div><div class="timeline-actions"><button id="undo" class="icon-button" title="Deshacer · Ctrl Z" aria-label="Deshacer" disabled><svg><use href="#i-undo"/></svg></button><button id="redo" class="icon-button" title="Rehacer · Ctrl Mayús Z" aria-label="Rehacer" disabled><svg><use href="#i-redo"/></svg></button><span class="toolbar-divider"></span><button id="split-scene" class="icon-button" title="Dividir escena en el cursor · S" aria-label="Dividir escena" disabled><svg><use href="#i-scissors"/></svg></button><button id="add-scene" class="button compact" disabled><svg><use href="#i-plus"/></svg>Escena</button><span class="toolbar-divider"></span><label class="zoom-control">−<input id="timeline-zoom" type="range" min="25" max="180" value="70" aria-label="Zoom de línea de tiempo">+</label><button id="fit-timeline" class="button compact ghost">Ajustar</button></div></div>
+      <div id="timeline-scroll" class="timeline-scroll"><div class="track-labels"><div class="ruler-spacer"></div><div><span class="track-dot picture"></span>Imagen</div><div><span class="track-dot overlay"></span>Capas</div><div class="motion-track-label" hidden><span class="track-dot text"></span>Diseño · texto</div><div class="motion-track-label" hidden><span class="track-dot overlay"></span>Diseño · formas</div><div class="motion-track-label" hidden><span class="track-dot picture"></span>Diseño · medios</div><div><span class="track-dot text"></span>Subtítulos / títulos</div><div><span class="track-dot voice"></span>Voz original</div><div><span class="track-dot music"></span>Música / FX</div></div><div id="timeline-content" class="timeline-content"><div id="timeline-ruler" class="timeline-ruler"></div><div id="picture-track" class="timeline-track picture-track"></div><div id="overlay-track" class="timeline-track overlay-track"></div><div id="motion-text-track" class="timeline-track motion-track" hidden></div><div id="motion-shape-track" class="timeline-track motion-track" hidden></div><div id="motion-media-track" class="timeline-track motion-track" hidden></div><div id="text-track" class="timeline-track text-track"></div><div id="voice-track" class="timeline-track voice-track"><canvas id="waveform" aria-label="Forma de onda del audio original"></canvas><span id="waveform-status">La forma de onda aparecerá después del análisis</span></div><div id="music-track" class="timeline-track music-track"></div><div id="playhead" class="playhead"><span></span><i></i></div></div></div>
+      <div class="timeline-footer"><span><kbd>Espacio</kbd> Reproducir <kbd>S</kbd> Dividir <kbd>⌫</kbd> Eliminar <kbd>Ctrl Z</kbd> Deshacer</span><span id="policy-label">ASCENDIA V5 · prueba de 10 s · revisión explícita</span></div>
+    </section>
+  </main>
+
+  <video id="source-video" playsinline preload="metadata" class="media-engine"></video>
+  <video id="broll-video" playsinline preload="auto" muted class="media-engine"></video>
+  <video id="presenter-video" playsinline preload="auto" muted class="media-engine"></video>
+  <video id="transition-video" playsinline preload="auto" muted class="media-engine"></video>
+  <div id="audio-engine" hidden></div>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <dialog id="modal"><div class="modal-heading"><h2 id="modal-title"></h2><button id="close-modal" class="icon-button" aria-label="Cerrar"><svg><use href="#i-close"/></svg></button></div><div id="modal-content"></div></dialog>
+</body>
+</html>

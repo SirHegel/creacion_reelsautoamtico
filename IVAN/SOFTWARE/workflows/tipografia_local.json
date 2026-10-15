@@ -1,0 +1,17 @@
+{
+  "name": "Tipografía local editable",
+  "scope": "SOFTWARE",
+  "purpose": "Contrato para agentes externos; no ejecuta modelos ni aprueba contenido automáticamente",
+  "stages": [
+    {"tool": "font_library", "requirement": "Cara real disponible y aviso/licencia observados; Sequel/Scholar para narrativa ASCENDIA"},
+    {"tool": "asset_attach", "requirement": "Adjuntar ID de fuente canónica al proyecto con revisión actual"},
+    {"tool": "text_presets", "requirement": "Elegir estilo y animación que expliquen la narración"},
+    {"tool": "text_layout", "requirement": "Medir caja, grafemas y glifos; revisar warnings sin guardar ni aprobar"},
+    {"tool": "project_update", "requirement": "Datos cerrados; mantener reloj al cortar/dividir y evitar respuestas tardías sobre otro proyecto"},
+    {"tool": "preview_render", "arguments": {"technical": true}, "requirement": "MP4 técnico máximo10s; examinar secuencia, acentos, palabras, salidas y zonas seguras"},
+    {"tool": "job_get", "requirement": "Consultar progreso/resultado; job_cancel solo cancela el trabajo propio"},
+    {"tool": "editable_export", "requirement": "Comprobar CRC/SHA de fuentes, avisos y manifiesto; sin heredar aprobaciones"}
+  ],
+  "editorial_approved": false,
+  "commercial_suite_parity": false
+}

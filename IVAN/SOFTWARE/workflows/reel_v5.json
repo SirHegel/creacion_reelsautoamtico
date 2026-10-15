@@ -1,0 +1,101 @@
+{
+  "name": "ASCENDIA V5 — reel nuevo",
+  "scope": "SOFTWARE",
+  "initial_export_seconds": 10,
+  "technical_architecture_seconds": 3,
+  "technical_architecture_status": "historical_parent_verified_do_not_repeat",
+  "motion_reference": "CLONE",
+  "identity_reference": "YO",
+  "production_adapter": "hyperframes_gsap_requires_verified_receipt",
+  "current_production_phase": "clone_creative_B_v2",
+  "clone_design_interval": [
+    1.6,
+    3.2
+  ],
+  "design_before_animation": true,
+  "stages": [
+    {
+      "id": "manual",
+      "tool": "studio_status",
+      "requirement": "Lectura completa del manual canónico; YO cámara/subtítulos/split y CLONE motion exclusivo"
+    },
+    {
+      "id": "skills",
+      "tool": "skills_prepare",
+      "requirement": "Doce guías locales completas; hashes de árbol, referencias, comprensión, decisión, catálogo y evidencia por proyecto. La plantilla comienza pendiente"
+    },
+    {
+      "id": "architecture",
+      "requirement": "Arquitectura GSAP del padre verificada: no repetir. Adaptador propio con recibos actuales independientes, sin atribuirnos la prueba ajena."
+    },
+    {
+      "id": "static_design",
+      "requirement": "Narrative promotion requires its current design evidence; this gate is not used to block technical SceneIR component renders.",
+      "tool": "design_snapshot"
+    },
+    {
+      "id": "import",
+      "tool": "asset_import",
+      "requirement": "Archivo local original; deduplicación por contenido"
+    },
+    {
+      "id": "analysis",
+      "tool": "project_analyze",
+      "arguments": {
+        "transcribe": true,
+        "model": "small",
+        "language": "es"
+      }
+    },
+    {
+      "id": "tracking",
+      "tool": "face_tracking",
+      "requirement": "Opcional: medidas CPU con PTS/evidencia; transformar según crop/split y revisar, sin aplicar automáticamente."
+    },
+    {
+      "id": "storyboard",
+      "tool": "storyboard_propose",
+      "requirement": "Propuesta local que el director revisa por frase"
+    },
+    {
+      "id": "agents",
+      "tool": "workflow_create",
+      "roles": [
+        "director",
+        "resources",
+        "motion",
+        "audio",
+        "qa"
+      ]
+    },
+    {
+      "id": "validate",
+      "tool": "project_validate",
+      "requirement": "Fuentes, tiempos, evidencia YO/CLONE, skills aplicadas, adaptador, recursos y riser"
+    },
+    {
+      "id": "preview",
+      "tool": "preview_render",
+      "requirement": "Solo diez segundos; candidato pendiente de revisión"
+    },
+    {
+      "id": "review",
+      "requirement": "Reproducir secuencia, comparar YO y CLONE en sus ámbitos, escuchar audio y registrar revisión explícita"
+    },
+    {
+      "id": "editable",
+      "tool": "editable_export",
+      "requirement": "Proyecto, medios, manifest y subtítulos; sin .estado"
+    },
+    {
+      "id": "full",
+      "requirement": "Bloqueado hasta aprobación de prueba y nueva autorización del usuario"
+    }
+  ],
+  "clone_static_reference_time": 3.1,
+  "clone_static_iteration": 2,
+  "parent_static_design_approval": "declared_in_manual_not_inherited_by_software_projects",
+  "scope_note": "Future narrative workflow; current parent B_V2 production is independent; technical SceneIR components use scene_ir_component.json without per-component approvals",
+  "parent_creative_scope": "B_v2_preserve_B_structure_fifteen_families_CANCELLED_and_B_v1_comparison",
+  "parent_integration": "no_additional_A_B_C_demos_no_YO_integration_B_v2_user_review_pending"
+}

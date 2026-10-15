@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "id": "semantic_5dd3592f014c",
+  "semantic_analysis": {
+    "summary": "El guion atribuye el enfado de Google a una skill de Claude que supuestamente resume todo internet, menciona LinkedIn, YouTube e Instagram y afirma que no exige pagar APIs. La composición representa esas afirmaciones de forma conceptual.",
+    "entities": [
+      {
+        "id": "google",
+        "name": "Google",
+        "kind": "organización",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "kind": "producto",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "skill",
+        "name": "Skill de scraping",
+        "kind": "capacidad descrita",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "internet",
+        "name": "Internet",
+        "kind": "ámbito declarado",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn",
+        "kind": "fuente mencionada",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "youtube",
+        "name": "YouTube",
+        "kind": "fuente mencionada",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "kind": "fuente mencionada",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "api",
+        "name": "APIs",
+        "kind": "condición de pago",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "facts": [
+      {
+        "id": "f_reaction",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f_skill",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f_scope",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f_sources",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "id": "f_payment",
+        "claim": "Texto sintético de ejemplo.",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "relationships": [
+      {
+        "from": "claude",
+        "to": "skill",
+        "action": "tiene",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "internet",
+        "action": "resume, según el guion",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "linkedin",
+        "action": "incluye como ejemplo de fuente",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "youtube",
+        "action": "incluye como ejemplo de fuente",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "instagram",
+        "action": "incluye como ejemplo de fuente",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "google",
+        "action": "motiva el enfado atribuido",
+        "evidence": "Entrada sintética de ejemplo."
+      },
+      {
+        "from": "skill",
+        "to": "api",
+        "action": "no requiere pago, según el guion",
+        "evidence": "Entrada sintética de ejemplo."
+      }
+    ],
+    "unsupported_claims": [
+      "No se aporta evidencia externa del enfado de Google.",
+      "No se identifica la skill ni se verifica su acceso a todo internet o a las plataformas mencionadas.",
+      "La ausencia declarada de pagos de API no demuestra gratuidad total, permisos de acceso ni resultados de scraping."
+    ],
+    "timing_mode": "anchored_to_supplied_narration",
+    "conceptual": true,
+    "narrative_structure": "Reacción provocadora → explicación causal mediante la skill → ejemplos de fuentes → condición económica limitada al pago de APIs.",
+    "visual_strategy": "Una composición relacional mantiene las identidades escritas, presenta la skill mediante un sprite conceptual y conecta las fuentes con Claude. Una transferencia separada explica el enfado atribuido a Google. Tras recibir las fuentes, el sistema revela la condición de pago del guion. Sin logos sustitutos, métricas ni interfaces falsas."
+  },
+  "scenes": [
+    {
+      "id": "s_scraping",
+      "start": 0,
+      "duration": 7.9,
+      "content": "Texto sintético de ejemplo.",
+      "objective": "Explicar la causalidad y el recorrido de fuentes sin presentar las afirmaciones como una ejecución comprobada.",
+      "semantic_reason": "El significado combina una reacción de un tercero, un actor con una capacidad, varias entradas y una condición de pago. El grafo permite expresar esas relaciones distintas sin convertirlas en clonación de apps, investigación cuantificada o instalación.",
+      "family": "composition_graph",
+      "fact_ids": [
+        "f_reaction",
+        "f_skill",
+        "f_scope",
+        "f_sources",
+        "f_payment"
+      ],
+      "actions": [
+        {
+          "at": 0.0,
+          "duration": 0.23333333333333334,
+          "op": "enter",
+          "target": "google"
+        },
+        {
+          "at": 0.5666666666666667,
+          "duration": 0.23333333333333334,
+          "op": "camera",
+          "target": "google",
+          "scale": 1.06
+        },
+        {
+          "at": 1.2,
+          "duration": 0.23333333333333334,
+          "op": "enter",
+          "target": "claude"
+        },
+        {
+          "at": 1.9,
+          "duration": 0.23333333333333334,
+          "op": "camera",
+          "target": "claude",
+          "scale": 1.06
+        },
+        {
+          "at": 2.3333333333333335,
+          "duration": 0.3,
+          "op": "transfer",
+          "target": "google",
+          "from": "claude",
+          "to": "google"
+        },
+        {
+          "at": 2.6333333333333333,
+          "duration": 0.3,
+          "op": "transform",
+          "target": "google",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 3.433333333333333,
+          "duration": 0.23333333333333334,
+          "op": "camera",
+          "target": "claude",
+          "scale": 1.08
+        },
+        {
+          "at": 4.233333333333333,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "linkedin"
+        },
+        {
+          "at": 4.433333333333334,
+          "duration": 0.36666666666666664,
+          "op": "transfer",
+          "target": "claude",
+          "from": "linkedin",
+          "to": "claude"
+        },
+        {
+          "at": 4.966666666666667,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "youtube"
+        },
+        {
+          "at": 5.166666666666667,
+          "duration": 0.2,
+          "op": "transfer",
+          "target": "claude",
+          "from": "youtube",
+          "to": "claude"
+        },
+        {
+          "at": 5.366666666666666,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "instagram"
+        },
+        {
+          "at": 5.566666666666666,
+          "duration": 0.26666666666666666,
+          "op": "transfer",
+          "target": "claude",
+          "from": "instagram",
+          "to": "claude"
+        },
+        {
+          "at": 5.9,
+          "duration": 0.2,
+          "op": "transform",
+          "target": "claude",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 6.1,
+          "duration": 0.2,
+          "op": "enter",
+          "target": "condition"
+        },
+        {
+          "at": 6.366666666666666,
+          "duration": 0.3333333333333333,
+          "op": "transfer",
+          "target": "condition",
+          "from": "claude",
+          "to": "condition"
+        },
+        {
+          "at": 6.733333333333333,
+          "duration": 0.3333333333333333,
+          "op": "resolve",
+          "target": "condition",
+          "text": "Texto sintético de ejemplo."
+        },
+        {
+          "at": 7.4,
+          "duration": 0.3333333333333333,
+          "op": "camera",
+          "target": "condition",
+          "scale": 1.08
+        }
+      ],
+      "narration_anchors": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "composition": "full_motion",
+      "transition_in": {
+        "kind": "cut",
+        "duration": 0.0
+      },
+      "transition_out": {
+        "kind": "cut",
+        "duration": 0
+      },
+      "visual_reason": "El hub mantiene Claude como centro causal y hace aparecer las fuentes cuando se nombran. Las transferencias producen una reacción en Google y una consolidación posterior en Claude; el resultado entra vacío cerca de su transferencia. Las identidades usan texto porque no existen sus logos en el catálogo. Los énfasis de cámara son breves y moderados. La geometría nativa de seis nodos, la lectura móvil y las escrituras de estado requieren comprobación en render; el plan no acredita su calidad visual.",
+      "alternatives": [
+        {
+          "family": "radial_research",
+          "reason": "Su convergencia explica bien las fuentes, pero no representa por sí sola la relación causal con Google ni la condición final. Además, faltan los assets auténticos de las plataformas y sus sources requieren asset."
+        },
+        {
+          "family": "terminal_install",
+          "reason": "Permite una instrucción conceptual y activación, pero el guion no describe una orden, instalación o configuración. Convertir la narración en terminal desplazaría el significado de fuentes y reacción."
+        },
+        {
+          "family": "spotlight_agent",
+          "reason": "Presenta la skill con claridad, pero su gesto y propósito no explican el recorrido de tres fuentes ni el enfado de un tercero; separarlo alargaría la presentación en este intervalo."
+        },
+        {
+          "family": "cancelled",
+          "reason": "Su diseño fijo expresa cancelación de suscripciones con importe y moneda. El guion solo menciona no pagar APIs, sin suscripciones canceladas ni ahorro cuantificado."
+        }
+      ],
+      "choreography": {
+        "mode": "custom_steps",
+        "execution": "params.steps",
+        "phase_ids": []
+      },
+      "illustrative_fields": [],
+      "data_bindings": [],
+      "handoff": {
+        "incoming_scene": null,
+        "shared_entity_ids": [],
+        "shared_assets": [],
+        "narrative_link": "Una única escena desarrolla reacción, causa, fuentes y condición económica.",
+        "visual_strategy": "La continuidad se construye dentro del grafo mediante entradas y transferencias explícitas.",
+        "execution": "metadata_only",
+        "execution_verified": false
+      },
+      "continuity": null,
+      "layout": null,
+      "closing": null,
+      "params": {
+        "title": "Según el guion",
+        "caption": "Claude: scraping sin pagar APIs",
+        "conceptual": true,
+        "layout": "hub",
+        "nodes": [
+          {
+            "id": "google",
+            "kind": "editorial",
+            "label": "Google",
+            "body": "Enfado atribuido"
+          },
+          {
+            "id": "claude",
+            "kind": "agent",
+            "label": "Claude · skill",
+            "body": "Scrapea todo internet, según el guion",
+            "role": "recon"
+          },
+          {
+            "id": "linkedin",
+            "kind": "message",
+            "label": "LinkedIn",
+            "body": "Página mencionada"
+          },
+          {
+            "id": "youtube",
+            "kind": "message",
+            "label": "YouTube",
+            "body": "Página mencionada"
+          },
+          {
+            "id": "instagram",
+            "kind": "message",
+            "label": "Instagram",
+            "body": "Página mencionada"
+          },
+          {
+            "id": "condition",
+            "kind": "result",
+            "label": "Condición del guion",
+            "body": ""
+          }
+        ],
+        "edges": [
+          {
+            "from": "claude",
+            "to": "google",
+            "label": "Motivo del enfado"
+          },
+          {
+            "from": "linkedin",
+            "to": "claude",
+            "label": "Scraping"
+          },
+          {
+            "from": "youtube",
+            "to": "claude",
+            "label": "Scraping"
+          },
+          {
+            "from": "instagram",
+            "to": "claude",
+            "label": "Scraping"
+          },
+          {
+            "from": "claude",
+            "to": "condition",
+            "label": "Sin pago de API"
+          }
+        ],
+        "steps": [
+          {
+            "at": 0.0,
+            "duration": 0.23333333333333334,
+            "op": "enter",
+            "target": "google"
+          },
+          {
+            "at": 0.5666666666666667,
+            "duration": 0.23333333333333334,
+            "op": "camera",
+            "target": "google",
+            "scale": 1.06
+          },
+          {
+            "at": 1.2,
+            "duration": 0.23333333333333334,
+            "op": "enter",
+            "target": "claude"
+          },
+          {
+            "at": 1.9,
+            "duration": 0.23333333333333334,
+            "op": "camera",
+            "target": "claude",
+            "scale": 1.06
+          },
+          {
+            "at": 2.3333333333333335,
+            "duration": 0.3,
+            "op": "transfer",
+            "target": "google",
+            "from": "claude",
+            "to": "google"
+          },
+          {
+            "at": 2.6333333333333333,
+            "duration": 0.3,
+            "op": "transform",
+            "target": "google",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 3.433333333333333,
+            "duration": 0.23333333333333334,
+            "op": "camera",
+            "target": "claude",
+            "scale": 1.08
+          },
+          {
+            "at": 4.233333333333333,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "linkedin"
+          },
+          {
+            "at": 4.433333333333334,
+            "duration": 0.36666666666666664,
+            "op": "transfer",
+            "target": "claude",
+            "from": "linkedin",
+            "to": "claude"
+          },
+          {
+            "at": 4.966666666666667,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "youtube"
+          },
+          {
+            "at": 5.166666666666667,
+            "duration": 0.2,
+            "op": "transfer",
+            "target": "claude",
+            "from": "youtube",
+            "to": "claude"
+          },
+          {
+            "at": 5.366666666666666,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "instagram"
+          },
+          {
+            "at": 5.566666666666666,
+            "duration": 0.26666666666666666,
+            "op": "transfer",
+            "target": "claude",
+            "from": "instagram",
+            "to": "claude"
+          },
+          {
+            "at": 5.9,
+            "duration": 0.2,
+            "op": "transform",
+            "target": "claude",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 6.1,
+            "duration": 0.2,
+            "op": "enter",
+            "target": "condition"
+          },
+          {
+            "at": 6.366666666666666,
+            "duration": 0.3333333333333333,
+            "op": "transfer",
+            "target": "condition",
+            "from": "claude",
+            "to": "condition"
+          },
+          {
+            "at": 6.733333333333333,
+            "duration": 0.3333333333333333,
+            "op": "resolve",
+            "target": "condition",
+            "text": "Texto sintético de ejemplo."
+          },
+          {
+            "at": 7.4,
+            "duration": 0.3333333333333333,
+            "op": "camera",
+            "target": "condition",
+            "scale": 1.08
+          }
+        ]
+      }
+    }
+  ],
+  "duration": 7.9,
+  "timing": {
+    "mode": "anchored_to_supplied_narration",
+    "voice_provided": true,
+    "fps": 30,
+    "anchors": [
+      {
+        "index": 0,
+        "start": 0.0,
+        "end": 0.32,
+        "text": "Google"
+      },
+      {
+        "index": 1,
+        "start": 0.4,
+        "end": 0.56,
+        "text": "anuncia"
+      },
+      {
+        "index": 2,
+        "start": 0.56,
+        "end": 0.88,
+        "text": "riesgo"
+      },
+      {
+        "index": 3,
+        "start": 0.96,
+        "end": 1.2,
+        "text": "mientras"
+      },
+      {
+        "index": 4,
+        "start": 1.2,
+        "end": 1.68,
+        "text": "Claude"
+      },
+      {
+        "index": 5,
+        "start": 1.68,
+        "end": 1.84,
+        "text": "procesa"
+      },
+      {
+        "index": 6,
+        "start": 1.84,
+        "end": 1.92,
+        "text": "varios"
+      },
+      {
+        "index": 7,
+        "start": 1.92,
+        "end": 2.24,
+        "text": "datos"
+      },
+      {
+        "index": 8,
+        "start": 2.32,
+        "end": 2.4,
+        "text": "para"
+      },
+      {
+        "index": 9,
+        "start": 2.4,
+        "end": 3.04,
+        "text": "resumir"
+      },
+      {
+        "index": 10,
+        "start": 3.04,
+        "end": 3.28,
+        "text": "información"
+      },
+      {
+        "index": 11,
+        "start": 3.28,
+        "end": 3.44,
+        "text": "web"
+      },
+      {
+        "index": 12,
+        "start": 3.68,
+        "end": 3.92,
+        "text": "usando"
+      },
+      {
+        "index": 13,
+        "start": 4.0,
+        "end": 4.24,
+        "text": "fuentes"
+      },
+      {
+        "index": 14,
+        "start": 4.24,
+        "end": 4.8,
+        "text": "LinkedIn"
+      },
+      {
+        "index": 15,
+        "start": 4.96,
+        "end": 5.2,
+        "text": "YouTube"
+      },
+      {
+        "index": 16,
+        "start": 5.36,
+        "end": 5.76,
+        "text": "Instagram"
+      },
+      {
+        "index": 17,
+        "start": 5.84,
+        "end": 6.08,
+        "text": "además"
+      },
+      {
+        "index": 18,
+        "start": 6.08,
+        "end": 6.24,
+        "text": "sin"
+      },
+      {
+        "index": 19,
+        "start": 6.24,
+        "end": 6.56,
+        "text": "pagar"
+      },
+      {
+        "index": 20,
+        "start": 6.56,
+        "end": 6.72,
+        "text": "ninguna"
+      },
+      {
+        "index": 21,
+        "start": 6.72,
+        "end": 7.04,
+        "text": "API"
+      },
+      {
+        "index": 22,
+        "start": 7.04,
+        "end": 7.44,
+        "text": "de"
+      },
+      {
+        "index": 23,
+        "start": 7.44,
+        "end": 7.76,
+        "text": "prueba"
+      }
+    ],
+    "note": "Anclas reales aportadas; límites visuales cuantizados a30FPS."
+  },
+  "planner": {
+    "provider": "codex",
+    "semantic_inference": true,
+    "keyword_fallback": false,
+    "ready_for_compile": true,
+    "pending_families": [],
+    "conceptual": true,
+    "manual_editorial_review": "pending",
+    "manual_sha256": {
+      "AGENTS.md": "8ef00cd18f9ca503b0d6e3c1d097798445d1031d6f52662901f494c81a1fda1a",
+      "PROMPT_MAESTRO.md": "004ee0a58b48a498e8afa03362cbcda0efec00c989cdc918f21d393f3c56df9b",
+      "INSTRUCCIONES.md": "f29b4c02d5d2ae7d49d6348eb0f9f2291a5fd77fa32646844e0e1b9f2b460dc2"
+    },
+    "continuity_execution": {
+      "handoff": "metadata_only",
+      "requested_operations": 0,
+      "capability_validated": false,
+      "execution_verified": false,
+      "verification": "Recibo del compositor, seeks y revisión visual con SHA vigente."
+    },
+    "transition_owner": "incoming_boundary; transition_out derived",
+    "family_actions": "ventanas derivadas, no nuevos comandos de animación",
+    "proof": ".estado/clone/planner/20c16b663e44f16f/attempt_1/provider_proof.json",
+    "prompt_version": "3.4_composition_capabilities",
+    "catalog_sha256": "49d28f955d005ecb0ea979d279fbcbf2709558b11a6867b5a22003b7dd888d3d",
+    "prompt_sha256": "0a287dfd6a8ceae580b456ae007666f88bb92ac1ba29da7d18758279a3bc1f7c",
+    "response_sha256": "1879db214990e9f2f93691856db4bbb7c08eab83b1406a510e0eaf1ea96bb7ee",
+    "script_sha256": "5dd3592f014c75066d296e1c5ceb098f1c7ecb71087a0400e585020f07d3c9ca",
+    "attempts": 1
+  }
+}

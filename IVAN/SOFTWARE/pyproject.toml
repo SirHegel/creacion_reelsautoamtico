@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascendia-studio"
+version = "0.6.0"
+description = "Private multiuser editable video production with IVAN automation"
+requires-python = ">=3.11"
+dependencies = ["Pillow==12.1.1", "regex==2025.9.18", "fonttools==4.61.1", "cryptography==46.0.5"]
+license = "MIT"
+
+[project.optional-dependencies]
+asr = ["faster-whisper==1.2.1"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+ascendia-studio = "studio.cli:main"
+
+[tool.setuptools]
+packages = ["studio"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

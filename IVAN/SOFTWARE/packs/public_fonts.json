@@ -1,0 +1,135 @@
+{
+  "schema": "ascendia.public-fonts/1",
+  "fonts": [
+    {
+      "asset_id": "a_08df266400933d3178d0",
+      "sha256": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6",
+      "path": "assets/fonts/08df266400933d3178d0.otf",
+      "family": "Source Sans 3",
+      "style": "Regular",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/ed1808970eb3c7301c9a523bee26473ba0bb62fa/OTF/SourceSans3-Regular.otf",
+      "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+      "notice_path": "assets/fonts/licenses/89ad2c4f66dd29127527493e.txt",
+      "notice_sha256": "89ad2c4f66dd29127527493e729c31e731f111cf10faf5774c3db9275ed0c22c",
+      "notice_source_url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/ed1808970eb3c7301c9a523bee26473ba0bb62fa/LICENSE.md",
+      "reserved_names": [
+        "Source"
+      ],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 1614,
+        "shaping_verified": false
+      }
+    },
+    {
+      "asset_id": "a_7776ddb9f3eb58683e59",
+      "sha256": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9",
+      "path": "assets/fonts/7776ddb9f3eb58683e59.otf",
+      "family": "Source Sans 3",
+      "style": "Bold",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/ed1808970eb3c7301c9a523bee26473ba0bb62fa/OTF/SourceSans3-Bold.otf",
+      "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+      "notice_path": "assets/fonts/licenses/89ad2c4f66dd29127527493e.txt",
+      "notice_sha256": "89ad2c4f66dd29127527493e729c31e731f111cf10faf5774c3db9275ed0c22c",
+      "notice_source_url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/ed1808970eb3c7301c9a523bee26473ba0bb62fa/LICENSE.md",
+      "reserved_names": [
+        "Source"
+      ],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 1614,
+        "shaping_verified": false
+      }
+    },
+    {
+      "asset_id": "a_a4ba3a92350ebb031da0",
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+      "path": "assets/fonts/a4ba3a92350ebb031da0.ttf",
+      "family": "Anton",
+      "style": "Regular",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/anton/Anton-Regular.ttf",
+      "commit": "66928797f271fed5ee428544e7229685e2d90127",
+      "notice_path": "assets/fonts/licenses/ee67e6ee22790b7929f1a376.txt",
+      "notice_sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4",
+      "notice_source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/anton/OFL.txt",
+      "reserved_names": [],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 978,
+        "shaping_verified": false
+      }
+    },
+    {
+      "asset_id": "a_8cc3643535edf039aa5d",
+      "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+      "path": "assets/fonts/8cc3643535edf039aa5d.ttf",
+      "family": "DM Serif Display",
+      "style": "Regular",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/dmserifdisplay/DMSerifDisplay-Regular.ttf",
+      "commit": "66928797f271fed5ee428544e7229685e2d90127",
+      "notice_path": "assets/fonts/licenses/a3e5cdd67d4571dd0a24fcc9.txt",
+      "notice_sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231",
+      "notice_source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/dmserifdisplay/OFL.txt",
+      "reserved_names": [
+        "Source"
+      ],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 333,
+        "shaping_verified": false
+      }
+    },
+    {
+      "asset_id": "a_df74c0ac387baeaeb0fe",
+      "sha256": "df74c0ac387baeaeb0fe4f2324e1668e6a3ed8c09cd9796fe162c71753e19e45",
+      "path": "assets/fonts/df74c0ac387baeaeb0fe.ttf",
+      "family": "DM Serif Display",
+      "style": "Italic",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/dmserifdisplay/DMSerifDisplay-Italic.ttf",
+      "commit": "66928797f271fed5ee428544e7229685e2d90127",
+      "notice_path": "assets/fonts/licenses/a3e5cdd67d4571dd0a24fcc9.txt",
+      "notice_sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231",
+      "notice_source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/dmserifdisplay/OFL.txt",
+      "reserved_names": [
+        "Source"
+      ],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 336,
+        "shaping_verified": false
+      }
+    },
+    {
+      "asset_id": "a_6a3412f058c7d8dfd917",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "path": "assets/fonts/6a3412f058c7d8dfd917.ttf",
+      "family": "IBM Plex Mono",
+      "style": "Regular",
+      "license": "OFL-1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "commit": "66928797f271fed5ee428544e7229685e2d90127",
+      "notice_path": "assets/fonts/licenses/7e6b2818edbd8f6a01ae8064.txt",
+      "notice_sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "notice_source_url": "https://raw.githubusercontent.com/google/fonts/66928797f271fed5ee428544e7229685e2d90127/ofl/ibmplexmono/OFL.txt",
+      "reserved_names": [
+        "Plex"
+      ],
+      "sample_glyph_coverage": {
+        "spanish_sample": "ÁÉÍÓÚÜÑáéíóúüñ¿¡0123456789",
+        "missing_sample_characters": [],
+        "codepoint_count": 930,
+        "shaping_verified": false
+      }
+    }
+  ]
+}

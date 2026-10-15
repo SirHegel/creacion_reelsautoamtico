@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "id": "clone-native-720-v1",
+  "reference": {
+    "path": "recursos/B2_CLONE.mp4",
+    "sha256": "7ef3e586a481156e8b88250c8ccfb1633834f679935554c46c10570ae78b2dc8",
+    "source": "https://example.invalid/recurso",
+    "width": 720, "height": 1280, "fps": 30, "frames": 1269,
+    "video_duration_s": 42.3, "container_duration_s": 42.388042,
+    "visual_coverage": "213 fotogramas a 5 Hz del vídeo completo y fotogramas nativos adicionales; cancelación contrastada también en 48 fotogramas consecutivos",
+    "contacts": [".estado/tmp/clone_design/overview_00.jpg", ".estado/tmp/clone_design/overview_01.jpg", ".estado/tmp/clone_design/overview_02.jpg", ".estado/tmp/clone_design/overview_03.jpg", ".estado/tmp/clone_design/overview_04.jpg", ".estado/tmp/clone_design/overview_05.jpg"],
+    "limits": "No se han identificado las fuentes originales ni los keyframes originales. Muestreo de color sobre MP4 comprimido, no recuperación del CSS. La cobertura a 5 Hz no equivale a revisar cada fotograma del vídeo entero."
+  },
+  "scope": {
+    "motion_reference": "CLONE exclusivamente",
+    "identity_reference_future": "YO, para cámara y subtítulos al integrar futuros reels",
+    "stock_or_broll": false, "full_reel_authorized": false,
+    "batch_component_production_authorized": true,
+    "per_component_user_approval_required": false,
+    "source_portrait_reusable": false,
+    "principle": "Secuencias de componentes que actúan, reaccionan, cambian de estado y resuelven una idea; no una colección de capturas ni un catálogo cerrado de plantillas."
+  },
+  "canvas": {"width": 720, "height": 1280, "render_width": 1080, "render_height": 1920, "render_scale": 1.5, "fps": 30, "coordinate_policy": "Unidades nativas; escalar el lienzo entero, no cada token por separado."},
+  "runtime_colors": {"paper": "#f3f3f5", "ink": "#171719", "secondary": "#737174", "clay": "#d77357", "red": "#ff3529", "green": "#42b95c", "dark": "#19191b", "line": "#dfdfe3"},
+  "palette": {
+    "measured_from_video": {
+      "paper": "#f3f3f5", "paper_center": "#f6f6f9", "paper_edge_lower": "#f0f0f3", "black_canvas": "#000000", "dark_panel": "#19191b", "terminal_surface": "#171712", "clay_bar": "#d77357", "amber_bar": "#dd8302", "risk_bar": "#ff3529", "blue_phone_region": "#1c4693", "product_icon_region": "#d47b56"
+    },
+    "sampling": [
+      {"frame": 264, "t": 8.8, "method": "mediana RGB en entorno 5x5", "points": {"20,20": "#f3f3f5", "350,90": "#f6f6f9", "20,1190": "#f0f0f3"}},
+      {"frame": 462, "t": 15.4, "points": {"20,20": "#000000", "350,30": "#000000", "20,1150": "#000000"}},
+      {"frame": 798, "t": 26.6, "points": {"90,850": "#19191b", "630,850": "#19191b"}},
+      {"frame": 804, "t": 26.8, "method": "mediana de píxeles coloreados en barras", "regions": {"clay": "#d77357", "amber": "#dd8302"}},
+      {"frame": 852, "t": 28.4, "regions": {"risk_bar": "#ff3529"}},
+      {"frame": 1080, "t": 36, "points": {"50,480": "#171712"}}
+    ],
+    "implementation_approximations": {"ink": "#171719", "secondary": "#737174", "green_success": "#42b95c", "hairline": "#dfdfe3"},
+    "usage": {
+      "light": "Sistema, agentes, exploración, feedback e instalación; variación radial clara sutil, sin retícula añadida por defecto.",
+      "black": "Contraste de costes/cancelación, comparación, foco de empresario y lanzamiento de producto.",
+      "red": "Problemas, errores, pérdida y cancelación; nunca colorear nombres de herramientas por obligación.",
+      "clay": "Jerarquía editorial y proceso en la referencia; no trasladar la paleta a los logos oficiales.",
+      "green": "Validación y problema efectivamente resuelto; conserva la relación entre acción y cambio de estado.",
+      "brand": "Los recursos extraídos conservan su aspecto original. No inventar logos ni atribuir a una marca una interfaz conceptual."
+    }
+  },
+  "typography": {
+    "original_fonts_identified": false,
+    "roles": {
+      "ui": {"family": "InterUI", "paths": [".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/Inter-400.woff2", ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/Inter-700.woff2"], "weights": [400,700], "native_size_range_px": [17,36], "status": "aproximación local, no identificación de la fuente original"},
+      "display": {"family": "Sequel", "path": "recursos/Sequel_Sans_Bold_Disp.ttf", "native_size_range_px": [44,100], "status": "identidad solicitada y aproximación verificada en CANCELLED aprobado"},
+      "editorial": {"family": "Scholar", "path": "recursos/Scholar_Italic.ttf", "native_size_range_px": [58,85], "max_width_px": 620, "status": "aproximación; CLONE muestra una cursiva serif más condensada. Ajustar visualmente y no afirmar coincidencia exacta."},
+      "mono": {"family": "JetBrains", "paths": [".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2", ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2"], "native_size_range_px": [15,25], "status": "aproximación local para rutas, comandos y etiquetas de rol"}
+    },
+    "hierarchy": "Un número, resultado u objeto principal; etiqueta de estado secundaria; texto editorial grande fuera de la UI. No dar igual peso a todos los elementos.",
+    "editorial_baseline_region_native_y": [1040,1180],
+    "fit_policy": "Medir ancho una vez al construir; adaptar tamaño dentro de límites y dividir contenido si la escala resultante perjudica legibilidad. No deformar textos arbitrariamente para que quepan.",
+    "fixed_outlines": {"AGAIN": "Contornos SVG aprobados para esa palabra únicamente; no constituyen una fuente utilizable con texto nuevo."},
+    "licenses": "Inter y JetBrains incluyen OFL junto a los archivos. Sequel/Scholar son recursos locales suministrados; no se ha deducido del nombre una licencia nueva."
+  },
+  "layout": {
+    "safe_margin_native_px": 40,
+    "spacing_proposed_native_px": [6,12,18,24,32,48],
+    "grid_agents": {"count_source": 11, "row_counts": [4,4,3], "grid_zone": {"x": 70,"y": 165,"width": 590,"height": 665}, "hero_sprite_width_px": [80,120], "command_pill_height_px": [30,42], "source_frame": 300},
+    "phone_comparison": {"phone_width_px": [240,260], "phone_height_px": [530,570], "positions": ["izquierda original", "derecha clon"], "source_frame": 510},
+    "corners_proposed_native_px": {"card": 20, "command_pill": 16, "phone": 48, "chip": 999},
+    "depth": "Capas, oclusión deliberada, sombras y desplazamiento diferencial. La apariencia 2.5D observada no identifica el motor ni prueba modelos 3D.",
+    "layer_order": ["canvas", "contexto/ghost", "objeto principal", "datos/componentes", "acción/mascota", "editorial", "transición"],
+    "prohibited": ["fondos de grabación duplicados y desenfocados", "retratos de CLONE reutilizados como presentador", "retículas de AGENT por defecto", "relleno decorativo sin función", "corte de elementos importantes para esconder un mal encuadre"]
+  },
+  "shadows": {
+    "white_card": {"dy": 10,"stdDeviation": 13,"opacity": 0.16,"status": "valor de implementación aproximado, ajustar frente a referencia"},
+    "sprite_label": {"dy": 6,"stdDeviation": 8,"opacity": 0.12,"status": "valor de implementación aproximado"},
+    "approved_cancel_stamp": {"dy": 12,"stdDeviation": 17,"opacity": 0.56,"mask": "solo exterior", "status": "implementación aprobada, conservar"},
+    "approved_AGAIN": {"dy": 3,"stdDeviation": 6.5,"opacity": 0.55,"status": "implementación aprobada, conservar"},
+    "future_YO_subtitle": {"css_1080": "2px 4px 5px rgba(0,0,0,0.85)", "status": "punto de partida de identidad YO; no equivale a sombra editorial CLONE"}
+  },
+  "motion": {
+    "observed": ["duplicación y agrupación de apps", "contador dependiente de estado", "cancelaciones consecutivas con sello y flash breve", "escaneo móvil que se transforma en construcción y test", "capturas/contenidos de teléfono que se sustituyen durante comparación", "datos de reseñas que alimentan clasificación y barras", "problemas ligados a toggles que se resuelven", "instalación que activa sucesivamente agentes", "mascotas en desfile"],
+    "timing_initial_s": {"fast_entry": [0.12,0.3], "card_change": [0.2,0.4], "impact_zoom": [0.15,0.3], "main_transformation": [0.2,0.6]},
+    "timing_provenance": "Parámetros iniciales de las directivas del usuario; no una medición exacta de todos los tweens de CLONE.",
+    "easing": {"entry": ["power3.out","expo.out"], "between_states": ["power2.inOut","sine.inOut"], "exit": ["power2.in","power3.in"], "small_hero_settle": "back.out con amplitud discreta, solo cuando el carácter observado lo admite"},
+    "phase_contract": ["composición inicial", "acción", "reacción de elementos", "resultado/transformación", "salida conectada"],
+    "seek_contract": "Una timeline pausada; posiciones precalculadas; callbacks de contadores idempotentes; sin reloj de pared, Math.random, animaciones CSS sueltas ni loops infinitos.",
+    "source_flash": {"frames": [86,87,88],"status": "impacto intencional observado, no corrupción; no extrapolar flash aleatorio a otras escenas"},
+    "blur_policy": "Solo desenfoque transitorio de un glifo/objeto si se justifica con referencia o movimiento; nunca como relleno de encuadre ni detrás del presentador.",
+    "rejection": ["fade/scale de entrada como única acción", "línea entre logos sin transferencia ni resultado", "tarjetas inmóviles sin información nueva", "zoom lento permanente", "transforms simultáneos conflictivos en un mismo nodo", "rotación 3D que recorta componentes en el render"]
+  },
+  "families": [
+    {"id":"app_constellation","source_s":[0,1.466667],"actions":["app protagonista","duplicación marcada como clon","constelación de apps","reorganización/salida"],"parameters":["app principal","apps relacionadas","resultado"]},
+    {"id":"subscription_cancel","source_s":[1.466667,3.3],"actions":["costes por servicio","total animado","cancelación fila a fila","sello/impacto","resolución"],"parameters":["servicios","precios","moneda","etiqueta de cancelación"],"approved_base":true},
+    {"id":"repository_evidence","source_s":[3.3,5.933333],"actions":["cabecera de repositorio","título/origen","métricas verificadas","About/licencia","pill de conclusión"],"parameters":["repo","URL real","descripción","licencia","métricas con fuente"]},
+    {"id":"pixel_agents","source_s":[7.933333,11.133333],"actions":["equipo de roles","reconocimiento de cada función","acción/activación","reorganización hacia resultado"],"parameters":["roles","labels","número de agentes","resultado"]},
+    {"id":"mobile_recon_build","source_s":[11.133333,13.866667],"actions":["interfaz original","escaneo","estructura recuperada","wireframe","interfaz construida"],"parameters":["entidad","pantallas","flujos","acciones","campos de UI"]},
+    {"id":"mobile_test","source_s":[13.866667,15.366667],"actions":["problemas sobre UI","agente test","checklist","validación vinculada a problemas"],"parameters":["problemas","tests","estados","resultado"]},
+    {"id":"comparison_parity","source_s":[15.366667,18.566667],"actions":["original/clon","comparación de estados","contador y barra","sustitución de apps","conclusión"],"parameters":["A","B","criterios","valor verificado","variantes"]},
+    {"id":"spotlight_agent","source_s":[20.333333,21.6],"actions":["foco","agente empresario","propósito/prop","énfasis de rol","paso a investigación"],"parameters":["rol","título","objetivo"]},
+    {"id":"feedback_hub","source_s":[21.6,24.2],"actions":["agente central","fuentes radiales","consulta","transferencias","reseñas acumuladas"],"parameters":["fuentes reales","objeto investigado","consultas","resultado"]},
+    {"id":"review_analytics","source_s":[24.2,28.733333],"actions":["reseñas en cola","clasificación visible","transferencia a barras","contadores","conclusión editorial"],"parameters":["reseñas","categorías","valores con fuente","mensaje"]},
+    {"id":"problem_resolution","source_s":[28.733333,31.6],"actions":["problemas sobre móvil","acción por problema","toggle cambia","callout resuelto desaparece","resumen"],"parameters":["problemas","acciones","estados","resultado"]},
+    {"id":"app_launch","source_s":[32.966667,34.9],"actions":["producto","agentes de entrega","estado de publicación","datos verificables","resultado live"],"parameters":["producto","URL","estado","métricas opcionales con fuente"]},
+    {"id":"terminal_install","source_s":[34.9,38.966667],"actions":["comando/repositorio","proceso de instalación conceptual","agentes se activan","estado ready","salida"],"parameters":["comandos","pasos","roles","resultado"]},
+    {"id":"agent_marquee","source_s":[38.966667,42.3],"actions":["entrada de agentes","desfile finito","rol destacado","CTA contextual","salida conectada"],"parameters":["roles","texto CTA suministrado","dirección","velocidad"]}
+  ],
+  "immutable_approved_cancelled": {
+    "svg": "ejemplos/clone_componente/diseno.svg",
+    "svg_sha256": "30d849580cb73d00c9ed96df33edf1f0586596231207b8e10b21cde1051ad43b",
+    "png": "ejemplos/clone_componente/clone_diseno_estatico.png",
+    "png_sha256": "61031fd548c95a32dd7746d85b14003f44477eab60c74463bc297d93f3c1078d",
+    "design_spec": "ejemplos/clone_componente/frame.md",
+    "policy": "No modificar diseño, geometría, logos ni palabra AGAIN de la base aprobada. Una variante paramétrica es un componente diferente y no sustituye la referencia aprobada."
+  },
+  "assets": {
+    "manifest": "sistema/clone/assets.json",
+    "canonical_existing_logos": "ejemplos/clone_componente/assets/{notion,spotify,canva,duolingo,calendly,headspace}.png",
+    "source_sprite_grid_frame": 300,
+    "policy": "Recuperar sprites y marcas del vídeo original. Un único archivo canónico por recurso con procedencia/crop/SHA; reutilizar los seis logos existentes sin copiarlos. No recuperar el presentador ajeno."
+  },
+  "future_YO_contract": {"visible_presenter_continuous_max_s":3,"preferred_split":{"upper":0.55,"lower":0.45},"subtitles":"centrados dentro de región del presentador, debajo de barbilla; seguimiento suavizado", "original_background_only":true,"full_motion_allowed":true,"hook":"dirección audiovisual YO, no transcripción automática de palabras sueltas"},
+  "quality_gates": [
+    "Cada familia registra frames/timestamps fuente y al menos tres estados significativos de acción/reacción/resultado.",
+    "La timeline reproduce estados al seek en cualquier orden; los contadores vuelven al valor correcto.",
+    "El render se decodifica completo y se inspecciona en secuencia; distinguir flashes intencionales de frames negros/rotos.",
+    "Textos y números alternativos caben y mantienen legibilidad, jerarquía y causalidad.",
+    "No métricas, comandos ejecutados ni resultados auténticos inventados; demo conceptual etiquetada como tal.",
+    "Verificación de fidelidad a CLONE separada de la correlación HTML/MP4 y de la estabilidad técnica.",
+    "SVG/PNG aprobados mantienen sus SHA; sprite/logo conserva procedencia original sin duplicación.",
+    "No fuentes supuestamente originales sin prueba ni aprobaciones retroactivas de estética."
+  ]
+}

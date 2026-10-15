@@ -1,0 +1,9 @@
+# Instalar únicamente con --target IVAN/.estado/python --no-compile
+requests==2.32.5
+Pillow==12.1.1
+numpy>=2.3,<3
+torch==2.11.0
+torchaudio==2.11.0
+transformers==5.19.0
+accelerate
+librosa==0.11.0

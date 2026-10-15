@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-10-14T03:13:06.064320+00:00",
+  "scope": "Logos oficiales congelados para preparación privada V2; permisos de publicación separados.",
+  "known_contexts": [
+    "private_review",
+    "editorial_reel"
+  ],
+  "default_context": "editorial_reel",
+  "policy": "authentic_verified describe origen e inspección, no licencia general. private_review requiere autorización de preparación explícita y nunca promueve publication_authorized.",
+  "assets": {
+    "brand_google_wordmark": {
+      "id": "brand_google_wordmark",
+      "path": "recursos/brands/google_wordmark.svg",
+      "sha256": "99bf4aa403643a6d41c028e5db29c79c17cbc815b3e10cd5c6b8f90567a03e52",
+      "bytes": 1660,
+      "archive_member": null,
+      "mime": "image/svg+xml",
+      "view_box": "0 0 74 24",
+      "width": 74.0,
+      "height": 24.0,
+      "has_alpha": true,
+      "external_references": false,
+      "script_free": true,
+      "brand": "google",
+      "entity_label": "Google",
+      "label": "Google wordmark",
+      "kind": "brand_logo",
+      "aliases": [
+        "Google"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://about.google/brand-resource-center/guidance/",
+      "download_url": "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg",
+      "conditions_url": "https://partnermarketinghub.withgoogle.com/brands/google/use-cases/entertainment/",
+      "extra_conditions_urls": [
+        "https://about.google/brand-resource-center/guidance/",
+        "https://partnermarketinghub.withgoogle.com/brands/google/use-cases/books-and-media/",
+        "https://blog.google/image-library/"
+      ],
+      "permission_status": "pending_context_review_or_brand_approval",
+      "pending_permission": {
+        "required_before_publication": true,
+        "reason": "Clasificar el uso y, si corresponde, obtener aprobación de la creatividad en Partner Marketing Hub. No se presume que pertenezca a prensa.",
+        "request_url": "https://partnermarketinghub.withgoogle.com/asset-approvals/"
+      },
+      "permitted_use_summary": "El archivo es una marca original alojada en la CDN de Google. No implica licencia general. Para entretenimiento se requiere revisión; las excepciones oficiales dependen del contexto y no se extrapolan automáticamente a este reel.",
+      "constraints": [
+        "Conservar colores, proporciones y legibilidad; no imitar ni redibujar.",
+        "No sugerir afiliación, patrocinio o respaldo de Google.",
+        "No incorporar la marca a la identidad propia ni inventar funciones.",
+        "Revisar atribución y disclaimer según el uso editorial elegido."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Archivo SVG directo de la CDN oficial de branding; inspección visual frente a la identidad del Brand Resource Center.",
+      "verified_at_utc": "2026-10-13T22:46:55.146472+00:00",
+      "original_bytes_unmodified": true,
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "La guía exige aprobación para usos de la marca en entretenimiento/video. Hay excepciones para referencias textuales, materiales educativos e imágenes de la biblioteca de prensa con crédito, pero no se ha comprobado que este uso animado concreto esté cubierto."
+        }
+      },
+      "conditions_snapshot_sha256": "fd1f5f2e4c3044f5e7fb6c03e61129f8529baf78538efadaa5469295871a48d0"
+    },
+    "brand_claude_mark": {
+      "id": "brand_claude_mark",
+      "path": "recursos/brands/claude_spark.svg",
+      "sha256": "6d53db4be375e899c937c26cf16684a80d6e869b1928d72b37748bef2560e219",
+      "bytes": 2580,
+      "archive_member": "Anthropic media resources/Anthropic logos/Claude logos/3 Claude Spark/SVG/Claude Spark - Clay.svg",
+      "mime": "image/svg+xml",
+      "view_box": "0 0 94 94",
+      "width": 94.0,
+      "height": 94.0,
+      "has_alpha": true,
+      "external_references": false,
+      "script_free": true,
+      "brand": "claude",
+      "entity_label": "Claude",
+      "label": "Claude Spark",
+      "kind": "brand_logo",
+      "aliases": [
+        "Claude",
+        "Claude Code"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://www.anthropic.com/news",
+      "download_url": "https://www-cdn.anthropic.com/ae59ca4ca194dac9c9dc3bc78c5829468cb0e8af.zip",
+      "conditions_url": "https://www.anthropic.com/legal/trademark-guidelines",
+      "extra_conditions_urls": [],
+      "permission_status": "pending_brand_approval",
+      "pending_permission": {
+        "required_before_publication": true,
+        "reason": "Falta aprobación específica de Anthropic para el material final.",
+        "contact": "marketing@anthropic.com",
+        "contact_sent": false
+      },
+      "permitted_use_summary": "Spark y wordmark extraídos sin modificación del press kit enlazado por la newsroom de Anthropic. Las reglas limitan el uso a marcas y materiales autorizados; no hay permiso de publicación registrado.",
+      "constraints": [
+        "No cambiar color, tipografía, proporción ni diseño.",
+        "Mantener espacio razonable y fondo que no interfiera con lectura.",
+        "No añadir un símbolo de marca al logo.",
+        "No sugerir patrocinio, respaldo o afiliación de Anthropic."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Newsroom oficial → Download press kit → CDN Anthropic → miembro exacto del ZIP.",
+      "verified_at_utc": "2026-10-13T22:46:55.146782+00:00",
+      "original_bytes_unmodified": true,
+      "source_archive_sha256": "c68ac92df86c825f95177e24016fcc9a8863a3fd4ca344fe6f0700b2c1e07151",
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "La guía de Anthropic exige permiso específico y aprobación previa de los materiales. Descargar su press kit no prueba que el material de Ascendia esté aprobado."
+        }
+      },
+      "conditions_snapshot_sha256": "8e56b3bfeb33e43fd96649917398906024bf82312dc97ada7ff5c2ce156e85f2",
+      "owner": "Anthropic, PBC"
+    },
+    "brand_claude_wordmark": {
+      "id": "brand_claude_wordmark",
+      "path": "recursos/brands/claude_wordmark.svg",
+      "sha256": "02737f748297f2c6e4863b775809038bda8549c7297e57070ed9e5ceafdf2871",
+      "bytes": 4377,
+      "archive_member": "Anthropic media resources/Anthropic logos/Claude logos/1 Claude logo/SVG/Claude logo - Slate.svg",
+      "mime": "image/svg+xml",
+      "view_box": "0 0 9156 2000",
+      "width": 9156.0,
+      "height": 2000.0,
+      "has_alpha": true,
+      "external_references": false,
+      "script_free": true,
+      "brand": "claude",
+      "entity_label": "Claude",
+      "label": "Claude wordmark",
+      "kind": "brand_logo",
+      "aliases": [
+        "Claude",
+        "Claude Code"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://www.anthropic.com/news",
+      "download_url": "https://www-cdn.anthropic.com/ae59ca4ca194dac9c9dc3bc78c5829468cb0e8af.zip",
+      "conditions_url": "https://www.anthropic.com/legal/trademark-guidelines",
+      "extra_conditions_urls": [],
+      "permission_status": "pending_brand_approval",
+      "pending_permission": {
+        "required_before_publication": true,
+        "reason": "Falta aprobación específica de Anthropic para el material final.",
+        "contact": "marketing@anthropic.com",
+        "contact_sent": false
+      },
+      "permitted_use_summary": "Spark y wordmark extraídos sin modificación del press kit enlazado por la newsroom de Anthropic. Las reglas limitan el uso a marcas y materiales autorizados; no hay permiso de publicación registrado.",
+      "constraints": [
+        "No cambiar color, tipografía, proporción ni diseño.",
+        "Mantener espacio razonable y fondo que no interfiera con lectura.",
+        "No añadir un símbolo de marca al logo.",
+        "No sugerir patrocinio, respaldo o afiliación de Anthropic."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Newsroom oficial → Download press kit → CDN Anthropic → miembro exacto del ZIP.",
+      "verified_at_utc": "2026-10-13T22:46:55.170140+00:00",
+      "original_bytes_unmodified": true,
+      "source_archive_sha256": "c68ac92df86c825f95177e24016fcc9a8863a3fd4ca344fe6f0700b2c1e07151",
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "La guía de Anthropic exige permiso específico y aprobación previa de los materiales. Descargar su press kit no prueba que el material de Ascendia esté aprobado."
+        }
+      },
+      "conditions_snapshot_sha256": "8e56b3bfeb33e43fd96649917398906024bf82312dc97ada7ff5c2ce156e85f2",
+      "owner": "Anthropic, PBC"
+    },
+    "brand_linkedin_icon": {
+      "id": "brand_linkedin_icon",
+      "path": "recursos/brands/linkedin_icon.png",
+      "sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600",
+      "bytes": 8375,
+      "archive_member": "in-logo/LI-In-Bug.png",
+      "mime": "image/png",
+      "width": 635,
+      "height": 540,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        635,
+        540
+      ],
+      "brand": "linkedin",
+      "entity_label": "LinkedIn",
+      "label": "LinkedIn logo",
+      "kind": "brand_logo",
+      "aliases": [
+        "LinkedIn",
+        "Linked In"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://brand.linkedin.com/downloads",
+      "download_url": "https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/logos/in-logo.zip",
+      "conditions_url": "https://brand.linkedin.com/in-logo",
+      "extra_conditions_urls": [
+        "https://brand.linkedin.com/business-books-and-media-usage",
+        "https://brand.linkedin.com/linkedin-logo",
+        "https://brand.linkedin.com/policies"
+      ],
+      "permission_status": "pending_brand_approval",
+      "pending_permission": {
+        "required_before_publication": true,
+        "reason": "Falta permiso para el contexto de producción de video; no hay licencia ni excepción aplicable demostrada.",
+        "contact": "trademarkrequest@linkedin.com",
+        "contact_sent": false
+      },
+      "permitted_use_summary": "Icono azul original del ZIP oficial. La disponibilidad de descarga no concede uso libre; no se presenta el wordmark como autorizado ni se transforma la marca.",
+      "constraints": [
+        "No cambiar color ni forma; usar solo variantes oficiales.",
+        "No combinar el icono con otras marcas/palabras para formar un logo.",
+        "No sugerir afiliación ni respaldo.",
+        "Mantener el archivo original y su símbolo registrado; respetar tamaño y espacio."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Página oficial Downloads → ZIP oficial content.linkedin.com → entrega AEM oficial → LI-In-Bug.png.",
+      "verified_at_utc": "2026-10-13T22:46:55.192862+00:00",
+      "original_bytes_unmodified": true,
+      "source_archive_sha256": "32c4b7bbf902c1d957881e2eca16bc765891dc86da8ce4d416a849f161222a87",
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "El icono [in] permite usos concretos de perfil/membresía y ciertos widgets API. El diagrama narrativo de scraping no encaja automáticamente en esas excepciones; el uso en video requiere consultar las condiciones y obtener la autorización pertinente."
+        }
+      },
+      "conditions_snapshot_sha256": "d4ff1dde6dc93b1a7a300adb00e04d959d76ff31fb27e0212afc2287c8dcfb37"
+    },
+    "brand_youtube_icon": {
+      "id": "brand_youtube_icon",
+      "path": "recursos/brands/youtube_icon.png",
+      "sha256": "1027b1b0517727adb9697155a270744381c3ce9b047b1c8bd8a9389dc7d07a83",
+      "bytes": 16687,
+      "archive_member": "YouTube_Icon/Digital/01 Red/yt_icon_red_digital.png",
+      "mime": "image/png",
+      "width": 1255,
+      "height": 1075,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        214,
+        248,
+        1041,
+        827
+      ],
+      "brand": "youtube",
+      "entity_label": "YouTube",
+      "label": "YouTube logo",
+      "kind": "brand_logo",
+      "aliases": [
+        "YouTube",
+        "You Tube"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://brand.youtube/youtube-icon/",
+      "download_url": "https://www.gstatic.com/marketing-cms/78/29/3e68a1414bb28d0b7e47b44c3c91/youtube-icon.zip",
+      "conditions_url": "https://brand.youtube/entertainment-and-media/",
+      "extra_conditions_urls": [
+        "https://brand.youtube/youtube-icon/",
+        "https://brand.youtube/youtube-logo/"
+      ],
+      "permission_status": "pending_context_review_or_brand_approval",
+      "pending_permission": {
+        "required_before_publication": true,
+        "reason": "Falta clasificación del contexto y, fuera de la excepción de prensa, revisión de la creatividad mediante el formulario oficial.",
+        "request_url": "https://support.google.com/youtube/contact/brand_request?hl=en"
+      },
+      "permitted_use_summary": "Icono rojo PNG del pack digital oficial actual. La página de media pide mocks y páginas de guion para revisión; preparar la prueba privada no constituye permiso para publicarla.",
+      "constraints": [
+        "No añadir contorno, stroke ni sombra al propio icono.",
+        "No recolorear, rotar, inclinar, estirar ni aplastar.",
+        "Mantener espacio libre y proporciones de la variante oficial.",
+        "No fabricar afiliación ni usar contenido de terceros sin sus permisos."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Página oficial YouTube Icon, atributo download-link2 → ZIP en gstatic → PNG rojo digital original.",
+      "verified_at_utc": "2026-10-13T22:46:55.193307+00:00",
+      "original_bytes_unmodified": true,
+      "source_archive_sha256": "ca9b5104387e0f7afcfda3a79c910449561112f1077177dd0d64f8c72f56e476",
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "YouTube exige aprobación de placements en media/entretenimiento. La prensa tiene una excepción explícita, sin una acreditación concreta exigida por la página; no se ha establecido que este uso esté dentro de esa excepción."
+        }
+      },
+      "conditions_snapshot_sha256": "c6fae185e806bac23c0a4d8294d132ef6aacce7b42fbf20335b6a99d89fee0da"
+    },
+    "brand_instagram_glyph": {
+      "id": "brand_instagram_glyph",
+      "path": "recursos/brands/instagram_glyph.png",
+      "sha256": "21f86b55f986848665ce54ab354ff6b43b7705e6c421d90c04369882b5956766",
+      "bytes": 2648790,
+      "archive_member": "01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png",
+      "mime": "image/png",
+      "width": 5000,
+      "height": 5000,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        5000,
+        5000
+      ],
+      "brand": "instagram",
+      "entity_label": "Instagram",
+      "label": "Instagram logo",
+      "kind": "brand_logo",
+      "aliases": [
+        "Instagram"
+      ],
+      "status": "authentic_verified",
+      "visual_verified": true,
+      "source_page": "https://www.meta.com/brand/resources/instagram/instagram-brand/",
+      "download_url": "https://scontent.fbog2-5.fna.fbcdn.net/v/t39.8562-6/CONFIGURE_RECURSO_0052.zip/IG_brand_asset_pack_2023.zip",
+      "conditions_url": "https://www.meta.com/brand/resources/instagram/instagram-brand/",
+      "extra_conditions_urls": [
+        "https://www.facebook.com/brand/resources/instagram/icons"
+      ],
+      "permission_status": "publication_context_review_pending",
+      "pending_permission": {
+        "required_before_publication": false,
+        "context_review_required": true,
+        "reason": "No se presume que todo reel requiera solicitud; falta confirmar que el uso concreto respeta sus reglas. Si cae en broadcast u otro caso sujeto a aprobación, se requiere permiso de Meta.",
+        "contact_sent": false
+      },
+      "permitted_use_summary": "Glyph gradiente PNG transparente original del pack de Meta, extraído sin alterar. La autorización de preparación privada queda separada de las condiciones para publicar el contenido final.",
+      "constraints": [
+        "Usar únicamente recursos oficiales, sin modificar la marca ni crear combinaciones de logos.",
+        "No insinuar patrocinio/afiliación; la marca no debe dominar la identidad propia.",
+        "Respetar restricciones de contexto y de menciones de otras redes en el mismo spot.",
+        "Para los medios explícitamente enumerados por Meta, solicitar permiso con mock y guion."
+      ],
+      "publication_authorized": false,
+      "source_linkage": "Brand Resource Center de Meta → Logo pack oficial FB CDN → PNG original de gradient glyph.",
+      "verified_at_utc": "2026-10-13T22:46:55.200636+00:00",
+      "original_bytes_unmodified": true,
+      "source_archive_sha256": "a9e5cbe63dc01279b3d12d536ea9d94ab5236521601bd5cc4b4caf7ba7060e82",
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada y reversible de la prueba/mockup V2 autorizada por el usuario; no acredita permiso de publicación de la marca."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "La guía distingue usos online de broadcast/radio/OOH/impresión grande que exigen solicitud. También restringe contextos negativos, protagonismo indebido y menciones de otras redes en el mismo spot salvo Follow us. La compatibilidad de esta composición multi-plataforma debe revisarse antes de publicación."
+        }
+      },
+      "conditions_snapshot_sha256": "89a713038914607de3114ebb68fae8fd9c13ab350269d9e9010ab1d8fb8da0ba"
+    },
+    "brand_omniroute_mark": {
+      "id": "brand_omniroute_mark",
+      "brand": "omniroute",
+      "path": "recursos/brands/omniroute.svg",
+      "sha256": "aab119f384aae38acbd59f07dccc78bcbebf2c111544ebf8eee06e0bcceb9c11",
+      "bytes": 1375,
+      "mime": "image/svg+xml",
+      "commit_sha": "9ecddd15a18bc3e8ecb2db0c045f083956bace10",
+      "source_page": "https://github.com/diegosouzapw/OmniRoute/blob/9ecddd15a18bc3e8ecb2db0c045f083956bace10/public/favicon.svg",
+      "download_url": "https://raw.githubusercontent.com/diegosouzapw/OmniRoute/9ecddd15a18bc3e8ecb2db0c045f083956bace10/public/favicon.svg",
+      "source_license": {
+        "spdx_id": "MIT",
+        "url": "https://github.com/diegosouzapw/OmniRoute/blob/release/v3.8.52/LICENSE",
+        "scope_limit": "Licencia de repositorio; no acredita automáticamente un aval de marca ni permiso irrestricto para publicación del logotipo."
+      },
+      "authentic_verified": true,
+      "context": "private_review",
+      "publication_authorized": false,
+      "status": "authentic_verified",
+      "transform_constraints": [
+        "Conservar proporción y colores originales",
+        "No afirmar aval de sus autores"
+      ],
+      "family_selection": false,
+      "width": 32,
+      "height": 32,
+      "entity_label": "OmniRoute",
+      "label": "OmniRoute logomark oficial",
+      "aliases": [
+        "OmniRoute"
+      ],
+      "kind": "brand_logo",
+      "has_alpha": true,
+      "external_references": false,
+      "script_free": true,
+      "visual_verified": true,
+      "permission_status": "private_review_verified_publication_not_established",
+      "pending_permission": {
+        "required_before_publication": false,
+        "reason": "No se ha encontrado exigencia específica de aprobación previa en los archivos inspeccionados. MIT/Apache corresponde al repositorio; no implica respaldo ni autorización general para este uso de marca. Revisar contexto antes de publicación.",
+        "request_url": null
+      },
+      "conditions_url": "https://github.com/diegosouzapw/OmniRoute/blob/release/v3.8.52/LICENSE",
+      "permitted_use_summary": "Archivo original del repositorio mantenido por el proyecto. Preparación privada educativa autorizada por el usuario; conservar identidad y no sugerir afiliación. La licencia del código no prueba permiso general de marca.",
+      "constraints": [
+        "Conservar proporción y colores originales",
+        "No afirmar aval de sus autores"
+      ],
+      "source_linkage": "Asset original de la interfaz/favicon del repositorio propietario, commit congelado; inspección visual registrada.",
+      "verified_at_utc": "2026-10-14T03:13:06.064320+00:00",
+      "original_bytes_unmodified": true,
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada del reel autorizada. Archivo original auténtico; sin afirmar permiso de publicación."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "No hay decisión documentada del uso público concreto de la marca."
+        }
+      }
+    },
+    "brand_claude_mem_mark": {
+      "id": "brand_claude_mem_mark",
+      "brand": "claude_mem",
+      "path": "recursos/brands/claude_mem.png",
+      "sha256": "9e3edf3a9ae37585228a009da9c456336664e15153e0a67d65d0d7cf11a29117",
+      "bytes": 132855,
+      "mime": "image/png",
+      "commit_sha": "fef3402e674bebbf72a23aeb735e91c92cd34afd",
+      "source_page": "https://github.com/thedotmack/claude-mem/blob/fef3402e674bebbf72a23aeb735e91c92cd34afd/plugin/ui/claude-mem-logo-stylized.png",
+      "download_url": "https://raw.githubusercontent.com/thedotmack/claude-mem/fef3402e674bebbf72a23aeb735e91c92cd34afd/plugin/ui/claude-mem-logo-stylized.png",
+      "source_license": {
+        "spdx_id": "Apache-2.0",
+        "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE",
+        "scope_limit": "Licencia de repositorio; no acredita automáticamente un aval de marca ni permiso irrestricto para publicación del logotipo."
+      },
+      "authentic_verified": true,
+      "context": "private_review",
+      "publication_authorized": false,
+      "status": "authentic_verified",
+      "transform_constraints": [
+        "Conservar proporción y colores originales",
+        "No afirmar aval de sus autores"
+      ],
+      "family_selection": false,
+      "width": 352,
+      "height": 337,
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        352,
+        337
+      ],
+      "entity_label": "Claude-Mem",
+      "label": "Claude-Mem logomark oficial",
+      "aliases": [
+        "Claude-Mem",
+        "Claude Mem"
+      ],
+      "kind": "brand_logo",
+      "has_alpha": true,
+      "external_references": false,
+      "script_free": true,
+      "visual_verified": true,
+      "permission_status": "private_review_verified_publication_not_established",
+      "pending_permission": {
+        "required_before_publication": false,
+        "reason": "No se ha encontrado exigencia específica de aprobación previa en los archivos inspeccionados. MIT/Apache corresponde al repositorio; no implica respaldo ni autorización general para este uso de marca. Revisar contexto antes de publicación.",
+        "request_url": null
+      },
+      "conditions_url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE",
+      "permitted_use_summary": "Archivo original del repositorio mantenido por el proyecto. Preparación privada educativa autorizada por el usuario; conservar identidad y no sugerir afiliación. La licencia del código no prueba permiso general de marca.",
+      "constraints": [
+        "Conservar proporción y colores originales",
+        "No afirmar aval de sus autores"
+      ],
+      "source_linkage": "Asset original de la interfaz/favicon del repositorio propietario, commit congelado; inspección visual registrada.",
+      "verified_at_utc": "2026-10-14T03:13:06.064320+00:00",
+      "original_bytes_unmodified": true,
+      "contexts": {
+        "private_review": {
+          "user_authorized_preparation": true,
+          "publication_authorized": false,
+          "reason": "Preparación privada del reel autorizada. Archivo original auténtico; sin afirmar permiso de publicación."
+        },
+        "editorial_reel": {
+          "user_authorized_preparation": false,
+          "publication_authorized": false,
+          "reason": "No hay decisión documentada del uso público concreto de la marca."
+        }
+      }
+    }
+  },
+  "manuals_and_skills": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d59bbfbb2c4cd0d3e6a6d59df794e4dc188668582930328fffc15fcc78cf01e1",
+      "read_complete": true
+    },
+    {
+      "path": "PROMPT_MAESTRO.md",
+      "sha256": "cee4937fa23ba1e3a9f1ea5e85ba02df36fde25b4f7017bc8c72572b9edcb6a3",
+      "read_complete": true
+    },
+    {
+      "path": "INSTRUCCIONES.md",
+      "sha256": "755716bbe5161fc750259fc40625bbdf031ff0a27d4c76b947cdbef5489cf1cf",
+      "read_complete": true
+    },
+    {
+      "path": ".agents/skills/media-use/SKILL.md",
+      "sha256": "0f08ff6b493a46e0505dcc9c0c607e517e0eb70e7dc2b7b5c1f51b4f27bb6181",
+      "read_complete": true
+    },
+    {
+      "path": ".agents/skills/media-use/references/resolve.md",
+      "sha256": "257ee47fcd7bbfdf7d7c4332eb9f6f0fd0e57c5bd31c4ebb077b053eed477130",
+      "read_complete": true
+    },
+    {
+      "path": ".agents/skills/hyperframes-registry/SKILL.md",
+      "sha256": "f1925b202cabd125b509658b11db593b55340b1926ecb056fc31aa4233a2b4f6",
+      "read_complete": true
+    }
+  ],
+  "skill_exceptions": [
+    "No ejecutar el resolver de logos por theSVG/avatar/favicon: el usuario exige fuentes oficiales y condiciones específicas.",
+    "No usar la caché global ni auto-promoción ~/.media: todas las escrituras quedan en IVAN.",
+    "El registro es de archivos de marca, no un nuevo componente visual; no se instalan bloques ni runtimes.",
+    "No HeyGen, TTS, stock, redibujo de logos ni efectos sobre archivos originales."
+  ],
+  "inspection": {
+    "method": "Descarga oficial, comprobación de miembros exactos de ZIP, MIME/dimensiones/alpha, hashes, SVG sin recursos externos y captura local en Chrome.",
+    "local_private_contact_sheet": ".estado/tmp/brand_registry/logos_contactos.png",
+    "logos_visually_inspected": [
+      "brand_google_wordmark",
+      "brand_claude_mark",
+      "brand_claude_wordmark",
+      "brand_linkedin_icon",
+      "brand_youtube_icon",
+      "brand_instagram_glyph"
+    ],
+    "publication_review_pending": true,
+    "external_brand_contact_sent": false
+  }
+}

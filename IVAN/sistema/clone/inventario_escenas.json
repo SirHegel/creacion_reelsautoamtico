@@ -1,0 +1,1904 @@
+{
+  "version": "1.0",
+  "stage": "A: inventario visual completo, no constituye biblioteca construida",
+  "source": {
+    "file": "recursos/B2_CLONE.mp4",
+    "url": "https://example.invalid/recurso",
+    "sha256": "7ef3e586a481156e8b88250c8ccfb1633834f679935554c46c10570ae78b2dc8",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 1269,
+    "visual_duration_s": 42.3,
+    "audio_container_duration_s": 42.388042,
+    "tail_note": "Los últimos0.088042s del contenedor/audio no incluyen otro frame de video; el inventario visual cubre0–42.300s."
+  },
+  "read_manuals": [
+    {
+      "file": "AGENTS.md",
+      "sha256": "a1bcf333eee20dd96b7c8f4a8087f6e2f4faa96a805bf841463b780f6ebcdb7b",
+      "read_complete": true
+    },
+    {
+      "file": "PROMPT_MAESTRO.md",
+      "sha256": "254743f544706f998b296b6162963b172fc2712979d9d717895687487f5610c7",
+      "read_complete": true
+    },
+    {
+      "file": "INSTRUCCIONES.md",
+      "sha256": "e228cf600126855e3b09ba94f885726485431d80e1872a9acf5cf5bba82042ce",
+      "read_complete": true
+    }
+  ],
+  "method": {
+    "sample_frames_5hz": 213,
+    "boundary_frames_30fps": 119,
+    "all_sample_sequences_visually_inspected": true,
+    "boundary_sequences_visually_inspected": true,
+    "native_detail_frames": [
+      300,
+      372,
+      456,
+      720,
+      840,
+      918,
+      1038,
+      1164
+    ],
+    "audio_listened": false,
+    "timing_precision_note": "Límites de composición comprobados en sucesión de frames a30FPS. Hitos internos generales examinados a5Hz; fechas de estados llevan precisión limitada al muestreo salvo cancelación previa analizada a30FPS."
+  },
+  "coverage": {
+    "start_frame": 0,
+    "end_frame_exclusive": 1269,
+    "gap_frames": 0,
+    "overlap_frames": 0,
+    "total_visual_s": 42.3,
+    "scene_count": 18,
+    "valid": true,
+    "motion_families_count": 15,
+    "integration_contract_families_count": 1
+  },
+  "constraints": {
+    "exclusive_motion_reference": "CLONE",
+    "other_motion_references_used": false,
+    "stock_or_broll_used": false,
+    "approved_cancelled_component_modified": false,
+    "future_YO_contract": "Solo contrato: cámaraoriginal≤3s continuos, split55/45 ytexto bajo barbilla; no implementar reel completo."
+  },
+  "limits": [
+    "No se identifica con certeza la fuente original deCLONE; las apariencias observadas no equivalen a nombre de fuente.",
+    "No se conocen curvas/GSAP/easing originales; las trayectorias se infieren de frames observados.",
+    "No se ha escuchado audio ni validado narración por escucha.",
+    "Las interfaces/reseñas y cifras del render son elementos visuales de referencia, no pruebas independientes de resultados reales.",
+    "Los roles/props de sprites se verifican visualmente en frame0300; no se extrajeron ni construyeron sprites en esta etapa.",
+    "No se declara avanzado un componente futuro por figurar en este inventario: necesita transformación, interacción, render y QC propios."
+  ],
+  "reference_data_only": {
+    "subscription_final": 214,
+    "comparison_final_percent": 100,
+    "reviews_count": 140,
+    "feedback_category_values": [
+      38,
+      27,
+      51
+    ],
+    "phone_result_screens": 18,
+    "phone_result_flows": 7,
+    "problems_solved": 4,
+    "roles": [
+      "recon",
+      "architect",
+      "design",
+      "build",
+      "backend",
+      "test",
+      "diff",
+      "entrepreneur",
+      "brand",
+      "launch",
+      "deploy"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "CLONE_001",
+      "entry_frame": 0,
+      "exit_frame_exclusive": 44,
+      "entry_s": 0.0,
+      "exit_s": 1.466667,
+      "duration_s": 1.466667,
+      "family": "apps_clone_orbit",
+      "title": "Duplicación y órbita de aplicaciones",
+      "description_observed": "Un icono Airbnb se duplica; la copia recibe CLONE y se incorporan otras aplicaciones alrededor del par.",
+      "design_observed": "split claro: iconos en la mitad superior y cámara auténtica en rectángulo inferior con esquinas superiores redondeadas",
+      "movement_observed": [
+        "duplicación de elemento",
+        "entradas laterales/orbitales escalonadas",
+        "escala del grupo de iconos",
+        "contracción de composición"
+      ],
+      "states_observed": [
+        {
+          "time_s": 0.2,
+          "action_observed": "Airbnb central y pequeño agente naranja abajo"
+        },
+        {
+          "time_s": 0.6,
+          "action_observed": "Aparecen dos iconos Airbnb"
+        },
+        {
+          "time_s": 0.8,
+          "action_observed": "La copia recibe etiqueta CLONE"
+        },
+        {
+          "time_s": 1,
+          "action_observed": "Se incorporan Notion/Spotify/Duolingo/Netflix/Figma"
+        },
+        {
+          "time_s": 1.4,
+          "action_observed": "Grupo completo se reduce para salir"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 0,
+            "time_s": 0.0,
+            "path": ".estado/tmp/clone_inventario/frame_0000.png",
+            "sha256": "577d07071211b2d994f78dcf42ff0f5ec6e6394c8b671ad2388b3ccf0fa5d7bc"
+          },
+          {
+            "frame": 6,
+            "time_s": 0.2,
+            "path": ".estado/tmp/clone_inventario/frame_0006.png",
+            "sha256": "d42ba06b753f9e0b20860695415eaeac882a874f4eee02e9659137e9a71746e9"
+          },
+          {
+            "frame": 18,
+            "time_s": 0.6,
+            "path": ".estado/tmp/clone_inventario/frame_0018.png",
+            "sha256": "5ced8afe576e62f73155a59a2317bffde89cd23f1661c1ff915467088e6ee392"
+          },
+          {
+            "frame": 24,
+            "time_s": 0.8,
+            "path": ".estado/tmp/clone_inventario/frame_0024.png",
+            "sha256": "ae5ce858f6fffd94a22d5acfad809c448b44483fe8a4abd98f8efd886a18e4ed"
+          },
+          {
+            "frame": 30,
+            "time_s": 1.0,
+            "path": ".estado/tmp/clone_inventario/frame_0030.png",
+            "sha256": "5c294781aa5cc69487e01599181a9ce6835aaa0af32f6cceaf74a7a4894a8aa7"
+          },
+          {
+            "frame": 42,
+            "time_s": 1.4,
+            "path": ".estado/tmp/clone_inventario/frame_0042.png",
+            "sha256": "c8dccf7a77097484b4b1d63268054d67c8da484200a14579f7aac72b4d8726da"
+          },
+          {
+            "frame": 43,
+            "time_s": 1.433333,
+            "path": ".estado/tmp/clone_inventario/frame_0043.png",
+            "sha256": "38bdc2bca166d6ce2fef0ea7fcba78696289db2fb82356b1423a57a69ed4ab89"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_00.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 0,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 44,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "apps_clone_orbit",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_002",
+      "entry_frame": 44,
+      "exit_frame_exclusive": 99,
+      "entry_s": 1.466667,
+      "exit_s": 3.3,
+      "duration_s": 1.833333,
+      "family": "subscription_cancelled",
+      "title": "Panel de suscripciones y cancelación",
+      "description_observed": "Las filas suman el precio, son tachadas progresivamente y reciben el sello CANCELLED.",
+      "design_observed": "fullframe negro: panel carbón, seis filas, total, sello diagonal y rótulo editorial bajo panel",
+      "movement_observed": [
+        "filas reveladas con traslación vertical corta",
+        "contador numérico29→214",
+        "push-in suave del panel",
+        "barridos rojos horizontales",
+        "atenuación de filas",
+        "destello y sacudida",
+        "sello diagonal con overshoot",
+        "reveal de rótulos WITHOUT PAYING/FOR A SUBSCRIPTION/AGAIN"
+      ],
+      "states_observed": [
+        {
+          "time_s": 1.466667,
+          "action_observed": "Panel nuevo entra con destello gris y escala"
+        },
+        {
+          "time_s": 1.6,
+          "action_observed": "Notion y contador29"
+        },
+        {
+          "time_s": 2.366667,
+          "action_observed": "Se completa contador214"
+        },
+        {
+          "time_s": 2.433333,
+          "action_observed": "Empieza barrido rojo fila1"
+        },
+        {
+          "time_s": 2.866667,
+          "action_observed": "Destello y sacudida del panel"
+        },
+        {
+          "time_s": 2.933333,
+          "action_observed": "Sello sobredimensionado entra"
+        },
+        {
+          "time_s": 3,
+          "action_observed": "Sello asentado y AGAIN legible"
+        },
+        {
+          "time_s": 3.266667,
+          "action_observed": "Panel se contrae antes del cambio"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 48,
+            "time_s": 1.6,
+            "path": ".estado/tmp/clone_inventario/frame_0048.png",
+            "sha256": "b585602df6ec377ef6a4c80297c8e7c75e11c0099c680f68b6768ca8f56bcebc"
+          },
+          {
+            "frame": 96,
+            "time_s": 3.2,
+            "path": ".estado/tmp/clone_inventario/frame_0096.png",
+            "sha256": "0b0e087988f445af22ebcf8da2c1c688f7565ac312c680cc42ad42a0cf578f10"
+          },
+          {
+            "frame": 97,
+            "time_s": 3.233333,
+            "path": ".estado/tmp/clone_inventario/frame_0097.png",
+            "sha256": "e2d0dd972bd74ed914f75d8ea346526f53482661a786bb065ae4d437108ef462"
+          },
+          {
+            "frame": 98,
+            "time_s": 3.266667,
+            "path": ".estado/tmp/clone_inventario/frame_0098.png",
+            "sha256": "326c2d6dfc3d57f0992468f8396b7b35a6d263c0458f6fd37c25733331368b01"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_00.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 44,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 99,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "cancelled",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_003",
+      "entry_frame": 99,
+      "exit_frame_exclusive": 178,
+      "entry_s": 3.3,
+      "exit_s": 5.933333,
+      "duration_s": 2.633333,
+      "family": "github_cards",
+      "title": "Repositorio y tarjeta About",
+      "description_observed": "La tarjeta de repositorio destaca el título y transforma su contenido en About con sello100%FREE.",
+      "design_observed": "split claro: tarjeta web blanca flotante arriba; captura del presentador abajo",
+      "movement_observed": [
+        "reveal de tarjeta con escala/posición",
+        "contorno trazado",
+        "reemplazo y desplazamiento de bloques",
+        "flotación leve de tarjeta",
+        "sello rotado de entrada"
+      ],
+      "states_observed": [
+        {
+          "time_s": 3.3,
+          "action_observed": "Tarjeta borrosa de entrada"
+        },
+        {
+          "time_s": 3.6,
+          "action_observed": "Cabecera GitHub y replica-skill legibles"
+        },
+        {
+          "time_s": 3.8,
+          "action_observed": "Se dibuja contorno coral alrededor de replica-skill"
+        },
+        {
+          "time_s": 4.8,
+          "action_observed": "Cabecera/repositorio se transforma en About"
+        },
+        {
+          "time_s": 5,
+          "action_observed": "Párrafo About legible"
+        },
+        {
+          "time_s": 5.2,
+          "action_observed": "Sello100%FREE inclinado entra"
+        },
+        {
+          "time_s": 5.9,
+          "action_observed": "Último estado split"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 102,
+            "time_s": 3.4,
+            "path": ".estado/tmp/clone_inventario/frame_0102.png",
+            "sha256": "179e00db6bf9c50b621bea713a37c3dcea7cb4129295d24217e2080b92a598ba"
+          },
+          {
+            "frame": 114,
+            "time_s": 3.8,
+            "path": ".estado/tmp/clone_inventario/frame_0114.png",
+            "sha256": "148511e15780c814e30e646242e832107a832deec15ae5249d8145aa91cf3686"
+          },
+          {
+            "frame": 144,
+            "time_s": 4.8,
+            "path": ".estado/tmp/clone_inventario/frame_0144.png",
+            "sha256": "7214d6f640a83aa8193248315ed16ec4bedbfb7ec638e99b9d0b9e6b8727b53f"
+          },
+          {
+            "frame": 150,
+            "time_s": 5.0,
+            "path": ".estado/tmp/clone_inventario/frame_0150.png",
+            "sha256": "0f62b561aefc8b98fd316208dbbda73f95afb2794027f5752947ada6aff679fc"
+          },
+          {
+            "frame": 156,
+            "time_s": 5.2,
+            "path": ".estado/tmp/clone_inventario/frame_0156.png",
+            "sha256": "60ae19d60adb863c3c1d410e7a9f3829b062d17bd8c5b6b68c82df97639255c1"
+          },
+          {
+            "frame": 177,
+            "time_s": 5.9,
+            "path": ".estado/tmp/clone_inventario/frame_0177.png",
+            "sha256": "08913640a4e4db258bc11d1df8eeada11900281b55f4bce850b9ef6b890c1350"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_00.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 99,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 178,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "github_cards",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_004",
+      "entry_frame": 178,
+      "exit_frame_exclusive": 238,
+      "entry_s": 5.933333,
+      "exit_s": 7.933333,
+      "duration_s": 2.0,
+      "family": "presenter_contract",
+      "title": "Puente narrativo: no es una sola skill",
+      "description_observed": "Texto cambia de and it’s not a one skill/either; dos agentes ilustran pluralidad.",
+      "design_observed": "presentador fullframe; texto breve centrado y dos pequeños agentes a la altura del torso",
+      "movement_observed": [
+        "aparición de sprites",
+        "sustitución de texto",
+        "movimiento original del presentador"
+      ],
+      "states_observed": [
+        {
+          "time_s": 5.933333,
+          "action_observed": "Cámara ocupa el cuadro completo"
+        },
+        {
+          "time_s": 6.8,
+          "action_observed": "Texto one skill con agente pequeño"
+        },
+        {
+          "time_s": 7.4,
+          "action_observed": "Agente de casco y otro agente acompañan el texto"
+        },
+        {
+          "time_s": 7.9,
+          "action_observed": "Fin del puente"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 178,
+            "time_s": 5.933333,
+            "path": ".estado/tmp/clone_inventario/frame_0178.png",
+            "sha256": "a02f96b4a875876a72cf03165f12c8d9a14fcb3c7375310dd8760e9dcd682353"
+          },
+          {
+            "frame": 204,
+            "time_s": 6.8,
+            "path": ".estado/tmp/clone_inventario/frame_0204.png",
+            "sha256": "323da2d025670a6efb2175e5091f53a699e096a4a99707b32b1e24b7888f50c4"
+          },
+          {
+            "frame": 222,
+            "time_s": 7.4,
+            "path": ".estado/tmp/clone_inventario/frame_0222.png",
+            "sha256": "b95ab8cb8c2dba74c865086d4f88513c9bb24024bca01586ba32af0e09a86f09"
+          },
+          {
+            "frame": 237,
+            "time_s": 7.9,
+            "path": ".estado/tmp/clone_inventario/frame_0237.png",
+            "sha256": "fa57ece626265e349fcafa65c687ddff1ce9e694ef47692d349484d0d3979527"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_00.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg"
+        ]
+      },
+      "scope_reuse": "contrato de presentador; el motor no reutiliza footage",
+      "transition_entry": {
+        "frame": 178,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 238,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": null,
+      "classification": "integration_contract"
+    },
+    {
+      "id": "CLONE_005",
+      "entry_frame": 238,
+      "exit_frame_exclusive": 334,
+      "entry_s": 7.933333,
+      "exit_s": 11.133333,
+      "duration_s": 3.2,
+      "family": "pixel_agent_grid",
+      "title": "Once agentes y roles",
+      "description_observed": "Se construye la plantilla de11 roles, aparecen sus nombres y las herramientas identifican cada función.",
+      "design_observed": "fullframe blanco: enorme11 rosa pálido; agentes pixelados en filas4/4/3; etiquetas blancas; editorial inferior",
+      "movement_observed": [
+        "entradas escalonadas por posición/escala",
+        "reveal de rótulos individuales",
+        "acciones cortas de herramientas pixeladas",
+        "cambios de rótulo editorial"
+      ],
+      "states_observed": [
+        {
+          "time_s": 7.933333,
+          "action_observed": "Entrada clara; editorial IT’S11OFTHEM"
+        },
+        {
+          "time_s": 8.2,
+          "action_observed": "11 de fondo y primeros agentes"
+        },
+        {
+          "time_s": 8.8,
+          "action_observed": "Los11 agentes ya visibles"
+        },
+        {
+          "time_s": 9,
+          "action_observed": "Empiezan las etiquetas"
+        },
+        {
+          "time_s": 9.6,
+          "action_observed": "Etiquetas completas"
+        },
+        {
+          "time_s": 10,
+          "action_observed": "Editorial A DIFFERENT JOB"
+        },
+        {
+          "time_s": 11.1,
+          "action_observed": "Último grid completo"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 240,
+            "time_s": 8.0,
+            "path": ".estado/tmp/clone_inventario/frame_0240.png",
+            "sha256": "e84281139205c2b8f8009f0f98526b48f5e7084092197a86ce8f25d2c1713c8b"
+          },
+          {
+            "frame": 246,
+            "time_s": 8.2,
+            "path": ".estado/tmp/clone_inventario/frame_0246.png",
+            "sha256": "6adb06baab35ff2460c0decf76012a9590befd649e62e168f91bafb437c2ea41"
+          },
+          {
+            "frame": 264,
+            "time_s": 8.8,
+            "path": ".estado/tmp/clone_inventario/frame_0264.png",
+            "sha256": "d243b74f6aedf5de5f9cd7c12886fae807d910c925838c00ab123bd622ae7ee0"
+          },
+          {
+            "frame": 270,
+            "time_s": 9.0,
+            "path": ".estado/tmp/clone_inventario/frame_0270.png",
+            "sha256": "58e914904c08714cf996609dbb8dfb151953177a00b9807434c9ddefab898ed9"
+          },
+          {
+            "frame": 288,
+            "time_s": 9.6,
+            "path": ".estado/tmp/clone_inventario/frame_0288.png",
+            "sha256": "d79cff987a8872d2ca233533486f1090cacd2c73a7884d4bff4f51d0094d7b51"
+          },
+          {
+            "frame": 300,
+            "time_s": 10.0,
+            "path": ".estado/tmp/clone_inventario/frame_0300.png",
+            "sha256": "28864bb7bd00451d45f316947669438cad2fe7dea839e7418ac804135e7d7b3c"
+          },
+          {
+            "frame": 333,
+            "time_s": 11.1,
+            "path": ".estado/tmp/clone_inventario/frame_0333.png",
+            "sha256": "41caaeb5df4144388eaed6294c707dc3ccfc073d4e5ba455d6c4da66918c350a"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_00.jpg",
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 238,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 334,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "pixel_agents",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_006",
+      "entry_frame": 334,
+      "exit_frame_exclusive": 382,
+      "entry_s": 11.133333,
+      "exit_s": 12.733333,
+      "duration_s": 1.6,
+      "family": "phone_recon",
+      "title": "Inspección del teléfono",
+      "description_observed": "Un círculo de inspección recorre la interfaz de reservas y aparecen resultados de la revisión.",
+      "design_observed": "split claro: móvil a izquierda y agente con lupa a derecha; resultados18screens/7flows/datamodel bajo agente",
+      "movement_observed": [
+        "reencuadre de teléfono",
+        "trayectoria vertical de lupa/círculo",
+        "máscara circular de lectura ampliada",
+        "construcción progresiva de resultados"
+      ],
+      "states_observed": [
+        {
+          "time_s": 11.133333,
+          "action_observed": "Teléfono y agente entran"
+        },
+        {
+          "time_s": 11.4,
+          "action_observed": "Círculo de inspección sobre pantalla"
+        },
+        {
+          "time_s": 12,
+          "action_observed": "Círculo baja por los horarios"
+        },
+        {
+          "time_s": 12.4,
+          "action_observed": "Resultados18screens/7flows/datamodel; lupa en zona inferior"
+        },
+        {
+          "time_s": 12.7,
+          "action_observed": "Estado final split"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 334,
+            "time_s": 11.133333,
+            "path": ".estado/tmp/clone_inventario/frame_0334.png",
+            "sha256": "2e391dbb12980aee17dfc4d96589fb960db51ef807328af01e4944b437fc243a"
+          },
+          {
+            "frame": 342,
+            "time_s": 11.4,
+            "path": ".estado/tmp/clone_inventario/frame_0342.png",
+            "sha256": "dfa15426e78e5ac7e0c0914c69e34e1f1dcf17049d6eb5d4f662bea253d8fe53"
+          },
+          {
+            "frame": 360,
+            "time_s": 12.0,
+            "path": ".estado/tmp/clone_inventario/frame_0360.png",
+            "sha256": "e04c9560db224112961816d02ef581bb587befd900e74d69f66f8e73c3301159"
+          },
+          {
+            "frame": 372,
+            "time_s": 12.4,
+            "path": ".estado/tmp/clone_inventario/frame_0372.png",
+            "sha256": "4f270f38dba5ad6936f175ad9e18f3827c5a6dfe46311eac464dfac4e937b8d4"
+          },
+          {
+            "frame": 381,
+            "time_s": 12.7,
+            "path": ".estado/tmp/clone_inventario/frame_0381.png",
+            "sha256": "ce23e870fdf1e130f27202594db7d753ce788544a371a3145a3f0514a7593f1a"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/limites_0.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 334,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 382,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "phone_recon",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_007",
+      "entry_frame": 382,
+      "exit_frame_exclusive": 416,
+      "entry_s": 12.733333,
+      "exit_s": 13.866667,
+      "duration_s": 1.133333,
+      "family": "phone_rebuild",
+      "title": "Reconstrucción de interfaz móvil",
+      "description_observed": "La interfaz pasa de una capa azul esquemática a una interfaz crema/coral manteniendo su estructura.",
+      "design_observed": "fullframe blanco: teléfono grande en centroalto, worker con casco/herramienta y etiqueta replica-build; editorial inferior",
+      "movement_observed": [
+        "expansión de mockup",
+        "transformación de color y estado de interfaz",
+        "máscara/revelación de pantalla",
+        "desplazamiento del worker"
+      ],
+      "states_observed": [
+        {
+          "time_s": 12.733333,
+          "action_observed": "Móvil crece y actor desaparece"
+        },
+        {
+          "time_s": 13.2,
+          "action_observed": "Controles visibles bajo recubrimiento azul"
+        },
+        {
+          "time_s": 13.6,
+          "action_observed": "Se resuelve la interfaz crema/coral"
+        },
+        {
+          "time_s": 13.8,
+          "action_observed": "UI reconstruida y worker al pie del teléfono"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 382,
+            "time_s": 12.733333,
+            "path": ".estado/tmp/clone_inventario/frame_0382.png",
+            "sha256": "d843c4354852bf83c8124c451c4e7db326e7378f1bc35366daf722dd45630e7a"
+          },
+          {
+            "frame": 396,
+            "time_s": 13.2,
+            "path": ".estado/tmp/clone_inventario/frame_0396.png",
+            "sha256": "f2f6fba25f69da77b06d8115b0a55b742f40cce0b6a7a58013c08cf158fc5c37"
+          },
+          {
+            "frame": 408,
+            "time_s": 13.6,
+            "path": ".estado/tmp/clone_inventario/frame_0408.png",
+            "sha256": "9be9cbb57fd44ce719aa5e887bd278abfaf5d04567a1d617fa561ae1a8adaacc"
+          },
+          {
+            "frame": 414,
+            "time_s": 13.8,
+            "path": ".estado/tmp/clone_inventario/frame_0414.png",
+            "sha256": "38500277860ae010cd5923c5ec32d9601836d850e6d67f1b7945c4cc13b38889"
+          },
+          {
+            "frame": 415,
+            "time_s": 13.833333,
+            "path": ".estado/tmp/clone_inventario/frame_0415.png",
+            "sha256": "a7e39970d9365abf2447a3990d34d2c40dea2835ea0bad65eeaecd18a7e8793d"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 382,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 416,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "phone_rebuild",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_008",
+      "entry_frame": 416,
+      "exit_frame_exclusive": 461,
+      "entry_s": 13.866667,
+      "exit_s": 15.366667,
+      "duration_s": 1.5,
+      "family": "phone_qa",
+      "title": "Tests y eliminación de bugs",
+      "description_observed": "Bugs rojos aparecen sobre la interfaz; la lista se completa con checks y el resultado comunica0bugs/allflows pass.",
+      "design_observed": "split claro: teléfono coral a izquierda; agente test a derecha; lista de tres comprobaciones y banner verde de resultado",
+      "movement_observed": [
+        "contracción del teléfono al área superior",
+        "marcadores de bugs",
+        "conversión de estados pendientes→checks",
+        "entrada de banner de resultado",
+        "leve inclinación de agente"
+      ],
+      "states_observed": [
+        {
+          "time_s": 13.866667,
+          "action_observed": "Teléfono se reduce al split y entra agente test"
+        },
+        {
+          "time_s": 14,
+          "action_observed": "Marcadores de bugs rojos"
+        },
+        {
+          "time_s": 14.4,
+          "action_observed": "Checklist visible"
+        },
+        {
+          "time_s": 14.8,
+          "action_observed": "Checks progresivos verdes"
+        },
+        {
+          "time_s": 15.2,
+          "action_observed": "Banner verde0bugs/allflows pass"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 416,
+            "time_s": 13.866667,
+            "path": ".estado/tmp/clone_inventario/frame_0416.png",
+            "sha256": "867e11467915c9ae86808e69c8862a7c9a96f73e7475047615509fdffa77bc0a"
+          },
+          {
+            "frame": 420,
+            "time_s": 14.0,
+            "path": ".estado/tmp/clone_inventario/frame_0420.png",
+            "sha256": "c161b034f88929c51714bc6baff46383452087af41160dbaecf109b116bb96a1"
+          },
+          {
+            "frame": 432,
+            "time_s": 14.4,
+            "path": ".estado/tmp/clone_inventario/frame_0432.png",
+            "sha256": "9dae7baabdd20b066076a0bb9a15137422d378e90a495eb22fc9513e0ff76290"
+          },
+          {
+            "frame": 444,
+            "time_s": 14.8,
+            "path": ".estado/tmp/clone_inventario/frame_0444.png",
+            "sha256": "00770c24cb158ff3ece121ffed4bde71ddc26da222784966adba09934532952f"
+          },
+          {
+            "frame": 456,
+            "time_s": 15.2,
+            "path": ".estado/tmp/clone_inventario/frame_0456.png",
+            "sha256": "13433864ff643f108f2625a1af7af3beb404b65b89fa2c9c3e8ad7a481d2e77c"
+          },
+          {
+            "frame": 460,
+            "time_s": 15.333333,
+            "path": ".estado/tmp/clone_inventario/frame_0460.png",
+            "sha256": "eba9f41f9496cf19150fda25ab64582890043a417d753943c090015b54c983e5"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 416,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 461,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "phone_qa",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_009",
+      "entry_frame": 461,
+      "exit_frame_exclusive": 557,
+      "entry_s": 15.366667,
+      "exit_s": 18.566667,
+      "duration_s": 3.2,
+      "family": "phone_compare",
+      "title": "Original contra clon y similitud",
+      "description_observed": "Entran los dos teléfonos; la métrica llega a100% y las pantallas se sustituyen por cinco pares de aplicaciones.",
+      "design_observed": "fullframe negro: dos teléfonos ORIGINAL/YOURCLONE, símbolo igual, porcentaje y línea de progreso; editorial inferior",
+      "movement_observed": [
+        "entrada lateral y giro/reencuadre del teléfono",
+        "contador0→100",
+        "barra de progreso",
+        "reemplazo sincronizado de pantallas",
+        "transición tipográfica editorial"
+      ],
+      "states_observed": [
+        {
+          "time_s": 15.366667,
+          "action_observed": "Teléfonos entran desde los laterales"
+        },
+        {
+          "time_s": 15.6,
+          "action_observed": "Par booking azul/coral y0%"
+        },
+        {
+          "time_s": 16,
+          "action_observed": "49%"
+        },
+        {
+          "time_s": 16.2,
+          "action_observed": "83%"
+        },
+        {
+          "time_s": 16.4,
+          "action_observed": "97%"
+        },
+        {
+          "time_s": 16.6,
+          "action_observed": "100%"
+        },
+        {
+          "time_s": 16.8,
+          "action_observed": "Par Airbnb"
+        },
+        {
+          "time_s": 17.2,
+          "action_observed": "Par Duolingo"
+        },
+        {
+          "time_s": 17.6,
+          "action_observed": "Par Notion"
+        },
+        {
+          "time_s": 17.8,
+          "action_observed": "Par Spotify"
+        },
+        {
+          "time_s": 18.0,
+          "action_observed": "Par Uber"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 461,
+            "time_s": 15.366667,
+            "path": ".estado/tmp/clone_inventario/frame_0461.png",
+            "sha256": "d77d074b1be16314decd21f0eca31bdaff8f27d89ab49133891c3cd2ab6c5b81"
+          },
+          {
+            "frame": 468,
+            "time_s": 15.6,
+            "path": ".estado/tmp/clone_inventario/frame_0468.png",
+            "sha256": "3ac25543229c1439b6007e4cbf31b716919f574f1ef7b2950efac2598a07ee1e"
+          },
+          {
+            "frame": 480,
+            "time_s": 16.0,
+            "path": ".estado/tmp/clone_inventario/frame_0480.png",
+            "sha256": "4886364867bca87559344898244944d25124957dbcbfc9e60fe1ea9664970768"
+          },
+          {
+            "frame": 486,
+            "time_s": 16.2,
+            "path": ".estado/tmp/clone_inventario/frame_0486.png",
+            "sha256": "58b8dc4613f42e4c0bcba43764cfee7c02622a0a521249af090c9eaff65a3064"
+          },
+          {
+            "frame": 492,
+            "time_s": 16.4,
+            "path": ".estado/tmp/clone_inventario/frame_0492.png",
+            "sha256": "d94907639d3db4b74d1af977b3edc64d2ab43359ed72bc29bac99737b2adc6b6"
+          },
+          {
+            "frame": 498,
+            "time_s": 16.6,
+            "path": ".estado/tmp/clone_inventario/frame_0498.png",
+            "sha256": "8c8096a59da32e608de52dc9b52848a239cb746cd50d1f77340d9878f117d205"
+          },
+          {
+            "frame": 504,
+            "time_s": 16.8,
+            "path": ".estado/tmp/clone_inventario/frame_0504.png",
+            "sha256": "bc55468e4265745f97e19e6d11c23d05d3268e06305f964b7f0de7eb71356f2a"
+          },
+          {
+            "frame": 516,
+            "time_s": 17.2,
+            "path": ".estado/tmp/clone_inventario/frame_0516.png",
+            "sha256": "f2b01e88cecf831c172a6091cce4b6e170f96b850f56a5c6d602a181c2594e7b"
+          },
+          {
+            "frame": 528,
+            "time_s": 17.6,
+            "path": ".estado/tmp/clone_inventario/frame_0528.png",
+            "sha256": "5103e46386a65e8800a82f398a1e5b6a7a3df447d96a4a4979b79ce6e8be9179"
+          },
+          {
+            "frame": 540,
+            "time_s": 18.0,
+            "path": ".estado/tmp/clone_inventario/frame_0540.png",
+            "sha256": "9f9ce009851da4bf3245d0547eb9d7ef5df677a82a9a87ece3b543f2e02c238c"
+          },
+          {
+            "frame": 556,
+            "time_s": 18.533333,
+            "path": ".estado/tmp/clone_inventario/frame_0556.png",
+            "sha256": "f3568c4dda5af2a19ecdd1c18474f551801944bd14a27bb6cf615ee17227960d"
+          },
+          {
+            "frame": 522,
+            "time_s": 17.4,
+            "path": ".estado/tmp/clone_inventario/frame_0522.png",
+            "sha256": "422b9e4dad42b326297aa562c1609f78fcfbc5fc1ca7fdf76b2775bac70f4322"
+          },
+          {
+            "frame": 534,
+            "time_s": 17.8,
+            "path": ".estado/tmp/clone_inventario/frame_0534.png",
+            "sha256": "a5dbf5ece9c23dc5fbb5b63753c217d3b4e8152dfb892400e5b7d654a3afe76a"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 461,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 557,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "phone_compare",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_010",
+      "entry_frame": 557,
+      "exit_frame_exclusive": 610,
+      "entry_s": 18.566667,
+      "exit_s": 20.333333,
+      "duration_s": 1.766667,
+      "family": "presenter_contract",
+      "title": "Puente narrativo: el punto sorprendente",
+      "description_observed": "El texto but the/craziest part cambia la jerarquía del argumento.",
+      "design_observed": "presentador fullframe; pequeño texto serif italic y énfasis sans coral/crema debajo",
+      "movement_observed": [
+        "destello de entrada",
+        "reveal de énfasis tipográfico",
+        "movimiento original del presentador"
+      ],
+      "states_observed": [
+        {
+          "time_s": 18.566667,
+          "action_observed": "Entrada de cámara con destello breve"
+        },
+        {
+          "time_s": 19,
+          "action_observed": "Texto a dos niveles"
+        },
+        {
+          "time_s": 20.3,
+          "action_observed": "Fin del puente"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 557,
+            "time_s": 18.566667,
+            "path": ".estado/tmp/clone_inventario/frame_0557.png",
+            "sha256": "b9c13ad593bbba3fd4e8d7332940344c11cdd2877b1a70c59268ff78a1422ee8"
+          },
+          {
+            "frame": 570,
+            "time_s": 19.0,
+            "path": ".estado/tmp/clone_inventario/frame_0570.png",
+            "sha256": "91edcc0a4a11a187ab2a041852610965fb6a42282c50e94916af8a681af847a4"
+          },
+          {
+            "frame": 600,
+            "time_s": 20.0,
+            "path": ".estado/tmp/clone_inventario/frame_0600.png",
+            "sha256": "3d281d6e466a95b58dc9d12de84cca9fd98586285bb8d4c37dda084cdcb59ea4"
+          },
+          {
+            "frame": 609,
+            "time_s": 20.3,
+            "path": ".estado/tmp/clone_inventario/frame_0609.png",
+            "sha256": "0659b418274cf191c1866a214b86f7d2b4015b471538900256dd484822e26b63"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_01.jpg",
+          ".estado/tmp/clone_inventario/secuencia_02.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg"
+        ]
+      },
+      "scope_reuse": "contrato de presentador; el motor no reutiliza footage",
+      "transition_entry": {
+        "frame": 557,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 610,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": null,
+      "classification": "integration_contract"
+    },
+    {
+      "id": "CLONE_011",
+      "entry_frame": 610,
+      "exit_frame_exclusive": 648,
+      "entry_s": 20.333333,
+      "exit_s": 21.6,
+      "duration_s": 1.266667,
+      "family": "spotlight_agent",
+      "title": "Agente empresario bajo foco",
+      "description_observed": "Enciende el foco, entra el agente y caen pequeñas partículas cálidas antes de asentarse.",
+      "design_observed": "fullframe negro: cono de luz y elipse de suelo; agente con sombrero/maletín; etiqueta replica-entrepreneur",
+      "movement_observed": [
+        "reveal de luz",
+        "entrada vertical del sprite",
+        "dispersión/caída de partículas pixeladas",
+        "asentamiento de personaje",
+        "cambio editorial"
+      ],
+      "states_observed": [
+        {
+          "time_s": 20.333333,
+          "action_observed": "Cono de luz visible"
+        },
+        {
+          "time_s": 20.6,
+          "action_observed": "Agente entra con partículas"
+        },
+        {
+          "time_s": 21,
+          "action_observed": "Agente centrado y partículas se dispersan"
+        },
+        {
+          "time_s": 21.4,
+          "action_observed": "Editorial SKILL y agente asentado"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 610,
+            "time_s": 20.333333,
+            "path": ".estado/tmp/clone_inventario/frame_0610.png",
+            "sha256": "2a5a97dd8f171fdff01f6684dcd9b35d16188a4cc4b256fabb06024d048d2962"
+          },
+          {
+            "frame": 618,
+            "time_s": 20.6,
+            "path": ".estado/tmp/clone_inventario/frame_0618.png",
+            "sha256": "9c2167e5999970ca24cc5eaac1da1ee28d572161468caf00d9750fb2ec9242fc"
+          },
+          {
+            "frame": 630,
+            "time_s": 21.0,
+            "path": ".estado/tmp/clone_inventario/frame_0630.png",
+            "sha256": "691779a67815b008aa9208a35e27998b529a98d1aa09aa4497add08a31a71945"
+          },
+          {
+            "frame": 642,
+            "time_s": 21.4,
+            "path": ".estado/tmp/clone_inventario/frame_0642.png",
+            "sha256": "7a038771468801ac61917c95d478da456cc1f9fa30ba9ba90c76a46b5adeaffe"
+          },
+          {
+            "frame": 647,
+            "time_s": 21.566667,
+            "path": ".estado/tmp/clone_inventario/frame_0647.png",
+            "sha256": "7d21da034103c2a0192b28efa9aa0628c5c417b5f9155da2ae89806f4402e08c"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_02.jpg",
+          ".estado/tmp/clone_inventario/limites_1.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 610,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 648,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "spotlight_agent",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_012",
+      "entry_frame": 648,
+      "exit_frame_exclusive": 726,
+      "entry_s": 21.6,
+      "exit_s": 24.2,
+      "duration_s": 2.6,
+      "family": "radial_research",
+      "title": "Lectura de reseñas desde plataformas",
+      "description_observed": "Se añaden nodos, se conectan al agente, circulan partículas y el contador llega a140reviews read.",
+      "design_observed": "split claro: empresario central, nodos AppStore/G2/Reddit/Trustpilot y app clonada; líneas punteadas; contador",
+      "movement_observed": [
+        "entradas escalonadas de nodos",
+        "trazado de conexiones punteadas",
+        "partículas de transferencia por trayectorias",
+        "contador0→140",
+        "reorganización radial"
+      ],
+      "states_observed": [
+        {
+          "time_s": 21.6,
+          "action_observed": "Contador0 y agente inicial"
+        },
+        {
+          "time_s": 22,
+          "action_observed": "Cuatro plataformas visibles"
+        },
+        {
+          "time_s": 22.4,
+          "action_observed": "Contador8"
+        },
+        {
+          "time_s": 23,
+          "action_observed": "App clonada superior y contador70"
+        },
+        {
+          "time_s": 23.6,
+          "action_observed": "Contador132"
+        },
+        {
+          "time_s": 24,
+          "action_observed": "Contador140"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 648,
+            "time_s": 21.6,
+            "path": ".estado/tmp/clone_inventario/frame_0648.png",
+            "sha256": "13098a8d15305359b8d6e145ad859216ed181a68c5d9a0f1c40bb79df1f64c04"
+          },
+          {
+            "frame": 660,
+            "time_s": 22.0,
+            "path": ".estado/tmp/clone_inventario/frame_0660.png",
+            "sha256": "120fce7f992e54e7bfeb28fee5c83154ed62aaa4468b06c9bd252fa8dd5aeaf0"
+          },
+          {
+            "frame": 672,
+            "time_s": 22.4,
+            "path": ".estado/tmp/clone_inventario/frame_0672.png",
+            "sha256": "9f6706541c231e47a8c4e8e287513d83e40fc7620ea437bfc58c7ede5c809837"
+          },
+          {
+            "frame": 690,
+            "time_s": 23.0,
+            "path": ".estado/tmp/clone_inventario/frame_0690.png",
+            "sha256": "2e86a087fe65d32581b1dc8af9da8ff4794b7f37b722ad9ac8b2fe163975ed45"
+          },
+          {
+            "frame": 708,
+            "time_s": 23.6,
+            "path": ".estado/tmp/clone_inventario/frame_0708.png",
+            "sha256": "1356a6edb0084f38e7029e6e34cef3d6e2a58f9ae1f8e87357eb338b8e3f45c0"
+          },
+          {
+            "frame": 720,
+            "time_s": 24.0,
+            "path": ".estado/tmp/clone_inventario/frame_0720.png",
+            "sha256": "e33731b9e9ccac60377c9f3ba6aef7f750a12b3b0f6c88abd07bca322a35a69f"
+          },
+          {
+            "frame": 725,
+            "time_s": 24.166667,
+            "path": ".estado/tmp/clone_inventario/frame_0725.png",
+            "sha256": "43fc2e879658c7d66b0fa8ea8e43196d520c5f2ba586f01531d1ddf311e1fe59"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_02.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 648,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 726,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "radial_research",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_013",
+      "entry_frame": 726,
+      "exit_frame_exclusive": 862,
+      "entry_s": 24.2,
+      "exit_s": 28.733333,
+      "duration_s": 4.533333,
+      "family": "feedback_bars",
+      "title": "Feedback convertido en tres categorías",
+      "description_observed": "Las reseñas se apilan/desplazan; etiquetas clasifican problemas y las barras se construyen por categoría.",
+      "design_observed": "fullframe blanco: tarjetas de reseñas arriba con estrellas/etiquetas; panel carbón inferior con tres barras; agente sobre su esquina",
+      "movement_observed": [
+        "apilado y scroll vertical de reseñas",
+        "atenuación de extremos de lista",
+        "etiquetas de clasificación",
+        "barras llenadas secuencialmente",
+        "texto editorial evolutivo"
+      ],
+      "states_observed": [
+        {
+          "time_s": 24.2,
+          "action_observed": "Primera reseña entra"
+        },
+        {
+          "time_s": 24.6,
+          "action_observed": "Entra panel de métricas"
+        },
+        {
+          "time_s": 25.2,
+          "action_observed": "Missing features38"
+        },
+        {
+          "time_s": 26.6,
+          "action_observed": "Unsolved problems27"
+        },
+        {
+          "time_s": 27.4,
+          "action_observed": "Things people hate51"
+        },
+        {
+          "time_s": 28,
+          "action_observed": "Tres barras y reseñas en scroll"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 726,
+            "time_s": 24.2,
+            "path": ".estado/tmp/clone_inventario/frame_0726.png",
+            "sha256": "7e20549c5c3a6703aede8b5f574f35a715436112e90b2b1aab6a5d5cd1ea9c72"
+          },
+          {
+            "frame": 738,
+            "time_s": 24.6,
+            "path": ".estado/tmp/clone_inventario/frame_0738.png",
+            "sha256": "16545b574de1584c6565822a875d90b21abdc056bec313d3a4314a50f7731c81"
+          },
+          {
+            "frame": 756,
+            "time_s": 25.2,
+            "path": ".estado/tmp/clone_inventario/frame_0756.png",
+            "sha256": "21ac4f85bb66962a26c30d6792abb144ba114be7c6ac6fd4297055e3ca053399"
+          },
+          {
+            "frame": 798,
+            "time_s": 26.6,
+            "path": ".estado/tmp/clone_inventario/frame_0798.png",
+            "sha256": "d98b59c3b54b9f3a42358c80d9247ae5a6a70d504b4176b92dc5610e801a07eb"
+          },
+          {
+            "frame": 822,
+            "time_s": 27.4,
+            "path": ".estado/tmp/clone_inventario/frame_0822.png",
+            "sha256": "5725ccb985c91288dbbc1d0db3364419b677c6330f6a15bbf66519430ccd43d1"
+          },
+          {
+            "frame": 840,
+            "time_s": 28.0,
+            "path": ".estado/tmp/clone_inventario/frame_0840.png",
+            "sha256": "d83c869f8cdbcc5cad0cd7ba0c628d69afa30593b1db129f2b9a4d7f39eda49f"
+          },
+          {
+            "frame": 861,
+            "time_s": 28.7,
+            "path": ".estado/tmp/clone_inventario/frame_0861.png",
+            "sha256": "ea47a519b9ca96a0116767733463ba1b38f870533bb26338dbfc6d1cdf23092a"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_02.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 726,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 862,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "feedback_bars",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_014",
+      "entry_frame": 862,
+      "exit_frame_exclusive": 948,
+      "entry_s": 28.733333,
+      "exit_s": 31.6,
+      "duration_s": 2.866667,
+      "family": "problem_resolution",
+      "title": "Problemas transformados en funciones",
+      "description_observed": "Los problemas aparecen en cápsulas rojas, desaparecen al activarse toggles verdes y se muestra4problems solved.",
+      "design_observed": "split claro: móvil Slotly con cuatro toggles; agente empresario al lado; cápsulas rojas de problemas",
+      "movement_observed": [
+        "entrada de mockup",
+        "reveal de etiquetas problema",
+        "traslación de botones toggle",
+        "cambio rojo→verde por estado",
+        "eliminación de problemas vinculada a funciones",
+        "banner de resultado"
+      ],
+      "states_observed": [
+        {
+          "time_s": 28.733333,
+          "action_observed": "Teléfono entra en split"
+        },
+        {
+          "time_s": 29,
+          "action_observed": "Cápsulas rojas de problemas"
+        },
+        {
+          "time_s": 29.4,
+          "action_observed": "Primer toggle activa y primer problema desaparece"
+        },
+        {
+          "time_s": 30,
+          "action_observed": "Tres funciones activadas"
+        },
+        {
+          "time_s": 30.6,
+          "action_observed": "Cuatro toggles activos y banner4problems solved"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 862,
+            "time_s": 28.733333,
+            "path": ".estado/tmp/clone_inventario/frame_0862.png",
+            "sha256": "2122a948d7256508532782fafb12da9df098a376594c32eab7d6d6fd9702bf6b"
+          },
+          {
+            "frame": 870,
+            "time_s": 29.0,
+            "path": ".estado/tmp/clone_inventario/frame_0870.png",
+            "sha256": "3da687eff0c3f6b4f6b51cdaac9b1056ea84e4dd876a93b57729b4f272f91a32"
+          },
+          {
+            "frame": 882,
+            "time_s": 29.4,
+            "path": ".estado/tmp/clone_inventario/frame_0882.png",
+            "sha256": "a38804843bbfbda0e539edb28768a3d145191ba792058a7c1b309b91399ea9b5"
+          },
+          {
+            "frame": 900,
+            "time_s": 30.0,
+            "path": ".estado/tmp/clone_inventario/frame_0900.png",
+            "sha256": "9ccffab6583257b0b01c1b3a6574822c8113ae903a96c239ea0cee7d5c012f92"
+          },
+          {
+            "frame": 918,
+            "time_s": 30.6,
+            "path": ".estado/tmp/clone_inventario/frame_0918.png",
+            "sha256": "1fa4e6270829cad0efede653fa4c46a3d5db37a8601eaaca7caf320d7f44ef8c"
+          },
+          {
+            "frame": 947,
+            "time_s": 31.566667,
+            "path": ".estado/tmp/clone_inventario/frame_0947.png",
+            "sha256": "5d1f975eee7641bf25e8f1cd97999f52a390d090c7a1f3579a4d2cc910be6579"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_02.jpg",
+          ".estado/tmp/clone_inventario/secuencia_03.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 862,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 948,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "problem_resolution",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_015",
+      "entry_frame": 948,
+      "exit_frame_exclusive": 989,
+      "entry_s": 31.6,
+      "exit_s": 32.966667,
+      "duration_s": 1.366667,
+      "family": "presenter_contract",
+      "title": "Puente narrativo: no solo un clon",
+      "description_observed": "Texto you don’t just get y a clone enfatiza el cambio de resultado.",
+      "design_observed": "presentador fullframe; italic blanco y frase sans en color coral claro",
+      "movement_observed": [
+        "reencuadre al presentador",
+        "reveal tipográfico de segundo nivel",
+        "movimiento original del presentador"
+      ],
+      "states_observed": [
+        {
+          "time_s": 31.6,
+          "action_observed": "Cámara ocupa cuadro"
+        },
+        {
+          "time_s": 32.6,
+          "action_observed": "Se añade a clone en segundo nivel"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 948,
+            "time_s": 31.6,
+            "path": ".estado/tmp/clone_inventario/frame_0948.png",
+            "sha256": "e7f26e5495545f3fe23a3ba15b9fba50f9e5e9e4875b16d9eca44674acbeae71"
+          },
+          {
+            "frame": 972,
+            "time_s": 32.4,
+            "path": ".estado/tmp/clone_inventario/frame_0972.png",
+            "sha256": "6dc31fc2d12981d723666805499fa90fc888e9b038a2cf5a10669a87cb508fea"
+          },
+          {
+            "frame": 978,
+            "time_s": 32.6,
+            "path": ".estado/tmp/clone_inventario/frame_0978.png",
+            "sha256": "5e91f555edf9499fd0522306cc7b9c06bd44464029271eb546f0db4927fb2452"
+          },
+          {
+            "frame": 988,
+            "time_s": 32.933333,
+            "path": ".estado/tmp/clone_inventario/frame_0988.png",
+            "sha256": "3ac1f27a7dc2b76c1ef928f80a14b2c6dd998cfe2df48709d0977b1cb26aa7a9"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_03.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg"
+        ]
+      },
+      "scope_reuse": "contrato de presentador; el motor no reutiliza footage",
+      "transition_entry": {
+        "frame": 948,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 989,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": null,
+      "classification": "integration_contract"
+    },
+    {
+      "id": "CLONE_016",
+      "entry_frame": 989,
+      "exit_frame_exclusive": 1047,
+      "entry_s": 32.966667,
+      "exit_s": 34.9,
+      "duration_s": 1.933333,
+      "family": "product_card",
+      "title": "Producto listo y despliegue",
+      "description_observed": "La ficha de producto entra; agentes de marca/lanzamiento/despliegue la acompañan y aparece el estado publicado.",
+      "design_observed": "fullframe negro: tarjeta Slotly oscura, icono calendario coral, datos4.9★/Flat/Live; tres agentes y badgeLIVE·slotly.app",
+      "movement_observed": [
+        "entrada de tarjeta y crecimiento",
+        "aparición de métricas",
+        "entradas escalonadas de agentes",
+        "trayectoria vertical del agente cohete y estela",
+        "reveal de badge de despliegue",
+        "rótulo YOU CAN SHIP"
+      ],
+      "states_observed": [
+        {
+          "time_s": 32.966667,
+          "action_observed": "Ficha de producto entra con flash"
+        },
+        {
+          "time_s": 33.2,
+          "action_observed": "Nombre Slotly, descripción y botónOPEN"
+        },
+        {
+          "time_s": 33.6,
+          "action_observed": "Datos4.9★/Flat/Live y agentes inferiores"
+        },
+        {
+          "time_s": 34.4,
+          "action_observed": "Agente deploy asciende con estela"
+        },
+        {
+          "time_s": 34.6,
+          "action_observed": "Badge verdeLIVE·slotly.app"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 989,
+            "time_s": 32.966667,
+            "path": ".estado/tmp/clone_inventario/frame_0989.png",
+            "sha256": "0b816b8f6d2fc6e4566060c2f49e392e0fb1715a4c5c91629f1a1d735d5e05aa"
+          },
+          {
+            "frame": 996,
+            "time_s": 33.2,
+            "path": ".estado/tmp/clone_inventario/frame_0996.png",
+            "sha256": "c2b3e93c807eff6a89cb1b27cd5f5f9d8b3bd6a4293ecfa52c4d0fdbca128015"
+          },
+          {
+            "frame": 1008,
+            "time_s": 33.6,
+            "path": ".estado/tmp/clone_inventario/frame_1008.png",
+            "sha256": "f0acf5cb0ccfcda38adb1fc746ec65d18f2d80cc59da9d7d546039f2b66dfe8e"
+          },
+          {
+            "frame": 1032,
+            "time_s": 34.4,
+            "path": ".estado/tmp/clone_inventario/frame_1032.png",
+            "sha256": "7fa06f6a5f2fdb0f153f7c30e6fcdb03bd74aad33021afa1be1c169e5c3d1df1"
+          },
+          {
+            "frame": 1038,
+            "time_s": 34.6,
+            "path": ".estado/tmp/clone_inventario/frame_1038.png",
+            "sha256": "52ee4c85272578aa7d1c1d5dd24e59c71b8d8a03077e533baf19d6caa2181c4c"
+          },
+          {
+            "frame": 1046,
+            "time_s": 34.866667,
+            "path": ".estado/tmp/clone_inventario/frame_1046.png",
+            "sha256": "c2090dfd3aee52c488279617b9f8be56126d58cbf6b470d15a9d5b5c106cf286"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_03.jpg",
+          ".estado/tmp/clone_inventario/limites_2.jpg",
+          ".estado/tmp/clone_inventario/limites_3.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 989,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 1047,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "product_card",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_017",
+      "entry_frame": 1047,
+      "exit_frame_exclusive": 1169,
+      "entry_s": 34.9,
+      "exit_s": 38.966667,
+      "duration_s": 4.066667,
+      "family": "terminal_install",
+      "title": "Instalación de skills y activación de agentes",
+      "description_observed": "Se escribe la URL deGitHub y una instrucción; avanza Installing11/11 y los agentes se activan con checks.",
+      "design_observed": "split claro: terminal negra arriba con cabeceraClaudeCode; URL progresiva; once agentes/checks; presentador abajo",
+      "movement_observed": [
+        "reveal de ventana",
+        "escritura carácter a carácter",
+        "contador de instalación",
+        "activación de sprites por estado",
+        "checks escalonados",
+        "salida terminal con flash"
+      ],
+      "states_observed": [
+        {
+          "time_s": 34.9,
+          "action_observed": "Terminal entra"
+        },
+        {
+          "time_s": 35.2,
+          "action_observed": "Escritura inicia"
+        },
+        {
+          "time_s": 36.8,
+          "action_observed": "URL completa"
+        },
+        {
+          "time_s": 37.2,
+          "action_observed": "Installing… Replica skills"
+        },
+        {
+          "time_s": 37.4,
+          "action_observed": "Primeros agentes activados"
+        },
+        {
+          "time_s": 37.8,
+          "action_observed": "Once checks y agentes activos"
+        },
+        {
+          "time_s": 38,
+          "action_observed": "Ready·try/replica-recon<appurl>"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 1047,
+            "time_s": 34.9,
+            "path": ".estado/tmp/clone_inventario/frame_1047.png",
+            "sha256": "480de834ed42b45c7348298c23fad1136aa6aae4c882ea49d6c3ddc08344518a"
+          },
+          {
+            "frame": 1056,
+            "time_s": 35.2,
+            "path": ".estado/tmp/clone_inventario/frame_1056.png",
+            "sha256": "44fe0281983811b1190cd2bdc7a873be8c7c7e425b9df7e11a00c1df0d6e3ee1"
+          },
+          {
+            "frame": 1104,
+            "time_s": 36.8,
+            "path": ".estado/tmp/clone_inventario/frame_1104.png",
+            "sha256": "019180a55768ee96aea79741be3958dd287d4419671396906cd0047a344c8036"
+          },
+          {
+            "frame": 1116,
+            "time_s": 37.2,
+            "path": ".estado/tmp/clone_inventario/frame_1116.png",
+            "sha256": "73f14f6b039f86e025b92a8459c9633272b1cc0290a720435c9106d2b3dad830"
+          },
+          {
+            "frame": 1122,
+            "time_s": 37.4,
+            "path": ".estado/tmp/clone_inventario/frame_1122.png",
+            "sha256": "9afb243904b9739a701d670cedf0637f28baa2d3410a9b090950eab9ac8c8d3a"
+          },
+          {
+            "frame": 1134,
+            "time_s": 37.8,
+            "path": ".estado/tmp/clone_inventario/frame_1134.png",
+            "sha256": "e7dbd0c1ce358b18d187db5b799c448b470907ecec31a7973215963a5c9b4724"
+          },
+          {
+            "frame": 1164,
+            "time_s": 38.8,
+            "path": ".estado/tmp/clone_inventario/frame_1164.png",
+            "sha256": "46b820d0ff49f15f2b4deb9fbd01b17b235eeea042d76a154d5dc69a62983427"
+          },
+          {
+            "frame": 1168,
+            "time_s": 38.933333,
+            "path": ".estado/tmp/clone_inventario/frame_1168.png",
+            "sha256": "24680ee3122a40ee21132bfca3eeabed1c662becc70b64e57d20e9248b27ae04"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_03.jpg",
+          ".estado/tmp/clone_inventario/limites_3.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 1047,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 1169,
+        "type": "cambio a siguiente composición"
+      },
+      "component_id": "terminal_install",
+      "classification": "motion_family"
+    },
+    {
+      "id": "CLONE_018",
+      "entry_frame": 1169,
+      "exit_frame_exclusive": 1269,
+      "entry_s": 38.966667,
+      "exit_s": 42.3,
+      "duration_s": 3.333333,
+      "family": "agent_marquee",
+      "title": "CTA con desfile de agentes",
+      "description_observed": "La fila de agentes se mueve continuamente; el texto pasa de save this a andcomment/clone y promesa de envío.",
+      "design_observed": "presentador fullframe: franja de agentes pixelados cruza sobre la cabeza; texto CTA por niveles centrados",
+      "movement_observed": [
+        "población escalonada de agentes",
+        "scroll horizontal continuo/repetición",
+        "reveal de CTA por jerarquías",
+        "movimiento original del presentador"
+      ],
+      "states_observed": [
+        {
+          "time_s": 38.966667,
+          "action_observed": "Cámara con texto save this"
+        },
+        {
+          "time_s": 39.2,
+          "action_observed": "Fila superior empieza a poblarse"
+        },
+        {
+          "time_s": 39.6,
+          "action_observed": "Texto andcomment"
+        },
+        {
+          "time_s": 40,
+          "action_observed": "Se añade clone"
+        },
+        {
+          "time_s": 40.8,
+          "action_observed": "I’llDM youthefullsetup"
+        },
+        {
+          "time_s": 42.266667,
+          "action_observed": "Último frame; marquee sigue"
+        }
+      ],
+      "evidence": {
+        "native_frames": [
+          {
+            "frame": 1169,
+            "time_s": 38.966667,
+            "path": ".estado/tmp/clone_inventario/frame_1169.png",
+            "sha256": "32f853d192db897728b95c29d9bba583b176fa040b63503a021341ae16fbb269"
+          },
+          {
+            "frame": 1176,
+            "time_s": 39.2,
+            "path": ".estado/tmp/clone_inventario/frame_1176.png",
+            "sha256": "3244025c0b1b8c46732de433b6bdfd6b77eaec9f81c0eb580df0269bff6fa533"
+          },
+          {
+            "frame": 1188,
+            "time_s": 39.6,
+            "path": ".estado/tmp/clone_inventario/frame_1188.png",
+            "sha256": "549756641c54a94e96d1887ce09cdcf3c2ef8554a83f1e8b136f276e7e7f41df"
+          },
+          {
+            "frame": 1200,
+            "time_s": 40.0,
+            "path": ".estado/tmp/clone_inventario/frame_1200.png",
+            "sha256": "24f28bf459cdb75b4250d2c578f5c25dd84cf029560501e24fc5a204c3c93f58"
+          },
+          {
+            "frame": 1224,
+            "time_s": 40.8,
+            "path": ".estado/tmp/clone_inventario/frame_1224.png",
+            "sha256": "9838c34e0e8f457341e15228702940918e329903cbd0788f0d181e43a29f4ed8"
+          },
+          {
+            "frame": 1268,
+            "time_s": 42.266667,
+            "path": ".estado/tmp/clone_inventario/frame_1268.png",
+            "sha256": "988c6411197c063a3af5cffd92ce32b0ea4f7a28612bebe8c0e81a2552db43fb"
+          }
+        ],
+        "sequence_sheets": [
+          ".estado/tmp/clone_inventario/secuencia_04.jpg",
+          ".estado/tmp/clone_inventario/limites_3.jpg"
+        ]
+      },
+      "scope_reuse": "familia candidata observada; construcción y QC independientes",
+      "transition_entry": {
+        "frame": 1169,
+        "type": "primer frame reconocible de nueva composición; posible flash/reveal durante entrada",
+        "timing_uncertainty_frames": 1
+      },
+      "transition_exit": {
+        "frame": 1269,
+        "type": "fin de video sin nueva escena"
+      },
+      "component_id": "agent_marquee",
+      "classification": "motion_family"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "ascendia.workflow/1",
+  "id": "reel_multiservice",
+  "name": "Crudo completo: automático, manual y colaboración",
+  "scope": "authenticated_own_workspace",
+  "execution": "declarative_operational_contract; invoke actual HTTP/MCP endpoints",
+  "style_profile": "profiles/ivan_base.json",
+  "documentation": "docs/MODOS_COLABORACION_PIPELINE.md",
+  "storage": {"provider": "local", "remote": false, "remote_sync": "pending"},
+  "constraints": {
+    "writes": "SOFTWARE",
+    "parent_mutations": false,
+    "private_parent_assets_shared": false,
+    "private_parent_credentials_inherited": false,
+    "gpu": false,
+    "cpu_workers_shared": 1,
+    "ffmpeg_threads_max": 2,
+    "max_source_seconds": 600,
+    "chunk_seconds_max": 10,
+    "automatic_editorial_approval": false,
+    "automatic_publication": false
+  },
+  "account_and_project": [
+    {"id": "identity", "action": "register_or_login", "output": "own_private_workspace", "email_identity": "local_account_unverified"},
+    {"id": "branding", "tool": "branding_get", "action": "configure_own_branding", "output": "explicit_server_project_snapshot", "apply_tool": "branding_apply", "cas": ["expected_revision", "expected_branding_revision"]},
+    {"id": "source", "tool": "asset_import", "action": "upload_canonical_raw_then_reuse_or_create_project", "output": "source_sha256_duration_probe"},
+    {"id": "voice", "tool": "audio_tracks", "action": "inspect_listen_choose_settings_voice_audio_stream", "index": "global_ffprobe_stream", "activity_is_voice_verification": false},
+    {"id": "resource_observation", "tools": ["resource_review_prepare", "resource_review_get", "resource_review_record"], "output": "current_hashed_observation", "broll_requirement": "sequence continuous_declared covers selected interval; samples are points only"},
+    {"id": "brand_registry", "tools": ["brand_assets_origins", "brand_assets_fetch", "brand_assets_catalog", "brand_assets_register", "brand_assets_resolve"], "output": "own_observed_brand_records", "fetch_auto_observes": false, "usage_contexts": ["private_review", "publication"], "rights_authority": false}
+  ],
+  "automatic": {
+    "owner_only": true,
+    "start_tool": "pipeline_start",
+    "options_required": ["mode", "channel"],
+    "mode": "full",
+    "asr_models": ["tiny", "base", "small"],
+    "max_tokens": {"minimum": 1024, "maximum": 8192},
+    "max_repairs": {"minimum": 0, "maximum": 2, "backend_default": 2},
+    "max_inference_calls": "ceil(source_duration / 10) + max_repairs",
+    "channels": {
+      "api": {"provider_connection": "own_account_only", "confirmed": true, "content_sent": "narration instructions branding and resource context", "live_execution_evidence_required": true},
+      "external": {"provider_field": "rejected", "confirmed_field": "rejected", "server_api_inference": false, "agent_model": "client_declared_not_certified"}
+    },
+    "stages": ["asr", "tracking", "context", "direction", "compile", "qc", "commit", "render", "export"],
+    "external_steps": [
+      {"id": "read_context", "tool": "pipeline_get", "arguments": {"include_context": true}, "requirement": "Read all chunk contexts and whole narrative"},
+      {"id": "plan_chunk", "tool": "pipeline_plan", "required": ["project_id", "generation", "chunk_id", "expected_revision", "document", "agent"], "document_schema": "ivan-plan/1", "timing": "chunk_local", "requirement": "Closed explicit data; no fabricated speech, resources, facts, rights or observations"},
+      {"id": "continue", "tool": "pipeline_resume", "required": ["project_id", "generation"], "requirement": "Read current generation; repair waiting_external_repair before resuming"},
+      {"id": "restart", "tool": "pipeline_restart", "required": ["project_id", "generation", "options"], "requirement": "Explicit current-generation CAS; new options, preserved history; reuse ASR/tracking only with current signature and evidence"},
+      {"id": "cancel", "tool": "pipeline_cancel", "required": ["project_id", "generation"], "requirement": "Safe points; preserve original and recorded evidence"}
+    ],
+    "waiting_states": ["waiting_external", "waiting_external_repair", "waiting_commit", "waiting_render", "waiting_export"],
+    "completion_state": "completed",
+    "completion_means": "technical production only; visual editorial review and perceptual listening pending",
+    "invalidators": ["project_revision", "source_bytes", "voice_stream", "branding", "manual_profile", "library", "brand_registry", "models_runtime", "code"],
+    "cached_stage_requirement": "Current input signature and actual evidence hash; never filename alone"
+  },
+  "manual": {
+    "action": "edit_own_or_authorized_shared_project",
+    "save_tool": "project_update",
+    "save_cas": "project.revision",
+    "full_export_tool": "draft_render",
+    "full_export_required": ["project_id", "seconds"],
+    "http_render_options": {"technical": true, "draft_full": true},
+    "engine_must_match_saved_settings": true,
+    "requires": "source and timeline cover requested interval; own workspace; duration <=600s",
+    "mode_receipt": "manual_full_technical_draft",
+    "editorial_approved": false
+  },
+  "collaboration": {
+    "owner": ["read", "export", "edit_cas", "technical_render", "manage_library_branding_connections", "automate", "share_revoke", "cancel_jobs"],
+    "editor": ["read_project_and_attached_media", "export_editable", "edit_cas_with_attached_media", "technical_render"],
+    "viewer": ["read_project_and_attached_media", "export_editable"],
+    "agent_token_crosses_share_to_owner": false,
+    "global_owner_catalog_exposed": false,
+    "permission_cas": {"grant_new": 0, "change": "current_share_revision", "revoke": "current_share_revision"},
+    "resource_url": "immutable_owner_workspace + project_id + actor_workspace_id",
+    "mutation_headers": ["X-Workspace-ID of actor", "X-CSRF-Token for browser session"],
+    "revalidation": "After body received: current session and role under per-project gate; backend project CAS",
+    "revocation": "Deny new access; serialize with operation already admitted; cannot retract prior downloads"
+  },
+  "review_and_portable": [
+    {"id": "jobs", "tools": ["job_get", "job_cancel"], "requirement": "Only own jobs; collaboration cancellation belongs to owner"},
+    {"id": "technical_qc", "action": "validate_geometry_dwell_receipts_decode", "human_readability_verified": false, "clone_fidelity_verified": false},
+    {"id": "editorial_qc", "action": "observe_all_scenes_transitions_listen_audio_record_corrections", "output": "current_scoped_observations", "auto_approval": false},
+    {"id": "editable", "tool": "editable_export", "requirement": "Actual CRC/SHA coverage, own canonical media and actual fonts/notices; no credentials or inherited approvals"}
+  ],
+  "agent_deployment": "User connects native client; workflow/tasks do not spawn models automatically",
+  "public_deployment": "pending TLS email verification recovery quota billing and own OAuth registration",
+  "drive_publish": false,
+  "capcut_adobe_parity": false
+}

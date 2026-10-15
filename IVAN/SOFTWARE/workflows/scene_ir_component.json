@@ -1,0 +1,46 @@
+{
+  "name": "SceneIR — componente técnico editable",
+  "scope": "SOFTWARE",
+  "mode": "scene_ir_component",
+  "schema": "ascendia.sceneir/1",
+  "max_seconds": 10,
+  "semantic_generator": false,
+  "component_approval_required": false,
+  "qc": "pending",
+  "stages": [
+    {
+      "tool": "studio_status",
+      "requirement": "Read current canonical manuals completely; parent production remains independent"
+    },
+    {
+      "tool": "scene_ir_schema",
+      "requirement": "External agent authors explicit semantics/geometry/actions; no stock or footage"
+    },
+    {
+      "tool": "scene_ir_preview",
+      "requirement": "Read-only proposal and declared replacement"
+    },
+    {
+      "tool": "scene_ir_apply",
+      "requirement": "Explicit application with expected_revision, no editorial approval"
+    },
+    {
+      "tool": "workflow_create",
+      "requirement": "Five component roles with leases/evidence; no automatic model deployment"
+    },
+    {
+      "tool": "preview_render",
+      "arguments": {
+        "technical": true
+      },
+      "requirement": "Actual component duration, maximum10s; execution without per-component approval"
+    },
+    {
+      "tool": "editable_export",
+      "requirement": "CRC/SHA verified JSON/assets plus current HTML/GSAP when present"
+    },
+    {
+      "requirement": "Inspect motion and listen; retain observed faults/pending QC, no reel promotion"
+    }
+  ]
+}

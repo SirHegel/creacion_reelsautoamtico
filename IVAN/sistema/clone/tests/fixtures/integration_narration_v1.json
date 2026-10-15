@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "context": "Entrada ficticia creada para probar el contrato; no reproduce una narración de cliente.",
+  "start": 0.0,
+  "end": 7.918005,
+  "duration": 7.918005,
+  "video_duration": 7.9,
+  "text": "Google anuncia riesgo mientras Claude procesa varios datos para resumir información web usando fuentes LinkedIn YouTube Instagram además sin pagar ninguna API de prueba.",
+  "text_asr": "Google anuncia riesgo mientras Claude procesa varios datos para resumir información web usando fuentes LinkedIn YouTube Instagram además sin pagar ninguna API de prueba.",
+  "words": [
+    {
+      "id": "w0",
+      "text": "Google",
+      "start": 0.0,
+      "end": 0.32
+    },
+    {
+      "id": "w1",
+      "text": "anuncia",
+      "start": 0.4,
+      "end": 0.56
+    },
+    {
+      "id": "w2",
+      "text": "riesgo",
+      "start": 0.56,
+      "end": 0.88
+    },
+    {
+      "id": "w3",
+      "text": "mientras",
+      "start": 0.96,
+      "end": 1.2
+    },
+    {
+      "id": "w4",
+      "text": "Claude",
+      "start": 1.2,
+      "end": 1.68,
+      "asr_text": "Cloud"
+    },
+    {
+      "id": "w5",
+      "text": "procesa",
+      "start": 1.68,
+      "end": 1.84
+    },
+    {
+      "id": "w6",
+      "text": "varios",
+      "start": 1.84,
+      "end": 1.92
+    },
+    {
+      "id": "w7",
+      "text": "datos",
+      "start": 1.92,
+      "end": 2.24
+    },
+    {
+      "id": "w8",
+      "text": "para",
+      "start": 2.32,
+      "end": 2.4
+    },
+    {
+      "id": "w9",
+      "text": "resumir",
+      "start": 2.4,
+      "end": 3.04
+    },
+    {
+      "id": "w10",
+      "text": "información",
+      "start": 3.04,
+      "end": 3.28
+    },
+    {
+      "id": "w11",
+      "text": "web",
+      "start": 3.28,
+      "end": 3.44
+    },
+    {
+      "id": "w12",
+      "text": "usando",
+      "start": 3.68,
+      "end": 3.92
+    },
+    {
+      "id": "w13",
+      "text": "fuentes",
+      "start": 4.0,
+      "end": 4.24
+    },
+    {
+      "id": "w14",
+      "text": "LinkedIn",
+      "start": 4.24,
+      "end": 4.8
+    },
+    {
+      "id": "w15",
+      "text": "YouTube",
+      "start": 4.96,
+      "end": 5.2,
+      "asr_text": "Youtube,"
+    },
+    {
+      "id": "w16",
+      "text": "Instagram",
+      "start": 5.36,
+      "end": 5.76
+    },
+    {
+      "id": "w17",
+      "text": "además",
+      "start": 5.84,
+      "end": 6.08
+    },
+    {
+      "id": "w18",
+      "text": "sin",
+      "start": 6.08,
+      "end": 6.24
+    },
+    {
+      "id": "w19",
+      "text": "pagar",
+      "start": 6.24,
+      "end": 6.56
+    },
+    {
+      "id": "w20",
+      "text": "ninguna",
+      "start": 6.56,
+      "end": 6.72
+    },
+    {
+      "id": "w21",
+      "text": "API",
+      "start": 6.72,
+      "end": 7.04
+    },
+    {
+      "id": "w22",
+      "text": "de",
+      "start": 7.04,
+      "end": 7.44
+    },
+    {
+      "id": "w23",
+      "text": "prueba",
+      "start": 7.44,
+      "end": 7.76
+    }
+  ],
+  "source": {
+    "drive_id": "demo_integracion",
+    "path": "ejemplos/demo_integracion/original.mp4",
+    "sha256": "ffe94d66d50ef7cd1e570a30c882a24b4286f7c9309cecc3215d17466614351c",
+    "md5": "08a695be3f558ba7c46194fa0af7ed06",
+    "size": 11092656
+  },
+  "verification": {
+    "state": "fuente_drive_y_asr_alineado_verificados",
+    "method": "ffprobe actual, MD5/tamaño Drive GET y nueva inferencia Parakeet cached offline desde fuente actual",
+    "asr_receipt": "ejemplos/demo_integracion/integracion/asr_parakeet.json",
+    "asr_receipt_sha256": "62c3540bfcce67b3cab64281ba2c50335e8484d4efc9c295bfa396163f4b8c07",
+    "word_alignment_matches_previous": true,
+    "perceptual_audio_review": false
+  },
+  "editorial_normalizations": [
+    {
+      "word_id": "w4",
+      "asr": "Cloud",
+      "editorial": "Claude",
+      "tipo": "normalizacion_contextual_nombre",
+      "evidencia": "La corrección ya aparece en transcripcion.json original del proyecto, correcciones_nombres[0]; el modelo nuevo vuelve a emitir Cloud. Se conserva asr_text y no se afirma escucha perceptiva.",
+      "estado": "documentada_no_cotejada_perceptivamente"
+    },
+    {
+      "word_id": "w15",
+      "asr": "Youtube,",
+      "editorial": "YouTube,",
+      "tipo": "normalizacion_ortografica_marca"
+    }
+  ]
+}

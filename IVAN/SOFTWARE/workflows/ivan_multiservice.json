@@ -1,0 +1,26 @@
+{
+  "schema": "ascendia.workflow/1",
+  "id": "ivan_multiservice",
+  "scope": "authenticated_own_workspace",
+  "style_profile": "profiles/ivan_base.json",
+  "direction_modes": ["own_api_key", "external_mcp_agent"],
+  "steps": [
+    {"id":"account", "action":"register_or_login", "output":"private_workspace"},
+    {"id":"brand", "action":"configure_branding_with_revision", "output":"project_branding_snapshot"},
+    {"id":"source", "action":"upload_and_inspect_raw", "output":"canonical_source_sha256"},
+    {"id":"prepare", "action":"ivan_prepare", "output":"actual_asr_camera_context"},
+    {"id":"resources", "action":"resource_review_prepare_then_observe_and_record", "output":"scoped_current_resource_observations"},
+    {"id":"direction", "action":"auto_ivan_or_external_ivan_apply_plan", "output":"validated_editable_sceneir_storyboard"},
+    {"id":"preview", "action":"technical_hyperframes_preview_up_to_10s", "output":"actual_mp4_and_execution_evidence"},
+    {"id":"review", "action":"human_visual_motion_and_audio_review", "output":"observations_and_corrections"},
+    {"id":"portable", "action":"editable_export", "output":"verified_zip_with_brand_fonts_notices_and_own_media"}
+  ],
+  "external_agent_tools": ["project_get","ivan_prepare","job_get","resource_review_prepare","resource_review_record","ivan_apply_plan","editable_export","workflow_create","task_claim","task_complete"],
+  "agent_deployment": "user_connects_native_mcp_client; task leases do not spawn a model",
+  "gpu": false,
+  "parent_mutations": false,
+  "private_parent_assets_shared": false,
+  "automatic_editorial_approval": false,
+  "remote_deployment": "pending",
+  "billing": "provider_bills_user_key; commercial_service_billing_pending"
+}

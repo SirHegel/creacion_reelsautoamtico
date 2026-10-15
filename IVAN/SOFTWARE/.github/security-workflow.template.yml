@@ -1,0 +1,31 @@
+name: Manual public-source security check
+
+# Template only: GitHub does not execute this file outside .github/workflows/.
+# Install deliberately with suitable repository/workflow authorization.
+# Even after installation, uploading or changing code does not trigger it.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-source-safety:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Read the selected repository commit
+        # actions/checkout v7.0.1, verified against its official tag API.
+        # https://api.github.com/repos/actions/checkout/git/ref/tags/v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          submodules: false
+          lfs: false
+          show-progress: false
+      - name: Check tracked public sources without exposing findings content
+        working-directory: IVAN/SOFTWARE
+        run: python3 -B scripts/security_check.py --git-tree

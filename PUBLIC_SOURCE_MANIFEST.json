@@ -1,0 +1,1312 @@
+{
+  "excluded_categories": [
+    "credentials_and_sessions",
+    "private_drive_links_and_identifiers",
+    "accounts_and_runtime_state",
+    "client_media_and_transcripts",
+    "private_exports_and_backups",
+    "commercial_fonts_and_unlicensed_vendor_assets",
+    "downloaded_dependencies_models_and_caches"
+  ],
+  "files": {
+    ".gitignore": {
+      "bytes": 645,
+      "sha256": "9d646fdfc0d449a56c3e5343b04067e1fc21c0acff48ef9ea4e47dd2cfd770f4"
+    },
+    "IVAN/.gitignore": {
+      "bytes": 28,
+      "sha256": "8ff234da8555febfcc88ca076eaec2cd752b1f2ed34082d206528e895519491c"
+    },
+    "IVAN/AGENTS.md": {
+      "bytes": 17809,
+      "sha256": "54fad18b312217ca29e54c9bd172713038db9cd05172e1ec38ef588ce6893056"
+    },
+    "IVAN/DEPENDENCIAS_PUBLICAS.md": {
+      "bytes": 2017,
+      "sha256": "e406afd36c93ab5e692504c568977bf1734f9c229b8d0db8cf73913f41141569"
+    },
+    "IVAN/INSTRUCCIONES.md": {
+      "bytes": 21666,
+      "sha256": "74b17204a739b0e0b592dae79fc9252900db41e480813dbd35f0322c4d4361fc"
+    },
+    "IVAN/PROMPT_MAESTRO.md": {
+      "bytes": 91767,
+      "sha256": "12416b18d10512853ac115fc565f3f4d108b34d3ad039b901f2642d66369fea3"
+    },
+    "IVAN/SOFTWARE/.github/security-workflow.template.yml": {
+      "bytes": 1067,
+      "sha256": "cc1f4f9e434f6de42c3790bc6e8f5e5029018fc290152ec86ed12ed6b7731a19"
+    },
+    "IVAN/SOFTWARE/.gitignore": {
+      "bytes": 1609,
+      "sha256": "e1f2a51805db351bcc940d63f67d4854bc99c4e42254494a51b14e6807b92ae4"
+    },
+    "IVAN/SOFTWARE/AGENTS.md": {
+      "bytes": 8118,
+      "sha256": "0e0ca278c71981044d1a3628f692f1b27473439b713af1e925e555b1acd832c4"
+    },
+    "IVAN/SOFTWARE/LICENSE": {
+      "bytes": 1337,
+      "sha256": "d4c970f606a2c0efa0984abbad79ae93ef7a7b55bced1dad2b474cabfe5a788a"
+    },
+    "IVAN/SOFTWARE/README.md": {
+      "bytes": 16178,
+      "sha256": "715f3f3b621d379ae86f6542a750e69ab22f6e8406260386f4a32d0fd2f7f13b"
+    },
+    "IVAN/SOFTWARE/SECURITY.md": {
+      "bytes": 5151,
+      "sha256": "277ff07031a809c576bc651b5d15c8e5fef7c1acdca823a3aa564968a3e1d3e9"
+    },
+    "IVAN/SOFTWARE/assets/fonts/08df266400933d3178d0.otf": {
+      "bytes": 334924,
+      "sha256": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6"
+    },
+    "IVAN/SOFTWARE/assets/fonts/6a3412f058c7d8dfd917.ttf": {
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    "IVAN/SOFTWARE/assets/fonts/7776ddb9f3eb58683e59.otf": {
+      "bytes": 343596,
+      "sha256": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9"
+    },
+    "IVAN/SOFTWARE/assets/fonts/8cc3643535edf039aa5d.ttf": {
+      "bytes": 76580,
+      "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616"
+    },
+    "IVAN/SOFTWARE/assets/fonts/a4ba3a92350ebb031da0.ttf": {
+      "bytes": 170812,
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+    },
+    "IVAN/SOFTWARE/assets/fonts/df74c0ac387baeaeb0fe.ttf": {
+      "bytes": 71208,
+      "sha256": "df74c0ac387baeaeb0fe4f2324e1668e6a3ed8c09cd9796fe162c71753e19e45"
+    },
+    "IVAN/SOFTWARE/assets/fonts/licenses/7e6b2818edbd8f6a01ae8064.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "IVAN/SOFTWARE/assets/fonts/licenses/89ad2c4f66dd29127527493e.txt": {
+      "bytes": 4579,
+      "sha256": "89ad2c4f66dd29127527493e729c31e731f111cf10faf5774c3db9275ed0c22c"
+    },
+    "IVAN/SOFTWARE/assets/fonts/licenses/a3e5cdd67d4571dd0a24fcc9.txt": {
+      "bytes": 4605,
+      "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231"
+    },
+    "IVAN/SOFTWARE/assets/fonts/licenses/ee67e6ee22790b7929f1a376.txt": {
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    "IVAN/SOFTWARE/docs/API.md": {
+      "bytes": 30384,
+      "sha256": "ccb7b65ccfcc9ec2dd4bf352a28b69d89dad0a8d37b1799b6b61cde73d1de6e5"
+    },
+    "IVAN/SOFTWARE/docs/ARQUITECTURA.md": {
+      "bytes": 20856,
+      "sha256": "346adecebc7ce0827c6e591859fef301406b123deb106ac298e946340194d51e"
+    },
+    "IVAN/SOFTWARE/docs/AUDITORIA.md": {
+      "bytes": 44548,
+      "sha256": "534e06c5decb1220a2e61b88c750d1808a6ff44b17eeafefc96c9a7d105b6c19"
+    },
+    "IVAN/SOFTWARE/docs/INVESTIGACION.md": {
+      "bytes": 18419,
+      "sha256": "b4bfa49d1407bca8dbde98905fff93a3743225df7f79c75ea88132655d02d5bd"
+    },
+    "IVAN/SOFTWARE/docs/MODOS_COLABORACION_PIPELINE.md": {
+      "bytes": 17251,
+      "sha256": "d80fb4a5515246e814dde84ec8426913c64566635ca586fd5aa465f50ac47a6e"
+    },
+    "IVAN/SOFTWARE/docs/MULTISERVICE_ADAPTACION.md": {
+      "bytes": 18727,
+      "sha256": "167663669da0a6abd3f0d7dbf4b5b89605969767f2cccb30778d8c55a897d17d"
+    },
+    "IVAN/SOFTWARE/docs/NUBE.md": {
+      "bytes": 13720,
+      "sha256": "92f29651927a103387067ead5dcf1d8a3d70f54996e05bbba9a6aad659670169"
+    },
+    "IVAN/SOFTWARE/docs/PROCESO_IVAN.md": {
+      "bytes": 29287,
+      "sha256": "2d60e8b9770b57a7727ddb5652ee197d94428e5da8cbd6714015eb1dc3b17080"
+    },
+    "IVAN/SOFTWARE/docs/TIPOGRAFIA.md": {
+      "bytes": 11659,
+      "sha256": "d5df2cb21bb881fe5514fec0a8830689691a55386fcb70c09a838fcb32a91245"
+    },
+    "IVAN/SOFTWARE/docs/home-desktop.png": {
+      "bytes": 223682,
+      "sha256": "72bfd368f6d40211eea7063c99ab9f8cdd22c82eb5307ac2aedd25ccd67320e7"
+    },
+    "IVAN/SOFTWARE/docs/home-mobile.png": {
+      "bytes": 175656,
+      "sha256": "2d4383f9699fe210631f722b3471480ecfe6e9686dc475c2590f75d2a86c15e3"
+    },
+    "IVAN/SOFTWARE/docs/portal-mobile.png": {
+      "bytes": 103080,
+      "sha256": "0d04fd3134fe23d8d126b354dd8399c958643a07266e5765f9939826e102147d"
+    },
+    "IVAN/SOFTWARE/docs/portal.png": {
+      "bytes": 119347,
+      "sha256": "8cb6ec81845ee75b0b4a84908bdd51272550061b34014c6a2232c0fd4abb5f83"
+    },
+    "IVAN/SOFTWARE/docs/shared-viewer.png": {
+      "bytes": 137998,
+      "sha256": "585d0f6cfb2c386b1d1e7213b028eaf23d3ad4c6aaff335020eecb61fca5480b"
+    },
+    "IVAN/SOFTWARE/docs/typography-editor-mobile.png": {
+      "bytes": 114562,
+      "sha256": "5b6beddfb5bbab4baeab25d689927db0d9e781c85bb8f194ae31b9306f45d19d"
+    },
+    "IVAN/SOFTWARE/docs/typography-editor.png": {
+      "bytes": 184464,
+      "sha256": "7e2527ca0f634c5f7cd1c167046b827d976d62fb7e255b9e7d30996c40370b5a"
+    },
+    "IVAN/SOFTWARE/docs/typography-fonts.png": {
+      "bytes": 202859,
+      "sha256": "3123fa7e29c14e5a20d76b631ff1c64101ceb4407005639693c0bd41c15dbb0f"
+    },
+    "IVAN/SOFTWARE/iniciar.sh": {
+      "bytes": 697,
+      "sha256": "8639dfc20f88d3fbca876c3c70692ef8dc4dcda32b9a9de777a538061d059fe9"
+    },
+    "IVAN/SOFTWARE/iniciar_multiservice.sh": {
+      "bytes": 704,
+      "sha256": "ec26ddd110785d565ef48aeccd5bc01db7151e6608da3c2ca57b956e4d385fde"
+    },
+    "IVAN/SOFTWARE/instalar.sh": {
+      "bytes": 1193,
+      "sha256": "f8e88ef7843425250ef11ce92a0bb77043d8c0a433cee414d7b28e90c744ab72"
+    },
+    "IVAN/SOFTWARE/instalar_asr.sh": {
+      "bytes": 673,
+      "sha256": "e48dbba2e671167109931655d31e222992640744114654e041abd47a664d4506"
+    },
+    "IVAN/SOFTWARE/packs/public_fonts.json": {
+      "bytes": 6463,
+      "sha256": "e6a3797c15a276d362fca7319899daeb23b34931088d9b7875686f026d9c2b1c"
+    },
+    "IVAN/SOFTWARE/profiles/ivan_base.json": {
+      "bytes": 6353,
+      "sha256": "23fbb731268898d60424cbc1f54f57906000caad2148e16e4a78836523a464ef"
+    },
+    "IVAN/SOFTWARE/pyproject.toml": {
+      "bytes": 629,
+      "sha256": "e06372933d2c0b09494d9f765a276385a767a20a2e22288723c12c79ca408220"
+    },
+    "IVAN/SOFTWARE/requirements-asr.txt": {
+      "bytes": 22,
+      "sha256": "a0e33d44fb0f6e7b348f475f40b9395baa4f2c9739a6bdba663835169f600c84"
+    },
+    "IVAN/SOFTWARE/requirements.txt": {
+      "bytes": 149,
+      "sha256": "c0d4caec18c5e5df7b273891bf9934e4ada26d7d354c673c8041e499b2582dc0"
+    },
+    "IVAN/SOFTWARE/scripts/package_release.py": {
+      "bytes": 13141,
+      "sha256": "19a55927003d0be26518a233cedf37bec2dc4f3b67c84e016bfe269befba6d33"
+    },
+    "IVAN/SOFTWARE/scripts/security_check.py": {
+      "bytes": 13015,
+      "sha256": "d7c3603625ef0c96164e83f65ea21a7ec39f12a8633606ac2769ed5c36aba218"
+    },
+    "IVAN/SOFTWARE/studio/__init__.py": {
+      "bytes": 95,
+      "sha256": "6b272a806ebc1adb2e759941aab9b74df49ad0b6ab20eadca6569e46137a6b54"
+    },
+    "IVAN/SOFTWARE/studio/__main__.py": {
+      "bytes": 89,
+      "sha256": "f8f01e1b771331cebd9bc77e03f3ff0822a396d79dcf9d5298754cac15fea535"
+    },
+    "IVAN/SOFTWARE/studio/accounts.py": {
+      "bytes": 9993,
+      "sha256": "fcbc419b03ab4a65c300bf0100e9411232ec7b2229bb10e4273816d0f917c3b4"
+    },
+    "IVAN/SOFTWARE/studio/analysis.py": {
+      "bytes": 30225,
+      "sha256": "8f4bd626927d016d49dd9b0f05bb6c778c0d134f5014f3faa2bfd419b8de074a"
+    },
+    "IVAN/SOFTWARE/studio/automation.py": {
+      "bytes": 55829,
+      "sha256": "c3c24bc5f321557b4eb8926ad5822b9f0c791813d610f680ecb9849c37d2b16c"
+    },
+    "IVAN/SOFTWARE/studio/brand_assets.py": {
+      "bytes": 40780,
+      "sha256": "02de5cc6c97fbb15e509d277681a5e830cd07a2fa6c4c3acdeba9ebad5441af1"
+    },
+    "IVAN/SOFTWARE/studio/brand_bundles.py": {
+      "bytes": 14205,
+      "sha256": "406b0165e03b26a2ecaf736cd20d36de3e761625929defa346fbaf811448d58b"
+    },
+    "IVAN/SOFTWARE/studio/branding.py": {
+      "bytes": 14748,
+      "sha256": "b5e52654ad3233cbb335ea803b1fd3b4345cc106a2a277711cf9f70171fd0fe0"
+    },
+    "IVAN/SOFTWARE/studio/bundles.py": {
+      "bytes": 31660,
+      "sha256": "22998f63646ea1bdb86c5c537a5eed37404e8d8fb4ed3f4113c6c3c2fe196b99"
+    },
+    "IVAN/SOFTWARE/studio/cli.py": {
+      "bytes": 16957,
+      "sha256": "8d1f4a535efaa075c71229963c12272736b70a7728176fda5f8b4ba8e1e2f3b6"
+    },
+    "IVAN/SOFTWARE/studio/cloud_storage.py": {
+      "bytes": 81084,
+      "sha256": "314bf9ae702b9c1fd727d17980dcd531f7086bc1b23b072f99207ac499921e22"
+    },
+    "IVAN/SOFTWARE/studio/core.py": {
+      "bytes": 66111,
+      "sha256": "be91020e5b260741d124a953e4c940472d51cbc491e96b932c48bd1d74ec92a1"
+    },
+    "IVAN/SOFTWARE/studio/design.py": {
+      "bytes": 17477,
+      "sha256": "75d69dedcdae17b22805272964dc48ace0b63c7105efc658dc9745358c02421b"
+    },
+    "IVAN/SOFTWARE/studio/design_review.py": {
+      "bytes": 13924,
+      "sha256": "0ed5be88e5e202c96f5f4c662d4e810a6bbcd6ad2b50f12e62c6766a5fe3cf99"
+    },
+    "IVAN/SOFTWARE/studio/fonts.py": {
+      "bytes": 12297,
+      "sha256": "dd0d7d8b055fd8fdcb8ac61674b3ac8cadc89a965da45b1fa9b119c68d41bb26"
+    },
+    "IVAN/SOFTWARE/studio/gateway.py": {
+      "bytes": 31321,
+      "sha256": "165903eb8dfb4105879d924d640ce26b2199ca9580d2ce332ec3e2a5e178ac39"
+    },
+    "IVAN/SOFTWARE/studio/hyperframes.py": {
+      "bytes": 83857,
+      "sha256": "193841f02cbb701af2bc8ffae5ee0250e7c08a82fa8dc6fb890cec6ae549c890"
+    },
+    "IVAN/SOFTWARE/studio/jobs.py": {
+      "bytes": 59430,
+      "sha256": "97f97bc7875ef9dc657b95b8dff72927492545a4a30fdb149a93f1ec1272927d"
+    },
+    "IVAN/SOFTWARE/studio/mcp.py": {
+      "bytes": 27755,
+      "sha256": "3a323ec141428a18c85dd3b0b547f51005d15c10f754f591e6338f19e1c4e63f"
+    },
+    "IVAN/SOFTWARE/studio/media_tools.py": {
+      "bytes": 31855,
+      "sha256": "98577c574a119e69e1d207890bdb5cc7dfbb8b061cbebc4883768734e8ae705f"
+    },
+    "IVAN/SOFTWARE/studio/motion.py": {
+      "bytes": 11493,
+      "sha256": "fff45dcb1f9787cc81eb7246e766d7916f0023f4cbea5331a7a4801c558822de"
+    },
+    "IVAN/SOFTWARE/studio/motion_bundle.py": {
+      "bytes": 11350,
+      "sha256": "e5ef713aa0102a6aa6b1feaf9095120f111a64f321eb92b59284bb0e5bff3aa9"
+    },
+    "IVAN/SOFTWARE/studio/pipeline.py": {
+      "bytes": 49947,
+      "sha256": "9bbf612b177318ccb756c2999404413f871167ff443c9b32bdc5e98a85272118"
+    },
+    "IVAN/SOFTWARE/studio/previews.py": {
+      "bytes": 18169,
+      "sha256": "5262af7a675473613d127e001a532e258fc40c53cd511a4f1230f4b1f1563293"
+    },
+    "IVAN/SOFTWARE/studio/providers.py": {
+      "bytes": 12350,
+      "sha256": "8d9885c58d12b7f02aa4dc54916a822ce4d0f2bdffad541d6caa62383da2c143"
+    },
+    "IVAN/SOFTWARE/studio/render.py": {
+      "bytes": 63126,
+      "sha256": "dd9506effe801cee98131a0e95084a52a24aea1e4deb26fdb3e4381441dd4298"
+    },
+    "IVAN/SOFTWARE/studio/resource_review.py": {
+      "bytes": 35544,
+      "sha256": "36b3caf7a8a37fa9bb41796774b73baa9d9882dc1ac8f36f5f9ebee79b1090fe"
+    },
+    "IVAN/SOFTWARE/studio/runtime.py": {
+      "bytes": 2761,
+      "sha256": "04a53616a2de6e2dd3bcbdf0a07bd2ad6822ac928eccab7d18d5204dab04972e"
+    },
+    "IVAN/SOFTWARE/studio/scene_ir.py": {
+      "bytes": 48208,
+      "sha256": "1f192575ee666b9e79df3134801d3b7a419d6817e369df61e32242a8770fbbda"
+    },
+    "IVAN/SOFTWARE/studio/scene_ir_actions.py": {
+      "bytes": 1647,
+      "sha256": "75589082565ae3e8e6ae5b5e222074921dee0486ca52e3dbf130d605f0a7face"
+    },
+    "IVAN/SOFTWARE/studio/segmentation.py": {
+      "bytes": 51186,
+      "sha256": "1ffa18dcd502ffc1782bfc220ddf6b758b6cae13f05f5c5f1b6a7d7f6e0d3162"
+    },
+    "IVAN/SOFTWARE/studio/server.py": {
+      "bytes": 39211,
+      "sha256": "7513de9b9a4010e063c25580c232959af868bd82767e6405ec178f3722c794bc"
+    },
+    "IVAN/SOFTWARE/studio/sharing.py": {
+      "bytes": 19291,
+      "sha256": "96feaf4aaf7b9a1432aafae57a67a9a93cdfb6b1e0bd2bb8b1b64aca6d0ed117"
+    },
+    "IVAN/SOFTWARE/studio/skills.py": {
+      "bytes": 11849,
+      "sha256": "928893ed729db2b9e82acd5ef0dbefcb6f0f0175a213ab2e359cb0b86ec83bd0"
+    },
+    "IVAN/SOFTWARE/studio/tracking.py": {
+      "bytes": 31178,
+      "sha256": "b916ba42957b0e1be0d89af5d6355063f633705380185d9306517bb90e6d1196"
+    },
+    "IVAN/SOFTWARE/studio/tracking_actions.py": {
+      "bytes": 16956,
+      "sha256": "f47d715b3ddb6f832fa5e8cef84a86d552497b92d292977ac9b362e724d9dbd9"
+    },
+    "IVAN/SOFTWARE/studio/typography.py": {
+      "bytes": 26471,
+      "sha256": "f18a0790dcf8bd48b1c82178f54ce074b804c1afa254619e032ba72a07f77ebc"
+    },
+    "IVAN/SOFTWARE/tests/browser_collaboration.mjs": {
+      "bytes": 25351,
+      "sha256": "6dbd3af7f4a0a76b7b6642d57bf640f5e377bc9a07f51b7832ee9f45c060ab15"
+    },
+    "IVAN/SOFTWARE/tests/browser_editor.mjs": {
+      "bytes": 26158,
+      "sha256": "5c8d783f1f86d6c79c21f9d43a36cc02b571b2f0cdb5cfd089267ab1bce4d55e"
+    },
+    "IVAN/SOFTWARE/tests/browser_formats.mjs": {
+      "bytes": 7501,
+      "sha256": "1d48e905177c5e4eab31bf36b258b99a691991f6b4f3f3bb242187cc01ea778e"
+    },
+    "IVAN/SOFTWARE/tests/browser_modes_v06.mjs": {
+      "bytes": 9706,
+      "sha256": "367c610bd240762ae0c0448d2678e85398ee26412128118df91c0786d3e0b644"
+    },
+    "IVAN/SOFTWARE/tests/browser_motion_capture.mjs": {
+      "bytes": 4827,
+      "sha256": "9547744d973459feb3c72976c2178242764990daed0ba9ab35adaedab1b8073f"
+    },
+    "IVAN/SOFTWARE/tests/browser_motion_controls.mjs": {
+      "bytes": 14481,
+      "sha256": "5c8b25a891abcf892862f08ea3e7ac0f07067432383f3d7ad773e9ac30fb1867"
+    },
+    "IVAN/SOFTWARE/tests/browser_motion_editor.mjs": {
+      "bytes": 19384,
+      "sha256": "134458b93dabec031b440b37ef05d1388448f046e45558b85af755eeeab6254d"
+    },
+    "IVAN/SOFTWARE/tests/browser_motion_export.mjs": {
+      "bytes": 12709,
+      "sha256": "e77b99bfcef06e2b1238c03d66777a3307480608d4309eb3669be6638ebb7e0b"
+    },
+    "IVAN/SOFTWARE/tests/browser_motion_final.mjs": {
+      "bytes": 14653,
+      "sha256": "c0c212ce05b2d47e4fdea695f95c443bea8a82dd645be467cf0389f36b234e5a"
+    },
+    "IVAN/SOFTWARE/tests/browser_multiservice_auth.mjs": {
+      "bytes": 16120,
+      "sha256": "af659c1c0da4dde9fa2ba10187ecd10f6813b81f4093138c905423b106533f0b"
+    },
+    "IVAN/SOFTWARE/tests/browser_multiservice_editor.mjs": {
+      "bytes": 22188,
+      "sha256": "9c9bb1ee79cb0af7cb290cf22e1f92417327331c69c834aba4b0961374918da9"
+    },
+    "IVAN/SOFTWARE/tests/browser_scene_ir.mjs": {
+      "bytes": 16088,
+      "sha256": "d75406532429beef3a8655a8e8325aaee4d2a22de4acef8d411db6de95af8fdd"
+    },
+    "IVAN/SOFTWARE/tests/browser_segmentation.mjs": {
+      "bytes": 24025,
+      "sha256": "4fb056120c1ae6597cabcadb8f9ac1c5da803dd980ee4f7b3d5aa6a55f53ad1e"
+    },
+    "IVAN/SOFTWARE/tests/browser_segmentation_reopen.mjs": {
+      "bytes": 8421,
+      "sha256": "4bbe0ebea909e3d90ca7c6f5febd46e74cbffada15f63eff4bd9670ea77cd10d"
+    },
+    "IVAN/SOFTWARE/tests/browser_split_geometry.mjs": {
+      "bytes": 8826,
+      "sha256": "e9b2595cfa29e6a67ed99829d852ba19543aaa8306fb2bf86e6ee3e5ef7e9f5f"
+    },
+    "IVAN/SOFTWARE/tests/browser_typography.mjs": {
+      "bytes": 31413,
+      "sha256": "b4db6c9b662866c87633b58bf40b3721bb0e59de7a339b0d91008866ece9b99a"
+    },
+    "IVAN/SOFTWARE/tests/frontend_collaboration.mjs": {
+      "bytes": 5022,
+      "sha256": "3291668f441329558874250f7e0c2aa6320290d53dce510861cfc0fb25fe140a"
+    },
+    "IVAN/SOFTWARE/tests/frontend_multiservice_motion.mjs": {
+      "bytes": 5936,
+      "sha256": "c1914e32527ec16581ce9189d5aa62913a12323255bd997e76772a5b9d69bb77"
+    },
+    "IVAN/SOFTWARE/tests/frontend_multiservice_production.mjs": {
+      "bytes": 5628,
+      "sha256": "0690591b68974ac716c622b21c45c65b52d7b70d7d18742ad7a6d49d1933cb3c"
+    },
+    "IVAN/SOFTWARE/tests/frontend_pipeline.mjs": {
+      "bytes": 8029,
+      "sha256": "f862dab88053b415d1443e4e04e927489b7cb510c237669f910e557fdf1b4014"
+    },
+    "IVAN/SOFTWARE/tests/frontend_split_geometry.mjs": {
+      "bytes": 3951,
+      "sha256": "359be0bba52dcce507322d5999992304b5ab1cef1c40789d7e96cadaf349482b"
+    },
+    "IVAN/SOFTWARE/tests/frontend_voice_and_manual.mjs": {
+      "bytes": 3781,
+      "sha256": "9c991a0746139644d8480596aa83181dace3bd6e7b023a62e1f8484a57479911"
+    },
+    "IVAN/SOFTWARE/tests/frontend_voice_queue.mjs": {
+      "bytes": 3838,
+      "sha256": "e552ccfbc09915f94008701b84537c6c8d03cf21b18d612cd8a9f69daeed9980"
+    },
+    "IVAN/SOFTWARE/tests/mcp_multiservice.mjs": {
+      "bytes": 3520,
+      "sha256": "850c167cbd477ef0921a0324b1a82cab65a91752a17a9d99f1b417afb7b632c3"
+    },
+    "IVAN/SOFTWARE/tests/mcp_pipeline_v06.mjs": {
+      "bytes": 8650,
+      "sha256": "2ba245552577faa14160d376ecf385422e6dd650644af56c80f7b6c0e343eafd"
+    },
+    "IVAN/SOFTWARE/tests/motion_preview_math.mjs": {
+      "bytes": 5200,
+      "sha256": "29f61e758fc7650b97a8e9f0111c47942cd5dd6480ade9b5aeb98e1ad7951fd7"
+    },
+    "IVAN/SOFTWARE/tests/test_accounts.py": {
+      "bytes": 4848,
+      "sha256": "d0322c422008135a3ccfe65fe8f324e3896fa6d34ce2be9e9f8964fd9b0361d0"
+    },
+    "IVAN/SOFTWARE/tests/test_api.py": {
+      "bytes": 17724,
+      "sha256": "0eb75180364fc48f064b2ab3701ce3dc0ba7f364790726a3eade36a2848cb839"
+    },
+    "IVAN/SOFTWARE/tests/test_asr_input.py": {
+      "bytes": 1810,
+      "sha256": "61b552ff61d94f8d50a75ac1f78f6996dd394541d5d71c8a5602a1eb86bf4b10"
+    },
+    "IVAN/SOFTWARE/tests/test_audit_controls.py": {
+      "bytes": 11526,
+      "sha256": "f0e9481a329a62feb35a72ab729791cccb24a0a7be187ac267ef67256b86cbac"
+    },
+    "IVAN/SOFTWARE/tests/test_automation_bootstrap.py": {
+      "bytes": 6430,
+      "sha256": "be4a0f9e87121682e6f4be4e16cd59a39c81cf625cca51c35b093f8f6283828f"
+    },
+    "IVAN/SOFTWARE/tests/test_automation_v05.py": {
+      "bytes": 28569,
+      "sha256": "042cd0118a030c2c847de02756796830cf429a7cd60fd765dedaa485b45218b5"
+    },
+    "IVAN/SOFTWARE/tests/test_brand_assets.py": {
+      "bytes": 24500,
+      "sha256": "b6a388205601b91d0474f5ec9c24525f4a3e1d5671aae342db1c699382b1e14c"
+    },
+    "IVAN/SOFTWARE/tests/test_brand_bundles.py": {
+      "bytes": 17618,
+      "sha256": "869fe6930c39c7d866543de001ec05c3dce99bec21fa552f3d90396768bc26bc"
+    },
+    "IVAN/SOFTWARE/tests/test_brand_graphic_bundles.py": {
+      "bytes": 12928,
+      "sha256": "53a12d3a0c9e9fdbd34be3afc29d58f7b0e6fd881ca079b3bacc22e34b228f2b"
+    },
+    "IVAN/SOFTWARE/tests/test_branding.py": {
+      "bytes": 7426,
+      "sha256": "dceebca0b2c6244b4f672b4fa6074ad86414961a28973f75c5e9d91170b70f37"
+    },
+    "IVAN/SOFTWARE/tests/test_bundles.py": {
+      "bytes": 14376,
+      "sha256": "deff4223818935af7482a20fdc7193ab0911b070e8c45c1ab5a76bac328bcf76"
+    },
+    "IVAN/SOFTWARE/tests/test_cloud_backup_api.py": {
+      "bytes": 3738,
+      "sha256": "da15f398879d54e22df867ee30773206964dec769962980a6eceaea6f3f1273a"
+    },
+    "IVAN/SOFTWARE/tests/test_cloud_backup_jobs.py": {
+      "bytes": 6911,
+      "sha256": "443d8bd68523af68deb5fc7a40e99aaf320d2fa7253f836b148b45c3b5878dea"
+    },
+    "IVAN/SOFTWARE/tests/test_cloud_storage.py": {
+      "bytes": 46006,
+      "sha256": "9ced9736cc047909008db4fc5ad1fb6e19c9c7d5e610b51b7dca44baea0d5842"
+    },
+    "IVAN/SOFTWARE/tests/test_collaboration_audit_guards.py": {
+      "bytes": 12571,
+      "sha256": "cee2ca7d450899a68509ca9a61f4b02668ec92a0bc8679e1cf2550f704d28ca4"
+    },
+    "IVAN/SOFTWARE/tests/test_collaboration_gateway.py": {
+      "bytes": 11934,
+      "sha256": "a2b14e8e196e6e5b7692b06accbe2c99a2a761da75a172346a77bdc3e600cf08"
+    },
+    "IVAN/SOFTWARE/tests/test_core.py": {
+      "bytes": 16442,
+      "sha256": "6ee0f5318c81ccc08e17151086fd2c8ac00798b6ea45d99bf43168c241677ab7"
+    },
+    "IVAN/SOFTWARE/tests/test_current_policy.py": {
+      "bytes": 20958,
+      "sha256": "df05400c35dc90efd3d4636ae99ceef2255788875d034c6cdb91b60e49c46a24"
+    },
+    "IVAN/SOFTWARE/tests/test_design_review.py": {
+      "bytes": 19883,
+      "sha256": "38ca5af453ef8f7752bfe0713248876b9add320d9b645141eb218d6e5ec64386"
+    },
+    "IVAN/SOFTWARE/tests/test_export_integrity.py": {
+      "bytes": 3450,
+      "sha256": "52bfe34a2d90c131353fe3966756d10fb32735c6fca0c810c781f1b09b41a24f"
+    },
+    "IVAN/SOFTWARE/tests/test_feature_api.py": {
+      "bytes": 3893,
+      "sha256": "123f99d22f77d1d379c86257afd5018f1d385d4c5696cb84de63281e1a4abe52"
+    },
+    "IVAN/SOFTWARE/tests/test_feature_jobs.py": {
+      "bytes": 5392,
+      "sha256": "b255c87f45870dd729df780282d14cd03800d4324fa3c53cc490995f214062e5"
+    },
+    "IVAN/SOFTWARE/tests/test_final_audit.py": {
+      "bytes": 10535,
+      "sha256": "384aacd17842dbf688d32ac001bcfd7b303ca7578a33ded9151b06d5b7f8d622"
+    },
+    "IVAN/SOFTWARE/tests/test_formats.py": {
+      "bytes": 9837,
+      "sha256": "7b3768b83b964ce2bcf34e3e589244b69333a90690fa34fcaf488857855d0ebd"
+    },
+    "IVAN/SOFTWARE/tests/test_free_motion.py": {
+      "bytes": 7976,
+      "sha256": "b94e3db5a0c08caf8d7f37216c45fe9665604ad46e965259cd6092e21dc11c1d"
+    },
+    "IVAN/SOFTWARE/tests/test_gateway_keepalive.py": {
+      "bytes": 4940,
+      "sha256": "a6255f4d9782ae7b47e427e891da432e2c224fe64fedc997c4341851bfff0971"
+    },
+    "IVAN/SOFTWARE/tests/test_gateway_security.py": {
+      "bytes": 22970,
+      "sha256": "88e22ca49f13a8c50ad5cf8e24b2e4583f738cc2bc90e1298a289897b6edd96e"
+    },
+    "IVAN/SOFTWARE/tests/test_hyperframes.py": {
+      "bytes": 21118,
+      "sha256": "bad9a95a69408a666071395afc04e1904ee30f324792dfa42b7dfa664e0ceb32"
+    },
+    "IVAN/SOFTWARE/tests/test_hyperframes_color.py": {
+      "bytes": 4654,
+      "sha256": "d09f9f755d01a6f8b2c70e193e80a41e51711a6cef96dadadd162844c4b90be7"
+    },
+    "IVAN/SOFTWARE/tests/test_hyperframes_split_receipt.py": {
+      "bytes": 6164,
+      "sha256": "0783a7893ccb4fe6ef33814422ab75bfa1002c506c6d51ab0d7dafa4a12a9cb0"
+    },
+    "IVAN/SOFTWARE/tests/test_jobs.py": {
+      "bytes": 9882,
+      "sha256": "f2a993b59a16e49e95c362fb95e1a21796bbf26d546da7d5a42ed02a552496b2"
+    },
+    "IVAN/SOFTWARE/tests/test_layers.py": {
+      "bytes": 17771,
+      "sha256": "3fca54e79ae8d93d3cbd5e84b203a9ba0d35146066acdcac9ca58d71bedc4a64"
+    },
+    "IVAN/SOFTWARE/tests/test_mcp.py": {
+      "bytes": 6220,
+      "sha256": "eab4098796972a1d97514bca8cedf022c6aedc0d32a598b579dd232a100cc872"
+    },
+    "IVAN/SOFTWARE/tests/test_media_tools.py": {
+      "bytes": 16783,
+      "sha256": "a8bad757c99c683accce0db502d1618805873f8fa91b34a7e4754b57508f3414"
+    },
+    "IVAN/SOFTWARE/tests/test_motion_bundle.py": {
+      "bytes": 8961,
+      "sha256": "d0ea956ee38cb5c2262cc6551670264bbdf812277afc11f1f8ce7b66962c7640"
+    },
+    "IVAN/SOFTWARE/tests/test_motion_roundtrip.py": {
+      "bytes": 3463,
+      "sha256": "9617ab478a20f510c511c875a7c881a1e513bd91df069a7b54289ded1f1a57f4"
+    },
+    "IVAN/SOFTWARE/tests/test_multiservice_modes_api.py": {
+      "bytes": 6415,
+      "sha256": "94f07a33beadf4c527ee68e8a02bf1450b3ce57c785d09635050c52db6d9d37a"
+    },
+    "IVAN/SOFTWARE/tests/test_package_release.py": {
+      "bytes": 8588,
+      "sha256": "a616636c96a9a6378787655282f62b8a4fee91fcb12638efbaff5f27421154a4"
+    },
+    "IVAN/SOFTWARE/tests/test_pipeline.py": {
+      "bytes": 28017,
+      "sha256": "76632d2f6a9d1a33a2cb32dadb43e0abfb5f47c7888a2d37ca88a3ac19061bd8"
+    },
+    "IVAN/SOFTWARE/tests/test_pipeline_integration.py": {
+      "bytes": 15675,
+      "sha256": "c784ca6460b072b70e1a6a75f26ee253b7791ed7d3c1c62800aab730a029d3ad"
+    },
+    "IVAN/SOFTWARE/tests/test_pipeline_legibility.py": {
+      "bytes": 7194,
+      "sha256": "a045361d1f81aba7931aa943f3a44b506b05870fa2bc2da7982b4d09cac4f024"
+    },
+    "IVAN/SOFTWARE/tests/test_previews.py": {
+      "bytes": 23229,
+      "sha256": "16499b36dbd0592cc85d48e175b801531318dd322dc1baac95a2a874c38bf185"
+    },
+    "IVAN/SOFTWARE/tests/test_probe_rotation.py": {
+      "bytes": 1650,
+      "sha256": "d14e5243ce894fc0773761cf2f303b92124f63e12587d064edf80c1d1c9c82a2"
+    },
+    "IVAN/SOFTWARE/tests/test_providers.py": {
+      "bytes": 5368,
+      "sha256": "992f36ef6da3c86af3da8719d07c6e994b40b7e993ad8d2f515c9c0d743c6759"
+    },
+    "IVAN/SOFTWARE/tests/test_render.py": {
+      "bytes": 9785,
+      "sha256": "ce9bec94fad9e10b74b89993551beedbb9c8780d056e6c7578db1f338bcce4e2"
+    },
+    "IVAN/SOFTWARE/tests/test_resource_review.py": {
+      "bytes": 22181,
+      "sha256": "337a787954ed4cdfa3715e50da5c8e522f883a34abc0a2bed3250d31f9b13ede"
+    },
+    "IVAN/SOFTWARE/tests/test_resource_review_api.py": {
+      "bytes": 12437,
+      "sha256": "8d6313dd490cac72d0de6e966e873fe12d44c659174468506d2d86117b0e24a5"
+    },
+    "IVAN/SOFTWARE/tests/test_scene_ir.py": {
+      "bytes": 22250,
+      "sha256": "be6233be3e692e223198041738fee0741a6887b7c64014321970980f2d334355"
+    },
+    "IVAN/SOFTWARE/tests/test_scene_ir_audit.py": {
+      "bytes": 25211,
+      "sha256": "383797515cf6e5dee526d5791ebab0e0c5a5056445cbccf6413fe5c2808de4d1"
+    },
+    "IVAN/SOFTWARE/tests/test_scene_ir_brand_assets.py": {
+      "bytes": 21672,
+      "sha256": "840cc198688396e332a1075ac29eda9c50b100ae5c8d46b668817175f04a2b2f"
+    },
+    "IVAN/SOFTWARE/tests/test_scene_ir_integration.py": {
+      "bytes": 7083,
+      "sha256": "4901518b906f7557491487d8585c9bf0a66127382f1c3159992d334503de5e5a"
+    },
+    "IVAN/SOFTWARE/tests/test_security_check.py": {
+      "bytes": 10386,
+      "sha256": "34ead44bf2bf7b6e22eacc1ee28ca2a4e96a71b387bd738b547d8174d80ffbb5"
+    },
+    "IVAN/SOFTWARE/tests/test_segmentation.py": {
+      "bytes": 10175,
+      "sha256": "dd41809cb08aa091106bc6fad7a48006219b68e7311bdb6e794c9772bd7e51a9"
+    },
+    "IVAN/SOFTWARE/tests/test_segmentation_audit.py": {
+      "bytes": 32497,
+      "sha256": "b616ed9f829570a6eaeff19405266a31648b7e6c5de54b59249255b3234c813d"
+    },
+    "IVAN/SOFTWARE/tests/test_segmentation_integration.py": {
+      "bytes": 7738,
+      "sha256": "68fdb2d656805575c32e9486b92010bdf31724d152d0f119d77d1cc7454a0b15"
+    },
+    "IVAN/SOFTWARE/tests/test_sharing.py": {
+      "bytes": 9647,
+      "sha256": "9f89c7dc20f84299e8ca8979bb59dbf3bea63b875be90674be571add8c4dcb4f"
+    },
+    "IVAN/SOFTWARE/tests/test_skills.py": {
+      "bytes": 14882,
+      "sha256": "b61071ed7c082caeb7fcc4c302ed533fdba8f2157d11f6f7eec8473dd685a828"
+    },
+    "IVAN/SOFTWARE/tests/test_split_automation.py": {
+      "bytes": 9052,
+      "sha256": "a3be9ce385a41b30ffcdc98531d792584b9ad9618cbc7fbf5b00d491a40dbadd"
+    },
+    "IVAN/SOFTWARE/tests/test_split_custom_v05.py": {
+      "bytes": 11681,
+      "sha256": "1e3d4c139008db8fbc8e4f6396cfb7c74a524f95319e1f491c385b999c94832a"
+    },
+    "IVAN/SOFTWARE/tests/test_split_layout.py": {
+      "bytes": 2985,
+      "sha256": "d606d3ee50dd632efc32e950cb0fc646b2724a8aecf84bd3832ca97ac753cc91"
+    },
+    "IVAN/SOFTWARE/tests/test_tracking.py": {
+      "bytes": 16182,
+      "sha256": "868dda605acfdafd82f7c9f2a4b45dd98366cecff88022fe31befb0130bee2c4"
+    },
+    "IVAN/SOFTWARE/tests/test_tracking_actions.py": {
+      "bytes": 13016,
+      "sha256": "89b2badefce68b4edc6e93d41ad27708114d925a67202d074cf2f7c773a4d55e"
+    },
+    "IVAN/SOFTWARE/tests/test_typography.py": {
+      "bytes": 14731,
+      "sha256": "426bf5bf1d54bad2631e2af04d239447524150bc4daf003b04cc673b17d0a6d5"
+    },
+    "IVAN/SOFTWARE/tests/test_typography_audit.py": {
+      "bytes": 25211,
+      "sha256": "d77d41a0fcebf4ca86c00fb8c2a7837c1f91dc29370878b26e754eeb4f8eea74"
+    },
+    "IVAN/SOFTWARE/tests/test_typography_integration.py": {
+      "bytes": 8710,
+      "sha256": "95af8f697401c7d28406da3eed0c0d8e4586db8178cbb34deb66ac9b5953afe4"
+    },
+    "IVAN/SOFTWARE/tests/test_voice_tracks.py": {
+      "bytes": 10464,
+      "sha256": "15ce04d39722247e0e2648d9af103f48b824644dd00f4a0d587300af3431d553"
+    },
+    "IVAN/SOFTWARE/tests/test_workspace_api.py": {
+      "bytes": 3335,
+      "sha256": "21d8543abe87c9adc7e3503658febfd3b6eb45d58389a52de903a1935f0f4165"
+    },
+    "IVAN/SOFTWARE/tests/test_workspace_runtime.py": {
+      "bytes": 11371,
+      "sha256": "6aefa74980f0f9e1ec862670d7f9930b47b4d6d419a84d9796c13d6c3915b673"
+    },
+    "IVAN/SOFTWARE/web/app.js": {
+      "bytes": 262824,
+      "sha256": "52514d9a6c15fc2dd99a9854f76e152dc36fee583b5e1db885e036f5333288f1"
+    },
+    "IVAN/SOFTWARE/web/index.html": {
+      "bytes": 29589,
+      "sha256": "924a72f3d26e63c2be6fe83b84f67a073b29683483b53eec8b734446eeabf462"
+    },
+    "IVAN/SOFTWARE/web/portal.css": {
+      "bytes": 26064,
+      "sha256": "22aec3792cd7aafaeca1a052e0509af69d4c057b61ecba4f1f7d08c68a98c32d"
+    },
+    "IVAN/SOFTWARE/web/portal.html": {
+      "bytes": 15155,
+      "sha256": "36e65c9b1ab2654120addea206fdc3ef6d270286fa31bde496a1f55a2ab601ff"
+    },
+    "IVAN/SOFTWARE/web/portal.js": {
+      "bytes": 72367,
+      "sha256": "97e98185484ac6f241eef8fb3a444a78ad7487290b74a8a4aed2de30a757920b"
+    },
+    "IVAN/SOFTWARE/web/style.css": {
+      "bytes": 40299,
+      "sha256": "6de501eec30f93d2d98b075c0198166c7bfbfed63e0d4afed588a0dd8e2643b0"
+    },
+    "IVAN/SOFTWARE/workflows/AGENTES.md": {
+      "bytes": 5550,
+      "sha256": "37f827bebb20dd073a5138c93aaabaf7e993555cb5732e6586bb140aeb04c12a"
+    },
+    "IVAN/SOFTWARE/workflows/desarrollo_multiservice.json": {
+      "bytes": 7041,
+      "sha256": "fcfb20b7c96de3319d595b5104467ed09f966453015e804ddb42ee7a44867301"
+    },
+    "IVAN/SOFTWARE/workflows/ivan_multiservice.json": {
+      "bytes": 1727,
+      "sha256": "a41e3aab1390bb88abaa4efbe76e371168f65d5b9308c1d11e6d1070d1d09eec"
+    },
+    "IVAN/SOFTWARE/workflows/persona_cpu.json": {
+      "bytes": 170,
+      "sha256": "3515be34f04916db9a8c44566fef2c1844131fef80ff31f31e28293dc65271f4"
+    },
+    "IVAN/SOFTWARE/workflows/reel_multiservice.json": {
+      "bytes": 7060,
+      "sha256": "f046476f91d11aa688d3956d66f83e78ba1f22295520666b6d370088af63e2c1"
+    },
+    "IVAN/SOFTWARE/workflows/reel_v5.json": {
+      "bytes": 3513,
+      "sha256": "3f4993175758b5ae2e92f41e5959aea1f41dae264234566426a9b83cc6dfb3fb"
+    },
+    "IVAN/SOFTWARE/workflows/scene_ir_component.json": {
+      "bytes": 1417,
+      "sha256": "03b154e4fa0b44a698bd6fca6092eb8a8babf67dea93936e878affb105c62a74"
+    },
+    "IVAN/SOFTWARE/workflows/tipografia_local.json": {
+      "bytes": 1289,
+      "sha256": "cfcef5a839f24936f06d09663a40bf704f1236396ec621ebd1c9bd08719fcfd1"
+    },
+    "IVAN/STYLE_YO.md": {
+      "bytes": 6456,
+      "sha256": "cc40aa79cc48de63ee1ade9974fa2fda10f48ded3d4ab809feadbe404893f240"
+    },
+    "IVAN/ejemplos/README.md": {
+      "bytes": 1310,
+      "sha256": "8d2e6d909d7ab645403be0cb315b29bd8e78c3485a5f93507fef371537ca9948"
+    },
+    "IVAN/ejemplos/arquitectura_motion_3s/construir.py": {
+      "bytes": 4566,
+      "sha256": "03f3332dd8dd725d9c7fefa1feff929e8090c0e071701bc764530163e88554f8"
+    },
+    "IVAN/ejemplos/arquitectura_motion_3s/timeline.gsap.js": {
+      "bytes": 4395,
+      "sha256": "44085bc9254836be26b77546ee27a4497664092fa97cf49fc7d8e20ac171eaf1"
+    },
+    "IVAN/ejemplos/clone_componente/cerrar_entrega.py": {
+      "bytes": 9163,
+      "sha256": "9de104d7c346ef21c1fe6a06b154a63222c4f6dcd36b968cc8da4295814c0a8a"
+    },
+    "IVAN/ejemplos/clone_componente/comparar_animacion.py": {
+      "bytes": 2541,
+      "sha256": "e161c2f32f4668bb71f1eeb1b31818f25a1d897e79991e8540aa3680c0429465"
+    },
+    "IVAN/ejemplos/clone_componente/comparar_estatico.py": {
+      "bytes": 859,
+      "sha256": "5e0078365abc1a396a7f7cea09fb3e1e452ca7f647c29e4512a2748b775ed76c"
+    },
+    "IVAN/ejemplos/clone_componente/construir_animacion.py": {
+      "bytes": 8590,
+      "sha256": "ff781f5c374fb990468e068c4c52941f0227599ca71c8d23aa7cffa43c5f71bf"
+    },
+    "IVAN/ejemplos/clone_componente/construir_estatico.py": {
+      "bytes": 7468,
+      "sha256": "a89b5b9b9c4cee5d295a1d7236a2e245810f1c4afcc52cc432f4df2cc53c3167"
+    },
+    "IVAN/ejemplos/clone_componente/contornos.py": {
+      "bytes": 4455,
+      "sha256": "56bd538113824927acc8e62eb24b2f3aeab8eb023d24598a128cf1f0072791e1"
+    },
+    "IVAN/ejemplos/clone_componente/render_clone.py": {
+      "bytes": 2636,
+      "sha256": "4624267bb341ce8d90bbdcf6ab4d115e4f3e96c0e0a177053e7a04bad820485d"
+    },
+    "IVAN/ejemplos/clone_componente/revisar_animacion.mjs": {
+      "bytes": 3791,
+      "sha256": "963aea8780ac4a71f8e782997a7c3943fea0c3966e98f4f9605e457c065137f3"
+    },
+    "IVAN/ejemplos/clone_componente/timeline.gsap.js": {
+      "bytes": 6055,
+      "sha256": "5de9ce8e5f433c6b60856b52a93905201299a6079cabc4612a3be5a9ba22d6b4"
+    },
+    "IVAN/ejemplos/demo_integracion/edicion.py": {
+      "bytes": 10073,
+      "sha256": "6fd75d64d466a3c71f1e5da4c3ef25cea816002ddc7ef81760e517e7989d8de0"
+    },
+    "IVAN/ejemplos/demo_integracion/motion.js": {
+      "bytes": 11526,
+      "sha256": "b19f0674f3c31877b4ae3fe027c04ddc2c289714c80b9b7e5bfe42c8db300660"
+    },
+    "IVAN/ejemplos/demo_montaje_v4/edicion.py": {
+      "bytes": 340,
+      "sha256": "cb1f80dbe36a6813afece9471b6a38ac52e9b482832a79f36827c5a8380af5d6"
+    },
+    "IVAN/ejemplos/demo_montaje_v4/motion.js": {
+      "bytes": 11607,
+      "sha256": "4f5a80cb4e122d50eaf5559cefc911f577d9784d914a2242cf63ab8877bbd3ec"
+    },
+    "IVAN/ejemplos/demo_produccion/comparar_referencias.py": {
+      "bytes": 10174,
+      "sha256": "33128673801ccba50097160473b1ce858e609eaf017d9a6a78fd3ead9320d86c"
+    },
+    "IVAN/ejemplos/demo_produccion/mezclar_sonido.py": {
+      "bytes": 9467,
+      "sha256": "7a7497677dd943e64bcf56fe195e7f8743b908181f64909338757f3a2c1ee4c2"
+    },
+    "IVAN/sistema/AUDITORIA_WORKFLOW.md": {
+      "bytes": 8748,
+      "sha256": "7ae50ce563134704ac4457c6bef93cad23daf8fd4a4adf4a9524e9fada772a56"
+    },
+    "IVAN/sistema/auditar_gsap.py": {
+      "bytes": 3809,
+      "sha256": "ff144eb6effeeb1f0db305cd917f215a73c29bd947ee152a29f654d1a2f44b27"
+    },
+    "IVAN/sistema/auditar_prueba.py": {
+      "bytes": 5466,
+      "sha256": "640d24537789f4d6232387f57dca0c13db4c24b861bbe154765c294a006d2b0c"
+    },
+    "IVAN/sistema/auditar_prueba_v4.py": {
+      "bytes": 5531,
+      "sha256": "90b233a045527e6bde023aeaf40a08fc6fd91fe6237b8e5bab720322432db13f"
+    },
+    "IVAN/sistema/auditar_temporal.py": {
+      "bytes": 3665,
+      "sha256": "bfb58eae396357301841f9f85636ef0ed2a7178837d4729d4be146a3f90ca1f3"
+    },
+    "IVAN/sistema/bibliotecas.py": {
+      "bytes": 16903,
+      "sha256": "a3cc45c5e807b35b03d821638bcb4ab0b126c000d800a1ed8fce09f7e7fed8f0"
+    },
+    "IVAN/sistema/browser.mjs": {
+      "bytes": 11223,
+      "sha256": "1929d25edf23f366bb3a5e0a1b97fa4384f9f19782f019c4c43f738b190f294f"
+    },
+    "IVAN/sistema/clone/BRAND_ASSETS.md": {
+      "bytes": 4789,
+      "sha256": "a1184db8743256e4765564f9104db86643485464787e5e75bd395f053196fef7"
+    },
+    "IVAN/sistema/clone/COMPOSITOR.md": {
+      "bytes": 5252,
+      "sha256": "eb27902b548ca0e30d00f566169cefe2dd0ee8153b744330af68425ffb6700d3"
+    },
+    "IVAN/sistema/clone/DESIGN_SYSTEM.md": {
+      "bytes": 7772,
+      "sha256": "47f5160a07bf0edb0498d4dde601f5a6520307185743a26dc9e28fd714405955"
+    },
+    "IVAN/sistema/clone/EXTENDER_BIBLIOTECA.md": {
+      "bytes": 10974,
+      "sha256": "37983e55b931d13cb1a314e2a09428838cc5690d1dff7562bfc4fb42373a142a"
+    },
+    "IVAN/sistema/clone/FIDELIDAD_COMPONENTES.md": {
+      "bytes": 4785,
+      "sha256": "71f7b3ef3096e55be7d2a2069212918673120696db1812f3c4b1185c02a47800"
+    },
+    "IVAN/sistema/clone/INTEGRACION_YO.md": {
+      "bytes": 33053,
+      "sha256": "358e972166bff73c447f33dfc42754e798de04cbabf4bb529b734b1876c84355"
+    },
+    "IVAN/sistema/clone/INVENTARIO_CLONE.md": {
+      "bytes": 5700,
+      "sha256": "230ba9e6459cf9c5dc8d8b3c7e404e950a7ad69318503e1db0ba80e65cb55778"
+    },
+    "IVAN/sistema/clone/PLANNER.md": {
+      "bytes": 39722,
+      "sha256": "985d98176bbc740b7565a2ea0aa72c4e0782b343582c1d193cdcaf2dc344bde6"
+    },
+    "IVAN/sistema/clone/README.md": {
+      "bytes": 6162,
+      "sha256": "d0d633134525aec3fdf71369ff4f1bbc12130b92c82a0714e5ed5a5644c17955"
+    },
+    "IVAN/sistema/clone/assets.json": {
+      "bytes": 27750,
+      "sha256": "f6f8fac9e4b3936a87c44fc1dfd8203ef2464d7ccb3c7f952c90122b283ec6e1"
+    },
+    "IVAN/sistema/clone/b_v2.py": {
+      "bytes": 6631,
+      "sha256": "61c0e11096f18fdf9b5148aaec6342e7af00cc002b0917b2e765074f3aeb14a9"
+    },
+    "IVAN/sistema/clone/brand_assets.json": {
+      "bytes": 28728,
+      "sha256": "02a7e968d1b1b5d29e7e7219a23c2fe9fb3feacc05a3613458dbf14b7d158a8a"
+    },
+    "IVAN/sistema/clone/brand_registry.py": {
+      "bytes": 9238,
+      "sha256": "667caf1498df40e3973332993ea60603ab0b0342adab12f6afcd2e5d4bf4a56f"
+    },
+    "IVAN/sistema/clone/compare.py": {
+      "bytes": 2307,
+      "sha256": "771645386a2c2eb7c44cab0a71ad7f2bbcada1d16cf036e9cf8f84954c2249ed"
+    },
+    "IVAN/sistema/clone/components/agents.js": {
+      "bytes": 14188,
+      "sha256": "d493d78f17cdee989e731ae243a6edbcb4b8c6420bcc4dea8e56fa3d9e117cf4"
+    },
+    "IVAN/sistema/clone/components/devices.js": {
+      "bytes": 19882,
+      "sha256": "423f8586ff7b05ee3acc4a51e2eefa237826ef39a79da54b0e9bfaccb76cbb97"
+    },
+    "IVAN/sistema/clone/components/graph.js": {
+      "bytes": 22655,
+      "sha256": "7f99cf95a6521260a95986a243c32a568d66c2e4c8c119b87e208befd1e42557"
+    },
+    "IVAN/sistema/clone/components/proof_cards.js": {
+      "bytes": 10518,
+      "sha256": "26e73e22992e0b53a16daa5296fec9cf16c3a4f0e013439791b890cb28c2a206"
+    },
+    "IVAN/sistema/clone/components/research.js": {
+      "bytes": 10622,
+      "sha256": "898397dbf7b994070f8c54bb4787c44c03ce7503b173dce8504a77c94c0dd1c5"
+    },
+    "IVAN/sistema/clone/components/terminal.js": {
+      "bytes": 16009,
+      "sha256": "d0203dab289142d621e58fe80355f504eef5de66f82d214c05502280d2fa6bdb"
+    },
+    "IVAN/sistema/clone/composition.py": {
+      "bytes": 8802,
+      "sha256": "75750166f7666ce1ce5c9159868d35e0ae46a720352ad3647e1f50deab2ebfbb"
+    },
+    "IVAN/sistema/clone/continuity.js": {
+      "bytes": 5065,
+      "sha256": "ba1a92befb214fc9b683d97612023b4c3f685c10903cf1f0622a1fca19741676"
+    },
+    "IVAN/sistema/clone/creative_compare.py": {
+      "bytes": 4040,
+      "sha256": "a1d9b6798125740ad9aeea8a18529c671231f4d9bd5b0057c36ae9cc29bd01f6"
+    },
+    "IVAN/sistema/clone/creative_gallery.py": {
+      "bytes": 15856,
+      "sha256": "18e49a8d83eb922098e8b4913259468616dff1a799ee645f0b2dfa835807820b"
+    },
+    "IVAN/sistema/clone/creative_report.py": {
+      "bytes": 7569,
+      "sha256": "4390b15b1355179259c0ecafaf8b02863b492684416db95855d257bcfa87d4e8"
+    },
+    "IVAN/sistema/clone/creativity.py": {
+      "bytes": 3229,
+      "sha256": "9cf193bbfbdf7e336fdf282ecae9bf1ea60afdf9becc7e3fe6c8b7c47bdbb274"
+    },
+    "IVAN/sistema/clone/design-system.json": {
+      "bytes": 15233,
+      "sha256": "a64d051fc24982735a1fd2babca023db05068b6a3686e14126436d11e05e2763"
+    },
+    "IVAN/sistema/clone/engine.py": {
+      "bytes": 43146,
+      "sha256": "bcefe155b60d268a8c83a61d3564a592360e8c70d717b00d0daf5a48e994c420"
+    },
+    "IVAN/sistema/clone/generate.py": {
+      "bytes": 7096,
+      "sha256": "2eb8b08c918015f96be93025ec9aa0f9f10da0db41f3fe5a9644515bf89b78fa"
+    },
+    "IVAN/sistema/clone/integration.js": {
+      "bytes": 51457,
+      "sha256": "cccc31c11cae388a2b896164135634a6da27c0269c413c19c2121af3d4cd5f0b"
+    },
+    "IVAN/sistema/clone/integration.py": {
+      "bytes": 28848,
+      "sha256": "883b5aca5308316e8894ec3c523b91ff5d55064031e41d5b6dba4245bee35964"
+    },
+    "IVAN/sistema/clone/integration_brands.js": {
+      "bytes": 7968,
+      "sha256": "5d93dddb4f8321586c8c21f24ffa0b7c9e3c5d91bb6677006c200f3b5bd25f97"
+    },
+    "IVAN/sistema/clone/integration_hook.js": {
+      "bytes": 15190,
+      "sha256": "01599d48cc5609a053f5e40e65d202c933aea14d0973e6879162aaf143427719"
+    },
+    "IVAN/sistema/clone/integration_layout.js": {
+      "bytes": 28427,
+      "sha256": "522799cc4f76a0536cc71f0c2643b1b31fb5b161330807095b172bd727e765b6"
+    },
+    "IVAN/sistema/clone/integration_planner.py": {
+      "bytes": 54626,
+      "sha256": "dff6b6e26ba1090a50bbe3ace709590481845e6567104ea963e179bd608e978f"
+    },
+    "IVAN/sistema/clone/integration_report.py": {
+      "bytes": 42110,
+      "sha256": "81d2bc5ef440dd61265fb606ff38165cc6ed222def68b667d06c9ea19ead3285"
+    },
+    "IVAN/sistema/clone/integration_v2_compare.py": {
+      "bytes": 5536,
+      "sha256": "592a0296ea314c82ec896ed0f9a3d56ba4ac9b906bf590e0ed2cd9b72c8c4809"
+    },
+    "IVAN/sistema/clone/integration_v2_report.py": {
+      "bytes": 16294,
+      "sha256": "c23d163e71e15bd220a100a7de30934c09df48158e74c61c47d0388c27c7a515"
+    },
+    "IVAN/sistema/clone/inventario_escenas.json": {
+      "bytes": 67292,
+      "sha256": "b8d8066366fcb9f5aaff9044a4b1d8aec1e8960a19e6ca5d99d10cdf9b429d67"
+    },
+    "IVAN/sistema/clone/layout.js": {
+      "bytes": 8638,
+      "sha256": "dd315a89e32b327bb77b33e8f00a23f22a53fec5c03e0499571c8759e6d18497"
+    },
+    "IVAN/sistema/clone/package.py": {
+      "bytes": 4476,
+      "sha256": "e4632c1ac12560b32b4f533399548f4708b56dcf24a8c8062acbb7b7e86dc579"
+    },
+    "IVAN/sistema/clone/planner.py": {
+      "bytes": 123634,
+      "sha256": "cebb66876a35f5d975221ce3f0f18870e8b6f1c239b4390e4cc007ea0d750cc1"
+    },
+    "IVAN/sistema/clone/presentation.js": {
+      "bytes": 15762,
+      "sha256": "befa29e2d27571e278fc3cd7c025ed7107b6529cd5fd846f3480798de2fbd1da"
+    },
+    "IVAN/sistema/clone/presentation.json": {
+      "bytes": 3758,
+      "sha256": "aacde0c188838df8be2f1a57f037cfee083d23f97508d9408a12d3d7100b54ea"
+    },
+    "IVAN/sistema/clone/publish.py": {
+      "bytes": 5492,
+      "sha256": "5029289adb6fba06a8b54270a0f4bd2f8dbc18c5d832351f2d74d06c4744b450"
+    },
+    "IVAN/sistema/clone/report.py": {
+      "bytes": 15977,
+      "sha256": "262b6d310f171e88dd18648cace09fe08668f9e73511ebc0eefee0175ddf25ce"
+    },
+    "IVAN/sistema/clone/review.mjs": {
+      "bytes": 10132,
+      "sha256": "22fd58ca6650eb6748d9ca5b82477fed80084570761f4790dd1fe757d9717f5f"
+    },
+    "IVAN/sistema/clone/runtime.js": {
+      "bytes": 5109,
+      "sha256": "dab28a0359377ac13b23cb67078e4be944467323b08dac0e6024487afbbdcf3f"
+    },
+    "IVAN/sistema/clone/scene_schema.json": {
+      "bytes": 22129,
+      "sha256": "4d286ab5120f56ac06639f9559a0da90f8f3f35fe1665f74ee5d13121158193b"
+    },
+    "IVAN/sistema/clone/test_contracts.py": {
+      "bytes": 5452,
+      "sha256": "44c87f69e6a38ccc85eb247c374ae612ae8c2219b38ea97d3130f3c84da8571c"
+    },
+    "IVAN/sistema/clone/test_presentation.py": {
+      "bytes": 16103,
+      "sha256": "928ece7f477fe42c19c98c30f18e90804e9bdfb5124a859921855d63f12b8cba"
+    },
+    "IVAN/sistema/clone/tests/composition_v2_browser.mjs": {
+      "bytes": 10015,
+      "sha256": "1af87707dc553529f6cc70e4cbc5536a4671c27e0400f19d9616a1d8327b2943"
+    },
+    "IVAN/sistema/clone/tests/fixtures/composition_v2_preserved.json": {
+      "bytes": 15819,
+      "sha256": "e6c09e60211a6ef892f0a0b30d08bbe4e8a5f7bbba89c9c77787e10f7d23192d"
+    },
+    "IVAN/sistema/clone/tests/fixtures/hook_v3_preserved.json": {
+      "bytes": 23755,
+      "sha256": "04d581220a6881c5fbb6eb54bf1c01f70d8c2a6638f557777822a8d08492d5dd"
+    },
+    "IVAN/sistema/clone/tests/fixtures/integration_narration_v1.json": {
+      "bytes": 4243,
+      "sha256": "5b94baba02002c5957e7490d56e8fdf7517291c7510cde1d57fe4710a62f9cb3"
+    },
+    "IVAN/sistema/clone/tests/fixtures/integration_scene_v1.json": {
+      "bytes": 20738,
+      "sha256": "bbb4f327550501c6a0dc3fbec98a985e246accd0c25c32b62ae59fcbe06ce6d6"
+    },
+    "IVAN/sistema/clone/tests/fixtures/integration_scene_v2.json": {
+      "bytes": 35250,
+      "sha256": "243d778d7ccf3f255089d2d72a60fe519f077d6a888352bd952869603b7e20f2"
+    },
+    "IVAN/sistema/clone/tests/fixtures/integration_v1_preserved.json": {
+      "bytes": 36345,
+      "sha256": "e4ebef95bc91dd3be45648f22ce1c881eec899d7da0f9d98245af5076ef27307"
+    },
+    "IVAN/sistema/clone/tests/hook_v3_browser.mjs": {
+      "bytes": 60227,
+      "sha256": "dee5ce869e9851078e88de250a2d947fc2aaac7d1cfcb0e5c0818c6cc9e5c972"
+    },
+    "IVAN/sistema/clone/tests/integration_browser.mjs": {
+      "bytes": 24685,
+      "sha256": "19c31a3f1d5075e97882b09a327c99d994e9d02844c9d1dda2a1623b4de798ac"
+    },
+    "IVAN/sistema/clone/tests/integration_layout_contract.mjs": {
+      "bytes": 16375,
+      "sha256": "0dcecc240916820ced86c2f7dd25cee2f0af61c9dd35ed4bacbba6e6841b5695"
+    },
+    "IVAN/sistema/clone/tests/integration_reveal_evidence.mjs": {
+      "bytes": 3898,
+      "sha256": "2f5b87cd1227296d6954528a0073ad7b0dd14299fcfc77aba912d5c701fb693a"
+    },
+    "IVAN/sistema/clone/tests/integration_v2_browser.mjs": {
+      "bytes": 56516,
+      "sha256": "d60847fba83d7a4e9424b7e9f06a37b8fd47a34f696823d20e59c7fce011e331"
+    },
+    "IVAN/sistema/clone/tests/production_complete_browser.mjs": {
+      "bytes": 91479,
+      "sha256": "5d41d3019670df204726628ee7d2c20dfe4bbd04c2935ddd326b300e24de2bfc"
+    },
+    "IVAN/sistema/clone/tests/test_composition_v2.py": {
+      "bytes": 9650,
+      "sha256": "adeca21e940855910f5d21a9fdf16558dc5728e8d68bda2a857ada984f53c67e"
+    },
+    "IVAN/sistema/clone/tests/test_integration_planner.py": {
+      "bytes": 18141,
+      "sha256": "21ff3a7d0ad2938177028706d70c13ed6c4d9ceb67fb70e890e26d0713e41844"
+    },
+    "IVAN/sistema/clone/tests/test_integration_production.py": {
+      "bytes": 15472,
+      "sha256": "d75a7ba80552780f1cf741b011e782d3094f43b5932daa9d84c5dc16bafb061e"
+    },
+    "IVAN/sistema/clone/tests/test_planner.py": {
+      "bytes": 27140,
+      "sha256": "dd1a07c62854a1ee1e445afda21e94ea9668603c6efe73c7c0073f3eaccb9a00"
+    },
+    "IVAN/sistema/clone/tests/test_planner_brands.py": {
+      "bytes": 14673,
+      "sha256": "8e9769be9a22db8c7230b4a90ba123cce050650318f55b65a34e03414f20b18a"
+    },
+    "IVAN/sistema/clone/tests/test_production_motion.py": {
+      "bytes": 5820,
+      "sha256": "8baf61934050d902bdb0e75ea91e9089536995d6820ce0c3f6bc264b6e8a2f00"
+    },
+    "IVAN/sistema/componentes.jsx": {
+      "bytes": 2023,
+      "sha256": "1b06fcbf8c3af34ab6bcc843e2801a72ba3f306aaca7eb82a71b05143353e831"
+    },
+    "IVAN/sistema/componentes_motion.js": {
+      "bytes": 3324,
+      "sha256": "75ad8841b98722b9d6723fb84f01ca6fc5f870a88ed57b85793795bc213c4567"
+    },
+    "IVAN/sistema/composicion.py": {
+      "bytes": 3833,
+      "sha256": "ed7a370837c365d53d247ca1fef60937d376b9216f687caa769f37c3dc748099"
+    },
+    "IVAN/sistema/confinar.mjs": {
+      "bytes": 979,
+      "sha256": "d2d81ad4e53e4eec364485ed994af1ba31392b547b0f828730cf66ab11290b94"
+    },
+    "IVAN/sistema/empaquetar_prueba.py": {
+      "bytes": 3017,
+      "sha256": "051b1102c51d9b0a3cf0b542064d2bdb678735bdedbb2252476fdf3c9d1ba9a3"
+    },
+    "IVAN/sistema/entregar_estatico.py": {
+      "bytes": 3439,
+      "sha256": "f432b08edfa9d4dfd70b12639fd0361624942ef3418112cc489514ac739fbfdb"
+    },
+    "IVAN/sistema/entregar_prueba.py": {
+      "bytes": 6804,
+      "sha256": "1179904aa27efb2a6a83f050d84b2721761219dfca5bc0de4bb44bcfca891722"
+    },
+    "IVAN/sistema/entregar_tecnica.py": {
+      "bytes": 6727,
+      "sha256": "e4686613383b492b1abdd996b673867f88c7d3d0e956ee374e3215751f974c90"
+    },
+    "IVAN/sistema/informe.py": {
+      "bytes": 8705,
+      "sha256": "782ecb5e9d9ef57e915061e82212367ec073ba738bd41fe4d1652be372d0e423"
+    },
+    "IVAN/sistema/informe_prueba.py": {
+      "bytes": 20892,
+      "sha256": "10d27395a698823bd6ca8101ba4844aa0ef94d74181f910c9f59475875d9a1a9"
+    },
+    "IVAN/sistema/informe_v4.py": {
+      "bytes": 15767,
+      "sha256": "573c9066a056d17cb7a98641e24ac373ca11e4c407d2b3eb215bf805a6a16930"
+    },
+    "IVAN/sistema/mcp_prueba.mjs": {
+      "bytes": 2000,
+      "sha256": "81fd20c67f073aa9e27bfd1fe7d91cbdb9662cfba6148625e51ed0ecffaadea7"
+    },
+    "IVAN/sistema/motion.js": {
+      "bytes": 6374,
+      "sha256": "28f91f92496749bbe5d3981388811169ede501b4ee1dfdc48d59e1fdd9e4f594"
+    },
+    "IVAN/sistema/node_package.json": {
+      "bytes": 373,
+      "sha256": "57c8cbc7aadc58c55bbe612ecbd4ecff34de4bbf876a08d85a8afec8d524e48a"
+    },
+    "IVAN/sistema/parakeet.py": {
+      "bytes": 6235,
+      "sha256": "537d16cb5e5d0a8a9eb23c625370146c1d65c8de9b68df4b7ab7aa97842c0fb5"
+    },
+    "IVAN/sistema/perfil.json": {
+      "bytes": 6634,
+      "sha256": "7272b2b3763ad313e5facaab5f056321a94626de5047e8144999d91e4bdda7e4"
+    },
+    "IVAN/sistema/preflight.py": {
+      "bytes": 5853,
+      "sha256": "9a1fdd13f597adf046ecf1a1e3081a67c987b3728d6a62637c81145049d564db"
+    },
+    "IVAN/sistema/preparar_v4.py": {
+      "bytes": 9215,
+      "sha256": "f0e21d3703b13bb908ccdf579686b0eb9f1efc79b8195d9bf9c3045484050c9e"
+    },
+    "IVAN/sistema/prueba_motores.mjs": {
+      "bytes": 5494,
+      "sha256": "81fc423b63d6a074f013aff951f98122566c21b6d397159615af525e3a18885f"
+    },
+    "IVAN/sistema/prueba_tecnica.py": {
+      "bytes": 1891,
+      "sha256": "d656e41d0e093bf330881f1301f277b280a6108b5afd1869898e5a47c039f5e8"
+    },
+    "IVAN/sistema/remotion_recurso.mjs": {
+      "bytes": 1106,
+      "sha256": "70826a7a94636f830819b52ea10983084464534ed084e13f6d967ddc3ff7e6dd"
+    },
+    "IVAN/sistema/render.py": {
+      "bytes": 6274,
+      "sha256": "ab495ac7e95193a62f8ec1506e241970ddadcbce168ad26d473ad1a0aa695a92"
+    },
+    "IVAN/sistema/requirements.txt": {
+      "bytes": 196,
+      "sha256": "6adc2e6f317ec423d264318ab8f912d777958182a3de5540f562eec1c5519cf8"
+    },
+    "IVAN/sistema/seleccion.py": {
+      "bytes": 11101,
+      "sha256": "3ce09dfe1fb44ddc95bc6f271ae4368df4fd6788a79c178c2c05204728f22289"
+    },
+    "IVAN/sistema/skills.py": {
+      "bytes": 8961,
+      "sha256": "f9c84520b62b80490268d7e1f39eaa0ed192b57b846b781de3dd84bdfce67e67"
+    },
+    "IVAN/sistema/skills_entorno.mjs": {
+      "bytes": 3299,
+      "sha256": "0a123b3653da8a8c0ba22f261dcaec69c3ebd598bb6ac15a096417fdeedf55a2"
+    },
+    "IVAN/sistema/tella.mjs": {
+      "bytes": 7912,
+      "sha256": "03a49457531019e02669909256943a20b1745a2823dfb59a2d0edbd8fa4aa50c"
+    },
+    "IVAN/sistema/verificar.py": {
+      "bytes": 9992,
+      "sha256": "21385ff57d5f38696508e2af9887ae35cef2f19715e3568964dbfb1972bc8036"
+    },
+    "IVAN/sistema/verificar_estabilidad_v5.py": {
+      "bytes": 7214,
+      "sha256": "47487e4edf4a7c1366c4c54149b71f1496187ceed3083e66357a8e2392916421"
+    },
+    "IVAN/sistema/verificar_gsap.mjs": {
+      "bytes": 4963,
+      "sha256": "e8e6943a8b72ee448c406cbf6a2772dc09b743bb9df7c1a0ee1ae258dfc68d49"
+    },
+    "IVAN/sistema/workflow.py": {
+      "bytes": 44296,
+      "sha256": "adcd8b2daab964b9f880c26c585e67c24182e936aaec2a26ad191255e7673c75"
+    },
+    "README.md": {
+      "bytes": 2444,
+      "sha256": "53f53129c915b59cd02db2d28c06377ef51fc7cfb3bd7d80814e7e9b6340062c"
+    },
+    "scripts/check_publication.py": {
+      "bytes": 5499,
+      "sha256": "638d91d638107be8bf68cdf4046de699fc2a88d66b49144f842d3fdb3d9d204b"
+    }
+  },
+  "inventory_excludes_itself": true,
+  "schema": "reels.public-source/1",
+  "scope": "reviewed_public_sources"
+}
